@@ -4,118 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>مراجعة شركة | محطة التمويل</title>
-  <meta name="description" content="صفحة مراجعة تفصيلية تقرأ بيانات الشركة من ملفات JSON في محطة التمويل." />
+  <meta name="description" content="قالب مراجعة احترافي يعرض بيانات الشركة التفصيلية من ملفات JSON في محطة التمويل." />
   <meta name="robots" content="index,follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    *{box-sizing:border-box}body{margin:0;font-family:Cairo,system-ui,sans-serif;background:#f6f8fc;color:#111827}a{text-decoration:none;color:#1a73e8}.shell{width:min(1180px,calc(100% - 28px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid #e5e7eb;backdrop-filter:blur(14px)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand strong{display:block;font-size:25px;font-weight:900;color:#1a73e8}.brand span{display:block;font-size:12px;color:#64748b;font-weight:700}.links{display:flex;gap:16px;color:#475569;font-weight:800;font-size:14px}.hero{padding:28px 0 12px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:22px;box-shadow:0 14px 38px rgba(15,23,42,.055)}.panel,.heroBox{padding:26px;margin:18px 0}.eyebrow{margin:0 0 8px;color:#1a73e8;font-weight:900;font-size:13px}h1{margin:0 0 10px;font-size:40px;line-height:1.25}h2{margin:0 0 12px;font-size:27px}.lead,p{color:#5f6b7a;line-height:1.9}.summaryGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.stat{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:14px}.stat span{display:block;color:#64748b;font-size:13px;font-weight:700}.stat strong{display:block;font-size:20px}.risk{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:15px;padding:14px;line-height:1.8;font-weight:700}.table-wrap{overflow:auto;border:1px solid #e5e7eb;border-radius:16px;background:#fff}table{width:100%;border-collapse:collapse;min-width:900px;text-align:right}th{background:#f1f6ff;color:#334155;font-size:13px}th,td{padding:13px;border-bottom:1px solid #e5e7eb;white-space:nowrap}.badge{display:inline-flex;border-radius:999px;padding:5px 10px;font-weight:900;font-size:12px;background:#eff6ff;color:#1d4ed8}.list{display:grid;gap:10px}.item{background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:14px}.muted{color:#64748b}.footer{background:#111827;color:#d1d5db;margin-top:30px;padding:30px 0}.footer strong{color:#fff}@media(max-width:900px){.links{display:none}.summaryGrid{grid-template-columns:1fr 1fr}h1{font-size:31px}}@media(max-width:560px){.summaryGrid{grid-template-columns:1fr}}
+    *{box-sizing:border-box}body{margin:0;font-family:Cairo,system-ui,sans-serif;background:#f6f8fc;color:#111827}a{text-decoration:none;color:#1a73e8}.shell{width:min(1180px,calc(100% - 28px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid #e5e7eb;backdrop-filter:blur(14px)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand strong{display:block;font-size:25px;font-weight:900;color:#1a73e8}.brand span{display:block;font-size:12px;color:#64748b;font-weight:700}.links{display:flex;gap:16px;color:#475569;font-weight:800;font-size:14px}.hero{padding:28px 0 8px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:22px;box-shadow:0 14px 38px rgba(15,23,42,.055)}.panel,.heroBox{padding:26px;margin:18px 0}.eyebrow{margin:0 0 8px;color:#1a73e8;font-weight:900;font-size:13px}h1{margin:0 0 10px;font-size:40px;line-height:1.25}h2{margin:0 0 12px;font-size:27px}h3{margin:0 0 10px}.lead,p{color:#5f6b7a;line-height:1.9}.summaryGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.stat{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:14px}.stat span{display:block;color:#64748b;font-size:13px;font-weight:700}.stat strong{display:block;font-size:20px}.risk{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:15px;padding:14px;line-height:1.8;font-weight:700;margin-top:14px}.verdict{display:grid;grid-template-columns:1fr 1fr;gap:14px}.verdictBox{border:1px solid #e5e7eb;border-radius:16px;padding:16px;background:#f8fafc}.verdictBox.good{border-color:#bbf7d0;background:#f0fdf4}.verdictBox.bad{border-color:#fed7aa;background:#fff7ed}.table-wrap{overflow:auto;border:1px solid #e5e7eb;border-radius:16px;background:#fff}table{width:100%;border-collapse:collapse;min-width:940px;text-align:right}th{background:#f1f6ff;color:#334155;font-size:13px}th,td{padding:13px;border-bottom:1px solid #e5e7eb;white-space:nowrap}.badge{display:inline-flex;border-radius:999px;padding:5px 10px;font-weight:900;font-size:12px;background:#eff6ff;color:#1d4ed8}.list{display:grid;gap:12px}.programCard{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:16px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}.chip{display:inline-flex;border:1px solid #dbe3ef;background:#fff;border-radius:999px;padding:7px 11px;font-weight:800;color:#334155;font-size:13px}.rulesGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.rule{border:1px solid #e5e7eb;background:#fff;border-radius:15px;padding:14px}.rule span{display:block;color:#64748b;font-size:12px;font-weight:800}.rule strong{display:block;margin-top:5px}.muted{color:#64748b}.footer{background:#111827;color:#d1d5db;margin-top:30px;padding:30px 0}.footer strong{color:#fff}@media(max-width:900px){.links{display:none}.summaryGrid,.verdict,.rulesGrid{grid-template-columns:1fr 1fr}h1{font-size:31px}}@media(max-width:560px){.summaryGrid,.verdict,.rulesGrid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-<header class="top"><div class="shell nav"><a class="brand" href="/Compari-prop-firm/"><strong>محطة التمويل</strong><span>مراجعة تفصيلية من JSON</span></a><nav class="links"><a href="/Compari-prop-firm/">الرئيسية</a><a href="/Compari-prop-firm/categories/">التصنيفات</a><a href="/Compari-prop-firm/compare/">المقارنات</a></nav></div></header>
+<header class="top"><div class="shell nav"><a class="brand" href="/Compari-prop-firm/"><strong>محطة التمويل</strong><span>قالب مراجعة احترافي</span></a><nav class="links"><a href="/Compari-prop-firm/">الرئيسية</a><a href="/Compari-prop-firm/categories/">التصنيفات</a><a href="/Compari-prop-firm/compare/">المقارنات</a></nav></div></header>
 <main class="shell">
   <section class="hero"><div class="card heroBox" id="hero"><p class="eyebrow">تحميل البيانات</p><h1>جاري فتح المراجعة...</h1><p class="lead">يتم البحث داخل ملفات البيانات التفصيلية.</p></div></section>
-  <section class="card panel" id="summaryPanel" hidden></section>
+  <section class="card panel" id="verdictPanel" hidden></section>
+  <section class="card panel" id="snapshotPanel" hidden></section>
   <section class="card panel" id="programsPanel" hidden></section>
   <section class="card panel" id="rulesPanel" hidden></section>
-  <section class="card panel" id="editorialPanel" hidden></section>
+  <section class="card panel" id="tradingPanel" hidden></section>
+  <section class="card panel" id="arabPanel" hidden></section>
+  <section class="card panel" id="auditPanel" hidden></section>
   <section class="card panel" id="sourcesPanel" hidden></section>
 </main>
 <footer class="footer"><div class="shell"><strong>محطة التمويل</strong><p>المعلومات تعليمية وتنظيمية. راجع المصدر الرسمي قبل أي قرار مالي.</p></div></footer>
 <script>
-const base = '/Compari-prop-firm/';
-const dataFiles = ['cfd-prop-firms.json','futures-prop-firms.json','crypto-prop-firms.json','brokers.json','crypto-exchanges.json'];
-const params = new URLSearchParams(location.search);
-const slug = params.get('slug') || location.hash.replace('#','');
-const $ = id => document.getElementById(id);
-const val = v => v === null || v === undefined || v === '' ? '' : String(v);
-const list = arr => Array.isArray(arr) && arr.length ? arr.join('، ') : '';
-const money = (price,currency='USD') => price === null || price === undefined || price === '' ? '' : `${currency || 'USD'} ${price}`;
-function escapeHtml(s){return val(s).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
-function row(label,value){ if(value === null || value === undefined || value === '') return ''; return `<tr><th>${escapeHtml(label)}</th><td>${value}</td></tr>`; }
-function setTitle(company){ document.title = `مراجعة ${company.company_name} | محطة التمويل`; }
-async function loadAll(){
-  const all = [];
-  for (const file of dataFiles) {
-    try { const r = await fetch(`${base}src/data/${file}`); if(r.ok){ const data = await r.json(); all.push(...data.map(x => ({...x, source_file:file}))); } } catch(e) {}
-  }
-  return all;
-}
-function renderHero(c){
-  $('hero').innerHTML = `<p class="eyebrow">${escapeHtml(c.company_type || c.category || 'مراجعة شركة')}</p><h1>مراجعة ${escapeHtml(c.company_name)}</h1><p class="lead">${escapeHtml(c.editorial_summary?.main_strength || c.summary || 'مراجعة تفصيلية مولدة من قاعدة بيانات محطة التمويل.')}</p><div class="summaryGrid"><div class="stat"><span>التصنيف</span><strong>${escapeHtml(c.category)}</strong></div><div class="stat"><span>حالة البيانات</span><strong>${escapeHtml(c.data_quality_status)}</strong></div><div class="stat"><span>الثقة</span><strong>${escapeHtml(c.data_confidence)}</strong></div><div class="stat"><span>آخر فحص</span><strong>${escapeHtml(c.last_checked)}</strong></div></div><div class="risk">لا تعتمد على هذه الصفحة وحدها. راجع الموقع الرسمي والقواعد الحالية قبل شراء تحدي أو فتح حساب.</div>`;
-}
-function renderSummary(c){
-  const mp = c.markets_and_platforms || {};
-  const profile = c.company_profile || {};
-  const rows = [
-    row('الموقع الرسمي', c.official_website ? `<a href="${escapeHtml(c.official_website)}" target="_blank" rel="nofollow noopener">فتح الموقع الرسمي</a>` : ''),
-    row('الكيان القانوني', escapeHtml(profile.legal_entity)),
-    row('الدولة/المقر', escapeHtml(profile.headquarters_or_registered_country)),
-    row('الأسواق', escapeHtml(list(mp.markets))),
-    row('المنصات', escapeHtml(list(mp.platforms))),
-    row('عملة الحساب', escapeHtml(list(mp.account_currency))),
-    row('ملف البيانات', escapeHtml(c.source_file))
-  ].join('');
-  $('summaryPanel').hidden = false;
-  $('summaryPanel').innerHTML = `<h2>ملخص الشركة</h2><div class="table-wrap"><table><tbody>${rows}</tbody></table></div>`;
-}
-function renderPrograms(c){
-  const programs = Array.isArray(c.programs) ? c.programs : [];
-  $('programsPanel').hidden = false;
-  if(!programs.length){ $('programsPanel').innerHTML = '<h2>البرامج والخطط</h2><p class="muted">لا توجد برامج مفصلة في ملف البيانات الحالي.</p>'; return; }
-  const blocks = programs.map(p => {
-    const plans = Array.isArray(p.plans) ? p.plans : [];
-    const rows = plans.map(plan => `<tr><td>${escapeHtml(plan.plan_name)}</td><td>${escapeHtml(plan.account_size)}</td><td>${escapeHtml(money(plan.price, plan.currency))}</td><td>${escapeHtml(plan.phase_1_profit_target)}</td><td>${escapeHtml(plan.phase_2_profit_target)}</td><td>${escapeHtml(plan.daily_drawdown)}</td><td>${escapeHtml(plan.max_drawdown)}</td><td>${escapeHtml(plan.drawdown_type)}</td><td>${escapeHtml(plan.profit_split)}</td><td>${escapeHtml(plan.payout_frequency)}</td></tr>`).join('');
-    return `<div class="item"><h3>${escapeHtml(p.program_name)}</h3><p>${escapeHtml(p.program_description)}</p><div class="table-wrap"><table><thead><tr><th>الخطة</th><th>الحساب</th><th>السعر</th><th>هدف 1</th><th>هدف 2</th><th>Daily DD</th><th>Max DD</th><th>نوع DD</th><th>Profit Split</th><th>السحب</th></tr></thead><tbody>${rows || '<tr><td colspan="10">لا توجد خطط مفصلة.</td></tr>'}</tbody></table></div></div>`;
-  }).join('');
-  $('programsPanel').innerHTML = `<h2>البرامج والخطط</h2><div class="list">${blocks}</div>`;
-}
-function renderRules(c){
-  const r = c.risk_rules || {}, p = c.funded_stage_and_payouts || {}, cr = c.company_level_rules || {};
-  const rows = [
-    row('وقت إعادة ضبط الخسارة اليومية', escapeHtml(r.daily_drawdown_resets_at)),
-    row('أساس الخسارة اليومية', escapeHtml(r.daily_drawdown_based_on)),
-    row('أساس الخسارة القصوى', escapeHtml(r.max_drawdown_based_on)),
-    row('هل الخسارة العائمة محسوبة؟', escapeHtml(r.floating_loss_counts)),
-    row('مثال Daily Loss', escapeHtml(r.max_daily_loss_example)),
-    row('مثال Max Loss', escapeHtml(r.max_loss_example)),
-    row('متطلبات أول سحب', escapeHtml(p.first_payout_requirements)),
-    row('وقت معالجة السحب', escapeHtml(p.payout_processing_time)),
-    row('Profit Split Scaling', escapeHtml(p.profit_split_scaling)),
-    row('قواعد IP/VPN', escapeHtml(cr.vpn_vps_rules)),
-    row('Copy Trading', escapeHtml(cr.copy_trading_general_rule))
-  ].join('');
-  $('rulesPanel').hidden = false;
-  $('rulesPanel').innerHTML = `<h2>قواعد المخاطر والسحب</h2><div class="table-wrap"><table><tbody>${rows || '<tr><td>لا توجد قواعد مفصلة في هذا الملف.</td></tr>'}</tbody></table></div>`;
-}
-function renderEditorial(c){
-  const e = c.editorial_summary || {};
-  const rows = [
-    row('نقطة القوة الرئيسية', escapeHtml(e.main_strength)),
-    row('نقطة الضعف الرئيسية', escapeHtml(e.main_weakness)),
-    row('مناسب لـ', escapeHtml(list(e.best_for))),
-    row('غير مناسب لـ', escapeHtml(list(e.not_suitable_for))),
-    row('Scalping', escapeHtml(e.scalper_friendliness)),
-    row('News Trading', escapeHtml(e.news_trader_friendliness)),
-    row('EA Trading', escapeHtml(e.ea_trader_friendliness))
-  ].join('');
-  $('editorialPanel').hidden = false;
-  $('editorialPanel').innerHTML = `<h2>الملخص التحريري</h2><div class="table-wrap"><table><tbody>${rows || '<tr><td>لا يوجد ملخص تحريري مفصل.</td></tr>'}</tbody></table></div>`;
-}
-function renderSources(c){
-  const audit = c.research_audit || {};
-  const sources = [...new Set([...(c.official_sources || []), ...(audit.official_pages_checked || [])])];
-  $('sourcesPanel').hidden = false;
-  $('sourcesPanel').innerHTML = `<h2>المصادر الرسمية والتدقيق</h2>${sources.length ? '<ul>' + sources.map(s => `<li><a href="${escapeHtml(s)}" target="_blank" rel="nofollow noopener">${escapeHtml(s)}</a></li>`).join('') + '</ul>' : '<p class="muted">لا توجد مصادر رسمية مسجلة.</p>'}`;
-}
-loadAll().then(all => {
-  if(!slug){ $('hero').innerHTML = '<h1>لم يتم تحديد الشركة</h1><p class="lead">افتح الصفحة من جدول الشركات في الصفحة الرئيسية.</p>'; return; }
-  const company = all.find(c => c.slug === slug);
-  if(!company){ $('hero').innerHTML = `<h1>لم يتم العثور على الشركة</h1><p class="lead">لم أجد slug: ${escapeHtml(slug)} داخل ملفات البيانات.</p>`; return; }
-  setTitle(company); renderHero(company); renderSummary(company); renderPrograms(company); renderRules(company); renderEditorial(company); renderSources(company);
-});
+const base='/Compari-prop-firm/';
+const dataFiles=['cfd-prop-firms.json','futures-prop-firms.json','crypto-prop-firms.json','brokers.json','crypto-exchanges.json'];
+const params=new URLSearchParams(location.search);const slug=params.get('slug')||location.hash.replace('#','');
+const $=id=>document.getElementById(id);const val=v=>v===null||v===undefined||v===''?'':String(v);const yes=v=>v===true?'نعم':v===false?'لا':val(v);const list=a=>Array.isArray(a)&&a.length?a.join('، '):'';const money=(p,c='USD')=>p===null||p===undefined||p===''?'':`${c||'USD'} ${p}`;
+function e(s){return val(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+function row(k,v){return v===null||v===undefined||v===''?'':`<tr><th>${e(k)}</th><td>${v}</td></tr>`}
+function rule(k,v){return v===null||v===undefined||v===''?'':`<div class="rule"><span>${e(k)}</span><strong>${e(v)}</strong></div>`}
+async function loadAll(){const all=[];for(const file of dataFiles){try{const r=await fetch(`${base}src/data/${file}`);if(r.ok){const data=await r.json();all.push(...data.map(x=>({...x,source_file:file})))}}catch(err){}}return all}
+function firstPlan(c){for(const p of c.programs||[]){if(p.plans&&p.plans[0])return p.plans[0]}return {}}
+function allPlans(c){return (c.programs||[]).flatMap(p=>(p.plans||[]).map(plan=>({program:p,...plan})))}
+function setMeta(c){document.title=`مراجعة ${c.company_name} | محطة التمويل`}
+function renderHero(c){const mp=c.markets_and_platforms||{},plan=firstPlan(c);$('hero').innerHTML=`<p class="eyebrow">مراجعة شركة / ${e(c.company_type||c.category)}</p><h1>مراجعة ${e(c.company_name)}</h1><p class="lead">${e(c.editorial_summary?.main_strength||c.summary||'مراجعة تعتمد على قاعدة بيانات محطة التمويل التفصيلية.')}</p><div class="summaryGrid"><div class="stat"><span>التصنيف</span><strong>${e(c.category)}</strong></div><div class="stat"><span>أقل سعر في البيانات</span><strong>${e(money(plan.price,plan.currency))}</strong></div><div class="stat"><span>المنصات</span><strong>${e(list(mp.platforms))}</strong></div><div class="stat"><span>آخر فحص</span><strong>${e(c.last_checked)}</strong></div></div><div class="risk">تنبيه: هذه مراجعة معلوماتية وليست إعلانًا أو توصية شراء. قواعد الشركات قد تتغير؛ راجع المصدر الرسمي قبل الدفع.</div>`}
+function renderVerdict(c){const ed=c.editorial_summary||{};$('verdictPanel').hidden=false;$('verdictPanel').innerHTML=`<h2>الخلاصة التحريرية</h2><div class="verdict"><div class="verdictBox good"><h3>نقطة القوة</h3><p>${e(ed.main_strength||'تحتاج مراجعة تفصيلية من المصدر الرسمي.')}</p></div><div class="verdictBox bad"><h3>نقطة الضعف</h3><p>${e(ed.main_weakness||'بعض الحقول قد تكون ناقصة أو تحتاج تدقيقًا يدويًا.')}</p></div></div><div class="verdict" style="margin-top:14px"><div class="verdictBox"><h3>مناسب لـ</h3><p>${e(list(ed.best_for)||'')}</p></div><div class="verdictBox"><h3>غير مناسب لـ</h3><p>${e(list(ed.not_suitable_for)||'')}</p></div></div>`}
+function renderSnapshot(c){const mp=c.markets_and_platforms||{},profile=c.company_profile||{},broker=c.broker_specific||{},ex=c.crypto_exchange_specific||{};const rows=[row('الموقع الرسمي',c.official_website?`<a href="${e(c.official_website)}" target="_blank" rel="nofollow noopener">فتح المصدر الرسمي</a>`:''),row('الكيان القانوني',e(profile.legal_entity)),row('الدولة/المقر',e(profile.headquarters_or_registered_country)),row('الأسواق',e(list(mp.markets))),row('الأدوات/الأصول',e(list(mp.instruments))),row('المنصات',e(list(mp.platforms))),row('عملة الحساب',e(list(mp.account_currency))),row('التنظيم',e(list(broker.regulators))),row('أقل إيداع',e(broker.minimum_deposit)),row('KYC',e(yes(ex.kyc_required))),row('ملف البيانات',e(c.source_file)),row('حالة البيانات',`<span class="badge">${e(c.data_quality_status)}</span>`)].join('');$('snapshotPanel').hidden=false;$('snapshotPanel').innerHTML=`<h2>بطاقة المعلومات السريعة</h2><div class="table-wrap"><table><tbody>${rows}</tbody></table></div>`}
+function renderPrograms(c){const programs=c.programs||[];$('programsPanel').hidden=false;if(!programs.length){$('programsPanel').innerHTML='<h2>البرامج والخطط</h2><p class="muted">لا توجد برامج مفصلة في ملف البيانات الحالي.</p>';return}const blocks=programs.map(p=>{const plans=p.plans||[];const rows=plans.map(plan=>`<tr><td>${e(plan.plan_name)}</td><td>${e(plan.account_size)}</td><td>${e(money(plan.price,plan.currency))}</td><td>${e(plan.phase_1_profit_target)}</td><td>${e(plan.phase_2_profit_target)}</td><td>${e(plan.daily_drawdown)}</td><td>${e(plan.max_drawdown)}</td><td>${e(plan.drawdown_type)}</td><td>${e(plan.minimum_trading_days)}</td><td>${e(plan.profit_split)}</td><td>${e(plan.payout_frequency)}</td></tr>`).join('');return `<div class="programCard"><h3>${e(p.program_name)}</h3><div class="chips"><span class="chip">${e(list(p.program_type))}</span><span class="chip">${e(p.program_status)}</span><span class="chip">${e(list(p.available_markets))}</span></div><p>${e(p.program_description)}</p><div class="table-wrap"><table><thead><tr><th>الخطة</th><th>الحساب</th><th>السعر</th><th>هدف 1</th><th>هدف 2</th><th>Daily DD</th><th>Max DD</th><th>نوع DD</th><th>أيام التداول</th><th>Profit Split</th><th>السحب</th></tr></thead><tbody>${rows||'<tr><td colspan="11">لا توجد خطط مفصلة.</td></tr>'}</tbody></table></div></div>`}).join('');$('programsPanel').innerHTML=`<h2>البرامج والخطط</h2><div class="list">${blocks}</div>`}
+function renderRules(c){const plans=allPlans(c);const first=plans[0]||{},r=c.risk_rules||{},p=c.funded_stage_and_payouts||{};const cards=[rule('نوع الدرو داون',first.drawdown_type),rule('شرح الحساب',first.drawdown_calculation_notes),rule('Trailing Rules',first.trailing_drawdown_rules),rule('أساس Daily DD',r.daily_drawdown_based_on),rule('أساس Max DD',r.max_drawdown_based_on),rule('هل floating loss محسوب؟',yes(r.floating_loss_counts)),rule('أول سحب',first.first_payout_time||p.first_payout_requirements),rule('تكرار السحب',first.payout_frequency||p.payout_processing_time),rule('سياسة الاسترداد',first.refund_policy||p.refund_after_passing)].join('');$('rulesPanel').hidden=false;$('rulesPanel').innerHTML=`<h2>قواعد المخاطر والسحب</h2><div class="rulesGrid">${cards}</div><div class="risk">${e(r.max_daily_loss_example||r.max_loss_example||'يجب قراءة طريقة حساب الخسارة اليومية والقصوى من المصدر الرسمي قبل شراء أي تحدي.')}</div>`}
+function renderTrading(c){const plan=firstPlan(c),cr=c.company_level_rules||{};const rows=[row('تداول الأخبار',e(yes(plan.news_trading))),row('تفاصيل الأخبار',e(plan.news_trading_details)),row('Weekend Holding',e(yes(plan.weekend_holding))),row('EA / Bots',e(yes(plan.ea_bots))),row('تفاصيل EA',e(plan.ea_bots_details)),row('Copy Trading',e(yes(plan.copy_trading))),row('قاعدة النسخ العامة',e(cr.copy_trading_general_rule)),row('Hedging',e(yes(plan.hedging))),row('VPN/VPS',e(cr.vpn_vps_rules)),row('الممارسات المحظورة',e(list(plan.forbidden_practices||cr.general_forbidden_practices)))].join('');$('tradingPanel').hidden=false;$('tradingPanel').innerHTML=`<h2>قواعد التداول المحظورة والمسموحة</h2><div class="table-wrap"><table><tbody>${rows||'<tr><td>لا توجد قواعد تداول مفصلة.</td></tr>'}</tbody></table></div>`}
+function renderArab(c){const ar=c.arab_user_relevance||{};const rows=[row('دعم اللغة العربية',e(yes(ar.arabic_language_support))),row('دول MENA مدعومة',e(list(ar.mena_countries_supported))),row('دول MENA محظورة',e(list(ar.mena_countries_restricted))),row('طرق دفع للعرب',e(list(ar.payment_methods_for_arab_users))),row('دفع بالكريبتو',e(yes(ar.crypto_payments_available))),row('دفع بالبطاقة',e(yes(ar.bank_card_payments_available))),row('قنوات الدعم',e(list(ar.support_channels)))].join('');$('arabPanel').hidden=false;$('arabPanel').innerHTML=`<h2>مناسبة المستخدم العربي</h2><div class="table-wrap"><table><tbody>${rows||'<tr><td>لا توجد بيانات كافية عن دعم المستخدم العربي.</td></tr>'}</tbody></table></div>`}
+function renderAudit(c){const audit=c.research_audit||{};const rows=[row('حقول حرجة ناقصة',e(list(audit.missing_critical_fields))),row('حقول لم تُعثر',e(list(audit.fields_not_found))),row('معلومات متعارضة',e(list(audit.conflicting_information))),row('ملاحظات للمراجعة البشرية',e(list(audit.notes_for_human_review)))].join('');$('auditPanel').hidden=false;$('auditPanel').innerHTML=`<h2>تدقيق جودة البيانات</h2><div class="table-wrap"><table><tbody>${rows||'<tr><td>لا توجد ملاحظات تدقيق مسجلة.</td></tr>'}</tbody></table></div>`}
+function renderSources(c){const audit=c.research_audit||{};const sources=[...new Set([...(c.official_sources||[]),...(audit.official_pages_checked||[]),...(c.programs||[]).flatMap(p=>(p.plans||[]).flatMap(plan=>plan.official_sources||[]))])];$('sourcesPanel').hidden=false;$('sourcesPanel').innerHTML=`<h2>المصادر الرسمية</h2>${sources.length?'<ul>'+sources.map(s=>`<li><a href="${e(s)}" target="_blank" rel="nofollow noopener">${e(s)}</a></li>`).join('')+'</ul>':'<p class="muted">لا توجد مصادر رسمية مسجلة.</p>'}`}
+loadAll().then(all=>{if(!slug){$('hero').innerHTML='<h1>لم يتم تحديد الشركة</h1><p class="lead">افتح الصفحة من جدول الشركات في الصفحة الرئيسية.</p>';return}const c=all.find(x=>x.slug===slug);if(!c){$('hero').innerHTML=`<h1>لم يتم العثور على الشركة</h1><p class="lead">لم أجد slug: ${e(slug)} داخل ملفات البيانات.</p>`;return}setMeta(c);renderHero(c);renderVerdict(c);renderSnapshot(c);renderPrograms(c);renderRules(c);renderTrading(c);renderArab(c);renderAudit(c);renderSources(c)})
 </script>
 </body>
 </html>
