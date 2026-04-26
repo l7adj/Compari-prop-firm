@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>تحويل الصفحة | محطة التمويل</title>
+  <meta name="robots" content="noindex">
+  <style>body{font-family:system-ui,sans-serif;background:#f7f9fc;color:#111827;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}a{color:#1a73e8;font-weight:700}</style>
+</head>
+<body>
+  <main>
+    <h1>جاري تحويل الصفحة...</h1>
+    <p>إذا لم يتم التحويل تلقائيًا، <a id="fallback" href="/Compari-prop-firm/">ارجع للرئيسية</a>.</p>
+  </main>
+  <script>
+    const base = '/Compari-prop-firm/';
+    const path = location.pathname;
+    const match = path.match(/\/Compari-prop-firm\/reviews\/([^/]+)\/?$/);
+    if (match && match[1]) {
+      const target = base + 'review/?slug=' + encodeURIComponent(match[1]);
+      document.getElementById('fallback').href = target;
+      location.replace(target);
+    } else {
+      document.getElementById('fallback').href = base;
+    }
+  </script>
+</body>
+</html>
