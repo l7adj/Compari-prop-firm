@@ -21,8 +21,8 @@
       <div class="card hero-main">
         <p class="eyebrow">البيانات التي جُمعت ليست مفقودة</p>
         <h1>قاعدة شركات التمويل والبروكرات معروضة من ملفات JSON</h1>
-        <p class="lead">هذه الصفحة تقرأ مباشرة من <strong>src/data/index.json</strong> وتعرض الشركات التي تم جمعها: الاسم، التصنيف، السعر أو الإيداع، حجم الحساب، المنصات، جودة البيانات، وآخر فحص.</p>
-        <div class="actions"><a class="btn primary" href="#database">افتح جدول البيانات</a><a class="btn" href="/Compari-prop-firm/category/cfd-prop-firms/">شركات CFD</a><a class="btn" href="/Compari-prop-firm/reviews/fundednext/">مراجعة FundedNext</a></div>
+        <p class="lead">هذه الصفحة تقرأ مباشرة من <strong>src/data/index.json</strong> وتعرض الشركات التي تم جمعها. وعند الضغط على أي شركة يتم فتح صفحة مراجعة تفصيلية تقرأ من ملفات البيانات الكاملة مثل <strong>cfd-prop-firms.json</strong>.</p>
+        <div class="actions"><a class="btn primary" href="#database">افتح جدول البيانات</a><a class="btn" href="/Compari-prop-firm/review/?slug=fundednext">مراجعة FundedNext التفصيلية</a><a class="btn" href="/Compari-prop-firm/review/?slug=ftmo">مراجعة FTMO التفصيلية</a></div>
       </div>
       <aside class="card side">
         <div class="stats"><div class="stat"><span>إجمالي العناصر</span><strong id="totalCount">...</strong></div><div class="stat"><span>Ready</span><strong id="readyCount">...</strong></div><div class="stat"><span>Partial</span><strong id="partialCount">...</strong></div><div class="stat"><span>التصنيفات</span><strong id="categoryCount">5</strong></div></div>
@@ -45,34 +45,26 @@
       <div class="card panel">
         <p class="eyebrow">جدول حي من ملف JSON</p>
         <h2>الشركات والمنصات الموجودة في قاعدة البيانات</h2>
-        <p>استخدم البحث أو الفلترة. الجدول لا يعرض “غير مذكور”؛ الحقول الفارغة تبقى فارغة حتى لا نخترع معلومات.</p>
+        <p>اضغط على اسم أي شركة لفتح صفحة مراجعة تفصيلية تسحب البرامج والخطط والقواعد والمصادر من ملفات JSON الكاملة.</p>
         <div class="toolbar"><input id="searchInput" class="input" placeholder="ابحث عن FTMO، FundedNext، Topstep..." /><select id="categoryFilter" class="select"><option value="all">كل التصنيفات</option></select><select id="qualityFilter" class="select"><option value="all">كل الحالات</option><option value="ready">Ready</option><option value="partial">Partial</option></select></div>
         <div class="table-wrap"><table><thead><tr><th>الشركة</th><th>التصنيف</th><th>أقل سعر/إيداع</th><th>أكبر حساب</th><th>المنصات</th><th>جودة البيانات</th><th>آخر فحص</th></tr></thead><tbody id="companyRows"><tr><td colspan="7">جاري تحميل قاعدة البيانات...</td></tr></tbody></table></div>
       </div>
     </section>
 
-    <section class="shell section"><div class="notice">الخطوة التالية بعد ظهور البيانات: تحويل صفحات المراجعة نفسها إلى قوالب تقرأ من ملفات JSON التفصيلية مثل cfd-prop-firms.json وfutures-prop-firms.json.</div></section>
+    <section class="shell section"><div class="notice">تم ربط الصفحة الرئيسية بالفهرس الخفيف، وتمت إضافة صفحة مراجعة عامة تقرأ التفاصيل الكاملة من ملفات JSON المفصلة حسب slug الشركة.</div></section>
   </main>
 
   <footer class="footer"><div class="shell"><strong>محطة التمويل</strong><span>راجع المصادر الرسمية قبل أي قرار مالي.</span></div></footer>
 
 <script>
 const base = '/Compari-prop-firm/';
-const categoryNames = {
-  cfd_prop_firm: 'CFD Prop Firm',
-  futures_prop_firm: 'Futures Prop Firm',
-  crypto_prop_firm: 'Crypto Prop Firm',
-  broker: 'Broker',
-  brokers: 'Broker',
-  crypto_exchange: 'Crypto Exchange',
-  crypto_exchanges: 'Crypto Exchange'
-};
+const categoryNames = {cfd_prop_firm:'CFD Prop Firm',futures_prop_firm:'Futures Prop Firm',crypto_prop_firm:'Crypto Prop Firm',broker:'Broker',brokers:'Broker',crypto_exchange:'Crypto Exchange',crypto_exchanges:'Crypto Exchange'};
 let companies = [];
 const $ = (id) => document.getElementById(id);
 function text(v){ return v === null || v === undefined ? '' : String(v); }
 function money(v){ return v && typeof v === 'object' && v.value !== null && v.value !== undefined ? `${v.currency || 'USD'} ${v.value}` : ''; }
 function platforms(v){ return Array.isArray(v) ? v.join(' / ') : ''; }
-function reviewUrl(c){ return `${base}reviews/${c.slug}/`; }
+function reviewUrl(c){ return `${base}review/?slug=${encodeURIComponent(c.slug)}`; }
 function renderStats(){
   const ready = companies.filter(c => c.data_quality_status === 'ready').length;
   const partial = companies.filter(c => c.data_quality_status === 'partial').length;
@@ -100,10 +92,7 @@ function renderTable(){
   });
   $('companyRows').innerHTML = rows.map(c => `<tr><td><a href="${reviewUrl(c)}">${text(c.company_name)}</a></td><td>${text(c.category_label || categoryNames[c.category] || c.category)}</td><td>${money(c.lowest_price_or_deposit)}</td><td>${text(c.max_account_size)}</td><td>${platforms(c.platforms)}</td><td><span class="badge ${c.data_quality_status || ''}">${text(c.data_quality_status)}</span></td><td>${text(c.last_checked)}</td></tr>`).join('') || '<tr><td colspan="7">لا توجد نتائج مطابقة.</td></tr>';
 }
-fetch(`${base}src/data/index.json`)
-  .then(r => r.json())
-  .then(data => { companies = data; renderStats(); renderFilters(); renderTable(); ['searchInput','categoryFilter','qualityFilter'].forEach(id => $(id).addEventListener('input', renderTable)); })
-  .catch(() => { $('companyRows').innerHTML = '<tr><td colspan="7">تعذر تحميل ملف البيانات.</td></tr>'; });
+fetch(`${base}src/data/index.json`).then(r => r.json()).then(data => { companies = data; renderStats(); renderFilters(); renderTable(); ['searchInput','categoryFilter','qualityFilter'].forEach(id => $(id).addEventListener('input', renderTable)); }).catch(() => { $('companyRows').innerHTML = '<tr><td colspan="7">تعذر تحميل ملف البيانات.</td></tr>'; });
 </script>
 </body>
 </html>
