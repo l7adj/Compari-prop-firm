@@ -22,7 +22,7 @@
         <p class="eyebrow">البيانات التي جُمعت ليست مفقودة</p>
         <h1>قاعدة شركات التمويل والبروكرات معروضة من ملفات JSON</h1>
         <p class="lead">هذه الصفحة تقرأ مباشرة من <strong>src/data/index.json</strong> وتعرض الشركات التي تم جمعها. وعند الضغط على أي شركة يتم فتح صفحة مراجعة تفصيلية تقرأ من ملفات البيانات الكاملة مثل <strong>cfd-prop-firms.json</strong>.</p>
-        <div class="actions"><a class="btn primary" href="#database">افتح جدول البيانات</a><a class="btn" href="/Compari-prop-firm/review/?slug=fundednext">مراجعة FundedNext التفصيلية</a><a class="btn" href="/Compari-prop-firm/review/?slug=ftmo">مراجعة FTMO التفصيلية</a></div>
+        <div class="actions"><a class="btn primary" href="#database">افتح جدول البيانات</a><a class="btn" href="/Compari-prop-firm/reviews/fundednext/">مراجعة FundedNext</a><a class="btn" href="/Compari-prop-firm/reviews/ftmo/">مراجعة FTMO</a></div>
       </div>
       <aside class="card side">
         <div class="stats"><div class="stat"><span>إجمالي العناصر</span><strong id="totalCount">...</strong></div><div class="stat"><span>Ready</span><strong id="readyCount">...</strong></div><div class="stat"><span>Partial</span><strong id="partialCount">...</strong></div><div class="stat"><span>التصنيفات</span><strong id="categoryCount">5</strong></div></div>
@@ -45,13 +45,13 @@
       <div class="card panel">
         <p class="eyebrow">جدول حي من ملف JSON</p>
         <h2>الشركات والمنصات الموجودة في قاعدة البيانات</h2>
-        <p>اضغط على اسم أي شركة لفتح صفحة مراجعة تفصيلية تسحب البرامج والخطط والقواعد والمصادر من ملفات JSON الكاملة.</p>
+        <p>اضغط على اسم أي شركة لفتح صفحة مراجعة واضحة الرابط. الروابط الآن بصيغة SEO مثل <strong>/reviews/fundednext/</strong>.</p>
         <div class="toolbar"><input id="searchInput" class="input" placeholder="ابحث عن FTMO، FundedNext، Topstep..." /><select id="categoryFilter" class="select"><option value="all">كل التصنيفات</option></select><select id="qualityFilter" class="select"><option value="all">كل الحالات</option><option value="ready">Ready</option><option value="partial">Partial</option></select></div>
         <div class="table-wrap"><table><thead><tr><th>الشركة</th><th>التصنيف</th><th>أقل سعر/إيداع</th><th>أكبر حساب</th><th>المنصات</th><th>جودة البيانات</th><th>آخر فحص</th></tr></thead><tbody id="companyRows"><tr><td colspan="7">جاري تحميل قاعدة البيانات...</td></tr></tbody></table></div>
       </div>
     </section>
 
-    <section class="shell section"><div class="notice">تم ربط الصفحة الرئيسية بالفهرس الخفيف، وتمت إضافة صفحة مراجعة عامة تقرأ التفاصيل الكاملة من ملفات JSON المفصلة حسب slug الشركة.</div></section>
+    <section class="shell section"><div class="notice">المسار الصحيح للسيو: روابط مراجعات واضحة داخل /reviews/slug/ مع قوالب مستقلة حسب التصنيف. ملفات React skeleton محفوظة داخل src/components/templates.</div></section>
   </main>
 
   <footer class="footer"><div class="shell"><strong>محطة التمويل</strong><span>راجع المصادر الرسمية قبل أي قرار مالي.</span></div></footer>
@@ -64,7 +64,7 @@ const $ = (id) => document.getElementById(id);
 function text(v){ return v === null || v === undefined ? '' : String(v); }
 function money(v){ return v && typeof v === 'object' && v.value !== null && v.value !== undefined ? `${v.currency || 'USD'} ${v.value}` : ''; }
 function platforms(v){ return Array.isArray(v) ? v.join(' / ') : ''; }
-function reviewUrl(c){ return `${base}review/?slug=${encodeURIComponent(c.slug)}`; }
+function reviewUrl(c){ return `${base}reviews/${encodeURIComponent(c.slug)}/`; }
 function renderStats(){
   const ready = companies.filter(c => c.data_quality_status === 'ready').length;
   const partial = companies.filter(c => c.data_quality_status === 'partial').length;
