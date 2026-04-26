@@ -1,4 +1,4 @@
-name: Deploy static site to GitHub Pages
+name: Generate and deploy static site to GitHub Pages
 
 on:
   push:
@@ -24,12 +24,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Prepare static site
-        run: |
-          rm -rf _site
-          mkdir _site
-          cp index.html _site/index.html
-          cp .nojekyll _site/.nojekyll
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate static site
+        run: node scripts/generate-site.mjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -37,7 +38,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: docs
 
       - name: Deploy to GitHub Pages
         id: deployment
