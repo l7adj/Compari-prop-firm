@@ -1,0 +1,2808 @@
+[
+  {
+    "company_name": "Alpha Capital Group",
+    "slug": "alpha-capital-group",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://alphacapitalgroup.uk/alpha-pro/",
+    "status": "active",
+    "last_checked": "2026-04-15",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 60.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "AquaFunded",
+    "slug": "aquafunded",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.aquafunded.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 100000.0,
+    "summary": "Instant funding structure with high standard profit split and documented trailing drawdown rules."
+  },
+  {
+    "company_name": "Audacity Capital",
+    "slug": "audacity-capital",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.audacitycapital.co.uk/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 120000.0,
+    "summary": "Detailed official documentation for Ability Challenge drawdown, targets, refund and payout process."
+  },
+  {
+    "company_name": "Blue Guardian",
+    "slug": "blue-guardian",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.blueguardian.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 100000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "City Traders Imperium",
+    "slug": "city-traders-imperium",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://citytradersimperium.com/funded-account-challenge-funding-program/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 76.0,
+      "currency": "USD"
+    },
+    "max_account_size": 10000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "E8 Markets",
+    "slug": "e8-markets",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://e8markets.com/compare-account-challenges",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 99.0,
+      "currency": "USD"
+    },
+    "max_account_size": 25000.0,
+    "summary": "تتوفر بيانات أساسية عن E8 One مثل السعر، الهدف وحدود الخسارة في قاعدة البيانات."
+  },
+  {
+    "company_name": "Fintokei",
+    "slug": "fintokei",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.fintokei.com/starttrader/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "Metals",
+      "Energies",
+      "Indices"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 44.0,
+      "currency": "USD"
+    },
+    "max_account_size": 10000.0,
+    "summary": "برامج متعددة واضحة: StartTrader ثلاث مراحل وSwiftTrader مرحلة واحدة، مع قواعد منشورة وأسعار ظاهرة."
+  },
+  {
+    "company_name": "FTMO",
+    "slug": "ftmo",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://ftmo.com/en/1-step-challenge/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 79.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "قواعد تقييم واضحة ومفصلة رسميًا، مع توضيح آلية حساب الخسارة اليومية."
+  },
+  {
+    "company_name": "FundedNext",
+    "slug": "fundednext",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://fundednext.com/express/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 49.0,
+      "currency": "USD"
+    },
+    "max_account_size": 10000.0,
+    "summary": "تنوع نماذج Stellar مع بيانات رسمية عن الأهداف وحدود الخسارة وموعد أول مكافأة."
+  },
+  {
+    "company_name": "Funded Trading Plus",
+    "slug": "funded-trading-plus",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.fundedtradingplus.com/prop-trading-challenges/one-step",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "Match-Trader",
+      "DXtrade"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 549.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "Clear 1-Step Express page with price, target, daily loss, trailing max loss, no time limit, news and weekend holding allowed."
+  },
+  {
+    "company_name": "FunderPro",
+    "slug": "funderpro",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://funderpro.com/the-challenge/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 109.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "FundingPips",
+    "slug": "fundingpips",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://fundingpips.com/1-step/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 59.0,
+      "currency": "USD"
+    },
+    "max_account_size": 25000.0,
+    "summary": "يوفر أكثر من نوع برنامج داخل نفس الشركة، بما في ذلك 1-Step و2-Step وInstant Funding في البيانات الحالية."
+  },
+  {
+    "company_name": "FundingTraders",
+    "slug": "fundingtraders",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://fundingtraders.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [
+      "mt5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 38.0,
+      "currency": "USD"
+    },
+    "max_account_size": 10000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "FXIFY",
+    "slug": "fxify",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://fxify.com/programs/instant-funding/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "mt4",
+      "mt5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 250.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Instant funding page clearly positions the program as no-evaluation with immediate access and up to 90% performance split."
+  },
+  {
+    "company_name": "Goat Funded Trader",
+    "slug": "goat-funded-trader",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.goatfundedtrader.com/pay-later",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 10000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "Hantec Trader",
+    "slug": "hantec-trader",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://htrader.hmarkets.com/programs/rules/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 100000.0,
+    "summary": "Clear published rules for EAs, weekend holding, leverage, news restrictions, inactivity and reward timing."
+  },
+  {
+    "company_name": "Hola Prime",
+    "slug": "hola-prime",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://holaprime.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "Rithmic",
+      "ProjectX",
+      "R Trader Pro",
+      "Quantower"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 192.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "1-Step Prime يعرض هدف ربح 6%، عدم وجود Daily Loss، وسحوبات أسبوعية/شهرية حسب اختيار المتداول."
+  },
+  {
+    "company_name": "Instant Funding",
+    "slug": "instant-funding",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://instantfunding.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 10000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "Lux Trading Firm",
+    "slug": "lux-trading-firm",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://luxtradingfirm.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 199.0,
+      "currency": "USD"
+    },
+    "max_account_size": 400000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "OFP Funding",
+    "slug": "ofp-funding",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://ofpfunding.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 250.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Prop Firm - CFD/Forex Evaluation"
+  },
+  {
+    "company_name": "PipFarm",
+    "slug": "pipfarm",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://pipfarm.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 450.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "Detailed payout process and payout interval documentation."
+  },
+  {
+    "company_name": "RebelsFunding",
+    "slug": "rebelsfunding",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.rebelsfunding.com/programs/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 10000.0,
+    "summary": "Copper 4 يوضح بوضوح 5% target لكل مرحلة، 5% daily drawdown، 10% overall drawdown، و4 صفقات كحد أدنى لكل مرحلة."
+  },
+  {
+    "company_name": "SabioTrade",
+    "slug": "sabiotrade",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://sabiotrade.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "SabioTrade platform"
+    ],
+    "markets": [
+      "FX",
+      "Stocks",
+      "Crypto",
+      "Commodities",
+      "Indices",
+      "ETFs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 119.0,
+      "currency": "USD"
+    },
+    "max_account_size": 20000.0,
+    "summary": "Clear public pricing tiers and main trading objectives for several plans."
+  },
+  {
+    "company_name": "The5ers",
+    "slug": "the5ers",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://the5ers.com/high-stakes/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 39.0,
+      "currency": "USD"
+    },
+    "max_account_size": 10000.0,
+    "summary": "قواعد High Stakes موضحة رسميًا، مع شرح دقيق لطريقة حساب الدرو داون اليومي."
+  },
+  {
+    "company_name": "The Trading Pit",
+    "slug": "the-trading-pit",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.thetradingpit.com/futures",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 99.0,
+      "currency": "USD"
+    },
+    "max_account_size": 150000.0,
+    "summary": "Clear Futures Prime account specifications with published prices, targets, drawdown and payout policy."
+  },
+  {
+    "company_name": "TopTier Trader",
+    "slug": "toptier-trader",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://www.toptiertrader.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Very explicit rule documentation for drawdown, payout consistency and add-ons."
+  },
+  {
+    "company_name": "VPropTrader",
+    "slug": "vproptrader",
+    "category": "cfd_prop_firm",
+    "category_label": "CFD Prop Firm",
+    "official_website": "https://vproptrader.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 6,
+    "platforms": [
+      "MT5",
+      "VTrader"
+    ],
+    "markets": [
+      "CFDs",
+      "Crypto"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 129.99,
+      "currency": "USD"
+    },
+    "max_account_size": 12000.0,
+    "summary": "يعرض CFD وCrypto challenges، MT5 للـCFD وVTrader للكريبتو، مع instant/1-step/2-step وخيارات أحجام حتى 100K في الصفحة."
+  },
+  {
+    "company_name": "Topstep",
+    "slug": "topstep",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://topstep.com/express/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "TopstepX",
+      "Tradovate",
+      "NinjaTrader",
+      "TradingView"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 49.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "Clear official rules and mature futures funding structure with one primary account-failure rule."
+  },
+  {
+    "company_name": "Apex Trader Funding",
+    "slug": "apex-trader-funding",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://apextraderfunding.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "Rithmic",
+      "Tradovate"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 39.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Very broad futures prop-firm presence with detailed official drawdown documentation."
+  },
+  {
+    "company_name": "Earn2Trade",
+    "slug": "earn2trade",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://earn2trade.com/gauntlet-mini/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "NinjaTrader",
+      "Rithmic",
+      "Finamark"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 129.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Strong education/evaluation orientation with clearly documented Gauntlet Mini rules."
+  },
+  {
+    "company_name": "Bulenox",
+    "slug": "bulenox",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://bulenox.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "Rithmic",
+      "Project X"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 45.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Offers both real-time trailing and EOD/scaling futures account structures."
+  },
+  {
+    "company_name": "OneUp Trader",
+    "slug": "oneup-trader",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://oneuptrader.com/",
+    "status": "active",
+    "last_checked": "2026-04-15",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [
+      "ninjatrader",
+      "tradovate",
+      "rithmic"
+    ],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 42.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Prop Firm - Futures Evaluation"
+  },
+  {
+    "company_name": "UProfit Trader",
+    "slug": "uprofit-trader",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://uprofit.com/",
+    "status": "active",
+    "last_checked": "2026-04-15",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [
+      "ninjatrader",
+      "tradovate",
+      "rithmic"
+    ],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 69.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Prop Firm - Futures Evaluation"
+  },
+  {
+    "company_name": "TradeDay",
+    "slug": "tradeday",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://www.tradeday.com/our-pricing",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 87.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "Prop Firm - Futures Evaluation"
+  },
+  {
+    "company_name": "TickTickTrader",
+    "slug": "tickticktrader",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://tickticktrader.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 145.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "Prop Firm - Futures Evaluation"
+  },
+  {
+    "company_name": "Take Profit Trader",
+    "slug": "take-profit-trader",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://takeprofittrader.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 170.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "Official help article documents PRO payout split and buffer-zone withdrawal logic."
+  },
+  {
+    "company_name": "Elite Trader Funding",
+    "slug": "elite-trader-funding",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://elitetraderfunding.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 100000.0,
+    "summary": "Official help center documents DTF, Static and EOD plan mechanics with drawdown treatment."
+  },
+  {
+    "company_name": "MyFundedFutures",
+    "slug": "myfundedfutures",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://myfundedfutures.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "NinjaTrader",
+      "Tradovate",
+      "Rithmic"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 75.0,
+      "currency": "USD"
+    },
+    "max_account_size": 25000.0,
+    "summary": "Fast payout-oriented futures funding structure with explicit sim-to-live transition rules."
+  },
+  {
+    "company_name": "DayTraders.com",
+    "slug": "daytraderscom",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://daytraders.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [
+      "rithmic"
+    ],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 65.0,
+      "currency": "USD"
+    },
+    "max_account_size": 100000.0,
+    "summary": "Prop Firm - Futures Evaluation"
+  },
+  {
+    "company_name": "Funded Futures Network",
+    "slug": "funded-futures-network",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://fundedfuturesnetwork.com/accounts",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "Rithmic",
+      "Tradovate",
+      "NinjaTrader",
+      "Quantower"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 185.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "مركز المساعدة يقدم مواصفات دقيقة لـExpress OG/MAX وشروط السحب والاتساق والفائزين."
+  },
+  {
+    "company_name": "FundedNext Futures",
+    "slug": "fundednext-futures",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://fundednext.com/futures",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 99.99,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Bolt official page يذكر 50K مقابل $99.99، news trading allowed، ولا consistency بعد اجتياز التحدي."
+  },
+  {
+    "company_name": "Phidias Propfirm",
+    "slug": "phidias-propfirm",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://phidiaspropfirm.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "Rithmic",
+      "dxFeed"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 149.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "صفحة القواعد الرسمية تعرض EOD drawdown، السحوبات، العمولات لكل أصل، وNews trading."
+  },
+  {
+    "company_name": "PropShopTrader",
+    "slug": "propshoptrader",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://propshoptrader.com/why-futures/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "Tickblaze"
+    ],
+    "markets": [
+      "Futures",
+      "Stocks"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 50000.0,
+    "summary": "نموذج متعدد الأصول للأسهم والفيوتشرز، مع benchmark progression وReal Prop transition و80/20 profit split."
+  },
+  {
+    "company_name": "FXIFY Futures",
+    "slug": "fxify-futures",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://fxifyfutures.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 60000.0,
+    "summary": "سياسة السحب الرسمية واضحة: buffer zone، نسب سحب تصاعدية من 60% إلى 100%، وسحب كل 14 يومًا عند تحقق الشروط."
+  },
+  {
+    "company_name": "The Trading Pit",
+    "slug": "the-trading-pit",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://www.thetradingpit.com/futures",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 99.0,
+      "currency": "USD"
+    },
+    "max_account_size": 150000.0,
+    "summary": "Clear Futures Prime account specifications with published prices, targets, drawdown and payout policy."
+  },
+  {
+    "company_name": "Leeloo Trading",
+    "slug": "leeloo-trading",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://www.leelootrading.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "rithmic",
+      "ninjatrader",
+      "bookmap",
+      "sierrachart"
+    ],
+    "markets": [
+      "Futures",
+      "CME",
+      "COMEX",
+      "NYMEX",
+      "CBOT"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 250.0,
+      "currency": "USD"
+    },
+    "max_account_size": 50000.0,
+    "summary": "Prop Firm - Futures Evaluation"
+  },
+  {
+    "company_name": "BluSky Trading",
+    "slug": "blusky-trading",
+    "category": "futures_prop_firm",
+    "category_label": "Futures Prop Firm",
+    "official_website": "https://blusky.pro/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "Tradovate",
+      "Rithmic",
+      "ProjectX",
+      "Volumetrica"
+    ],
+    "markets": [
+      "Futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 50000.0,
+    "summary": "Daily payout processing and clear published payout policy for funded accounts."
+  },
+  {
+    "company_name": "HyroTrader",
+    "slug": "hyrotrader",
+    "category": "crypto_prop_firm",
+    "category_label": "Crypto Prop Firm",
+    "official_website": "https://www.hyrotrader.com/evaluations/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [
+      "bybit",
+      "binance_via_cleo"
+    ],
+    "markets": [
+      "Crypto Spot",
+      "Crypto Perpetual",
+      "Crypto Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 89.0,
+      "currency": "USD"
+    },
+    "max_account_size": 200000.0,
+    "summary": "Prop Firm - Crypto Evaluation"
+  },
+  {
+    "company_name": "Breakout",
+    "slug": "breakout",
+    "category": "crypto_prop_firm",
+    "category_label": "Crypto Prop Firm",
+    "official_website": "https://www.breakoutprop.com/kraken/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "kraken"
+    ],
+    "markets": [
+      "Crypto Spot",
+      "Crypto Perpetual",
+      "Crypto Futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 200000.0,
+    "summary": "Prop Firm - Crypto Evaluation"
+  },
+  {
+    "company_name": "Crypto Fund Trader",
+    "slug": "crypto-fund-trader",
+    "category": "crypto_prop_firm",
+    "category_label": "Crypto Prop Firm",
+    "official_website": "https://cryptofundtrader.com/join-cft/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 7,
+    "platforms": [
+      "bybit",
+      "mt5",
+      "match_trader"
+    ],
+    "markets": [
+      "Crypto Spot",
+      "Crypto Perpetual",
+      "Crypto Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 95.0,
+      "currency": "USD"
+    },
+    "max_account_size": 25000.0,
+    "summary": "Prop Firm - Crypto Evaluation"
+  },
+  {
+    "company_name": "Bitfunded",
+    "slug": "bitfunded",
+    "category": "crypto_prop_firm",
+    "category_label": "Crypto Prop Firm",
+    "official_website": "https://www.bitfunded.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [],
+    "markets": [
+      "Crypto"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": 100000.0,
+    "summary": "Crypto-specific prop firm with published payout terms and crypto-focused challenge education."
+  },
+  {
+    "company_name": "BrightFunded",
+    "slug": "brightfunded",
+    "category": "crypto_prop_firm",
+    "category_label": "Crypto Prop Firm",
+    "official_website": "https://brightfunded.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 8,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Crypto CFDs",
+      "Indices",
+      "Commodities"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Detailed help center explains 1-Step, 2-Step Bright, and 2-Step Classic drawdown and target rules."
+  },
+  {
+    "company_name": "FP Markets",
+    "slug": "fp-markets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.fpmarkets.com/account-types/forex-account-types/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader",
+      "TradingView"
+    ],
+    "markets": [
+      "Forex",
+      "Metals",
+      "Indices",
+      "Commodities",
+      "Stocks CFDs",
+      "Digital Currencies"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Strong platform coverage including MT4, MT5, cTrader and TradingView with Raw pricing."
+  },
+  {
+    "company_name": "Vantage",
+    "slug": "vantage",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.vantagemarkets.com/en/trading/accounts/raw-ecn/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "Shares CFDs",
+      "Indices",
+      "Gold",
+      "Commodities",
+      "CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 50,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Low minimum deposit and clear account comparison for Standard/Raw/Pro pricing."
+  },
+  {
+    "company_name": "ThinkMarkets",
+    "slug": "thinkmarkets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.thinkmarkets.com/en/account-types/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "ThinkTrader",
+      "TradingView",
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Stocks",
+      "ETFs",
+      "Indices",
+      "Commodities",
+      "Crypto",
+      "Futures"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 50.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Multiple account types with low ThinkTrader minimum deposit, TradingView support and documented ThinkZero commissions."
+  },
+  {
+    "company_name": "Axi",
+    "slug": "axi",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.axi.com/int/trading-accounts",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT4 NexGen"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 5.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Very low Standard minimum deposit and clear account comparison for Standard, Pro and Elite."
+  },
+  {
+    "company_name": "Exness",
+    "slug": "exness",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.exness.com/standard-accounts/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 200.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "حسابات متنوعة وحد أدنى مرن حسب طريقة الدفع والمنطقة، مع حساب Standard بلا عمولة وسبريد معلن رسميًا."
+  },
+  {
+    "company_name": "IC Markets",
+    "slug": "ic-markets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.icmarkets.com/global/en/trading-accounts/standard-account",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader",
+      "TradingView"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "تنوع حسابات قوي للمتداول النشط، مع Raw Spread وcTrader/TradingView وبيانات تكلفة رسمية واضحة."
+  },
+  {
+    "company_name": "Pepperstone",
+    "slug": "pepperstone",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://pepperstone.com/en/help-and-support/opening-an-account/what-is-the-difference-between-a-standard-account-and-a-razor-account/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader",
+      "TradingView"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "صفحة تسعير رسمية واضحة تعرض الحسابات، العمولات، السبريد والحد الأدنى للإيداع."
+  },
+  {
+    "company_name": "HFM",
+    "slug": "hfm",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.hfm.com/int/en/trading-accounts/premium-account",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "HFM App"
+    ],
+    "markets": [
+      "Forex",
+      "Metals",
+      "Oil",
+      "Indices",
+      "Shares CFDs",
+      "Commodities"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Broad funding methods and very low method-level deposit thresholds."
+  },
+  {
+    "company_name": "Tickmill",
+    "slug": "tickmill",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.tickmill.com/trading/classic-account",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "TradingView",
+      "Tickmill Trader"
+    ],
+    "markets": [
+      "Forex",
+      "Stock Indices",
+      "Commodities",
+      "Cryptocurrencies",
+      "Stocks"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Clear low-cost Raw account and explicit strategy/islamic account support on official account table."
+  },
+  {
+    "company_name": "XM",
+    "slug": "xm",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.xm.com/help-center/trading-accounts",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 5.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "حد أدنى منخفض للإيداع ومنصات MT4/MT5، مناسب كبداية للمتداولين الجدد."
+  },
+  {
+    "company_name": "RoboForex",
+    "slug": "roboforex",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://roboforex.com/trade-conditions/ecn/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Metals"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 10.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "ECN/Prime accounts with floating spreads from 0 pips and MT4/MT5 support."
+  },
+  {
+    "company_name": "OANDA",
+    "slug": "oanda",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.oanda.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "OANDA Web",
+      "OANDA Mobile",
+      "MT4",
+      "TradingView"
+    ],
+    "markets": [
+      "Forex",
+      "Crypto spot via Paxos in supported regions"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Transparent spread-only and core-pricing model with MT4 and TradingView support."
+  },
+  {
+    "company_name": "FOREX.com",
+    "slug": "forexcom",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.forex.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "FOREX.com platform",
+      "TradingView",
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "Indices",
+      "Commodities",
+      "Shares/Stock CFDs depending on region"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Clear separation between spread-only and RAW pricing accounts with platform support."
+  },
+  {
+    "company_name": "XTB",
+    "slug": "xtb",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.xtb.com/int/help-center/trading-account-2-1/what-types-of-accounts-do-you-offer-1",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "xStation",
+      "Mobile App",
+      "Desktop",
+      "Tablet"
+    ],
+    "markets": [
+      "Forex CFDs",
+      "Indices CFDs",
+      "Commodities CFDs",
+      "Stocks",
+      "ETFs",
+      "CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Strong proprietary platform and no minimum deposit on international account information page."
+  },
+  {
+    "company_name": "Admirals",
+    "slug": "admirals",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://admiralmarkets.com/start-trading/account-types",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "MetaTrader Web Trader",
+      "Admirals Platform",
+      "Admirals Mobile App"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "ETFs",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Wide platform choice with MT4/MT5, Zero accounts and Islamic/swap-free option."
+  },
+  {
+    "company_name": "BlackBull Markets",
+    "slug": "blackbull-markets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://blackbull.com/en/trading/islamic/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader",
+      "TradingView",
+      "BlackBull App"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Strong platform coverage and low-deposit ECN account structure."
+  },
+  {
+    "company_name": "GO Markets",
+    "slug": "go-markets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.gomarkets.com/en/accounts-and-pricing/account-types",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader",
+      "TradingView",
+      "GO TradeX"
+    ],
+    "markets": [
+      "Forex CFDs",
+      "Share CFDs",
+      "Index CFDs",
+      "Commodity CFDs",
+      "Cryptocurrency CFDs",
+      "Bonds CFDs",
+      "ETF CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 10.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Clear account split between commission-free and low-spread commission pricing."
+  },
+  {
+    "company_name": "Swissquote",
+    "slug": "swissquote",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.swissquote.com/en-mea/private/trade/pricing/forex-cfds/account-types",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 8,
+    "platforms": [
+      "Advanced Trader",
+      "MetaTrader"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Stocks CFDs",
+      "Indices",
+      "Commodities"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 10000.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Strong brand and tiered account structure with clear pricing tables."
+  },
+  {
+    "company_name": "AvaTrade",
+    "slug": "avatrade",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://support.avatrade.com/hc/en-us/articles/360001760672-What-is-the-minimum-amount-I-need-to-deposit-in-order-to-open-an-account",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "حد أدنى واضح للإيداع مع طرق إيداع متعددة، ووجود MT5 رسميًا."
+  },
+  {
+    "company_name": "JustMarkets",
+    "slug": "justmarkets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://justmarkets.com/trading/standard-accounts",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "mt4",
+      "mt5",
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Crypto"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 10.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Low minimum deposit with Standard and Standard Cent accounts and broad account currencies."
+  },
+  {
+    "company_name": "AMarkets",
+    "slug": "amarkets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.amarkets.com/trading/account-type/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Metals",
+      "ETFs",
+      "Cryptocurrencies"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Clear account comparison with Standard, ECN and Zero accounts plus high leverage and optional Islamic account."
+  },
+  {
+    "company_name": "LiteFinance",
+    "slug": "litefinance",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.litefinance.org/trading/account-types/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader",
+      "LiteFinance platform"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 10.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Clear account pages with ECN, Classic and Cent specifications."
+  },
+  {
+    "company_name": "ActivTrades",
+    "slug": "activtrades",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://trade.activtrades.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "ActivTrader",
+      "MT4",
+      "MT5",
+      "TradingView"
+    ],
+    "markets": [
+      "Forex",
+      "Stocks CFDs",
+      "Indices",
+      "Cryptos",
+      "ETFs",
+      "Commodities"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Multiple platforms including ActivTrader, MT4, MT5 and TradingView."
+  },
+  {
+    "company_name": "Trade Nation",
+    "slug": "trade-nation",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://tradenation.com/our-platforms/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "TN Trader",
+      "TradingView",
+      "MT4",
+      "TradeCopier"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 1.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Good platform variety including TradingView and MT4, plus crypto payment options in some regions."
+  },
+  {
+    "company_name": "FXTM",
+    "slug": "fxtm",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.fxtm.com/trading-accounts/advantage",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "mt4",
+      "mt5",
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Spot Metals",
+      "Gold Index",
+      "Index CFDs",
+      "Commodity CFDs",
+      "Cryptocurrency CFDs",
+      "Stock CFDs",
+      "ETFs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 50.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Advantage account combines spreads from 0.0 with MT4/MT5 and market execution."
+  },
+  {
+    "company_name": "FBS",
+    "slug": "fbs",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://fbs.com/trading/specs",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 5.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Cent account allows low-risk small-size live trading for beginners."
+  },
+  {
+    "company_name": "Alpari",
+    "slug": "alpari",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://alpariwidget.com/en/trading-accounts/standard/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "mt4",
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Metals",
+      "Cryptocurrency CFDs",
+      "ETF CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 30.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Standard account has clear minimum deposit, MT4/MT5 support and no commission."
+  },
+  {
+    "company_name": "Skilling",
+    "slug": "skilling",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://skilling.com/eu/en/account-types/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "mt4",
+      "mt5",
+      "ctrader",
+      "web",
+      "Skilling Trader",
+      "Skilling cTrader",
+      "TradingView",
+      "MT4"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Equities"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100,
+      "currency": null,
+      "type": "minimum_deposit"
+    },
+    "max_account_size": null,
+    "summary": "Clear account comparison with TradingView/cTrader/MT4 options and negative balance protection."
+  },
+  {
+    "company_name": "Markets.com",
+    "slug": "marketscom",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.markets.com/account-type-markets/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "mt4",
+      "mt5",
+      "Markets Terminal",
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Metals",
+      "Futures",
+      "Shares",
+      "Cryptocurrency",
+      "Bonds",
+      "ETFs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100,
+      "currency": null,
+      "type": "minimum_deposit"
+    },
+    "max_account_size": null,
+    "summary": "Clear account pages for Markets Terminal and MT4/5 accounts with minimum deposit and spread information."
+  },
+  {
+    "company_name": "IG",
+    "slug": "ig",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.ig.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "IG web platform",
+      "mobile apps",
+      "advanced charting packages"
+    ],
+    "markets": [
+      "Forex",
+      "Indices",
+      "Shares",
+      "Commodities",
+      "Cryptocurrencies",
+      "Bonds",
+      "Interest rates",
+      "Options",
+      "Knock-outs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Very broad market coverage and detailed cost pages."
+  },
+  {
+    "company_name": "Plus500",
+    "slug": "plus500",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.plus500.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "Plus500 proprietary web/mobile platform"
+    ],
+    "markets": [
+      "CFDs",
+      "Forex",
+      "Indices",
+      "Commodities",
+      "Shares",
+      "Crypto CFDs depending on jurisdiction"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Simple spread-based CFD fee model with no dealing commissions."
+  },
+  {
+    "company_name": "City Index",
+    "slug": "city-index",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.cityindex.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile",
+      "City Index Web Trader",
+      "Mobile app",
+      "MT4",
+      "TradingView"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Shares",
+      "Cryptocurrencies"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Established multi-asset CFD/FX broker with standard and MT4 accounts plus broad market range."
+  },
+  {
+    "company_name": "CMC Markets",
+    "slug": "cmc-markets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.cmcmarkets.com/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "CMC Markets Platform",
+      "MT4"
+    ],
+    "markets": [
+      "Forex",
+      "Indices",
+      "Commodities",
+      "Shares",
+      "Treasuries",
+      "Cryptocurrencies",
+      "ETFs depending on entity"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 0,
+      "currency": null,
+      "type": "minimum_deposit"
+    },
+    "max_account_size": null,
+    "summary": "Strong official account comparison with Standard and FX Active details, plus no minimum deposit on cited page."
+  },
+  {
+    "company_name": "Dukascopy",
+    "slug": "dukascopy",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.dukascopy.com/swiss/english/forex/account/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "jforex",
+      "mt4",
+      "JForex",
+      "MT4"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs",
+      "Precious Metals",
+      "Crypto",
+      "Bonds"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 1000.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Bank-backed Swiss broker with JForex, multi-currency accounts and explicit commission schedule."
+  },
+  {
+    "company_name": "FxPro",
+    "slug": "fxpro",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.fxpro.com/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "MT4",
+      "MT5",
+      "cTrader",
+      "FxPro Platform"
+    ],
+    "markets": [
+      "Forex",
+      "Metals",
+      "Futures CFDs",
+      "Shares CFDs",
+      "Spot Indices",
+      "Spot Energy",
+      "ETFs",
+      "Cryptos"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 100.0,
+      "currency": null,
+      "type": "minimum_deposit"
+    },
+    "max_account_size": null,
+    "summary": "Strong platform variety: MT4, MT5, cTrader and proprietary FxPro platform."
+  },
+  {
+    "company_name": "INFINOX",
+    "slug": "infinox",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.infinox.com/global/en/account-types/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "mt4",
+      "mt5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Stocks",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Simple STP vs ECN account comparison with transparent spread and commission starting points."
+  },
+  {
+    "company_name": "Deriv",
+    "slug": "deriv",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://deriv.com/trading-platforms/deriv-mt5",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "Deriv MT5",
+      "Deriv X",
+      "cTrader",
+      "Deriv Trader",
+      "Deriv Bot"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Stocks",
+      "Stock indices",
+      "Commodities",
+      "Cryptocurrencies",
+      "Derived indices"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Unique access to Derived Indices and multiple platforms including MT5, Deriv X and cTrader."
+  },
+  {
+    "company_name": "Capital.com",
+    "slug": "capitalcom",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://capital.com/en-int/ways-to-trade/cfd-trading",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "Capital.com platform",
+      "mobile app",
+      "TradingView"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Indices",
+      "Commodities",
+      "Shares CFDs",
+      "Crypto CFDs"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 10.0,
+      "currency": "USD"
+    },
+    "max_account_size": null,
+    "summary": "Low card/Apple Pay minimum deposit and clear official fees page with free deposits/withdrawals."
+  },
+  {
+    "company_name": "easyMarkets",
+    "slug": "easymarkets",
+    "category": "broker",
+    "category_label": "Broker",
+    "official_website": "https://www.easy-markets.com/int/en-my/about/forex-account/",
+    "status": "active",
+    "last_checked": "2026-04-25",
+    "data_quality_status": "ready",
+    "data_confidence": 8,
+    "platforms": [
+      "easyMarkets Web/App",
+      "TradingView",
+      "MT4",
+      "MT5"
+    ],
+    "markets": [
+      "Forex",
+      "CFDs",
+      "Commodities",
+      "Metals",
+      "Indices"
+    ],
+    "lowest_price_or_deposit": {
+      "value": 25.0,
+      "currency": null,
+      "type": "minimum_deposit"
+    },
+    "max_account_size": null,
+    "summary": "Clear no-commission account table and Islamic account option."
+  },
+  {
+    "company_name": "Binance",
+    "slug": "binance",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.binance.com/en/fee/trading",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Official Binance materials show Spot, Margin, Futures, P2P, Convert and Proof of Reserves; spot trading fee filled from official Binance article."
+  },
+  {
+    "company_name": "Bybit",
+    "slug": "bybit",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.bybit.com/en/help-center/article/Bybit-Spot-Fees-Explained",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "perpetual"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Official Bybit materials show spot, futures, options, staking and Proof of Reserves; spot fees from official Bybit help article."
+  },
+  {
+    "company_name": "OKX",
+    "slug": "okx",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.okx.com/fees",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Official OKX materials show spot, futures, options, convert, P2P, bots, API, sub-accounts and Proof of Reserves."
+  },
+  {
+    "company_name": "KuCoin",
+    "slug": "kucoin",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.kucoin.com/vip/privilege/fee",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "altcoin_selection"
+  },
+  {
+    "company_name": "Bitget",
+    "slug": "bitget",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.bitget.com/support/articles/12560603820584",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Crypto Exchange"
+  },
+  {
+    "company_name": "Kraken",
+    "slug": "kraken",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.kraken.com/features/fee-schedule",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "security_and_proof"
+  },
+  {
+    "company_name": "Coinbase Advanced",
+    "slug": "coinbase",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.coinbase.com/advanced-trade",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "spot_pairs_and_tradingview"
+  },
+  {
+    "company_name": "MEXC",
+    "slug": "mexc",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.mexc.com/fee",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Crypto Exchange"
+  },
+  {
+    "company_name": "Gate",
+    "slug": "gate",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.gate.com/fee",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Official Gate fee materials and help center indicate spot VIP 0 fee example at 0.1% base rate and broad spot/margin/futures availability."
+  },
+  {
+    "company_name": "HTX",
+    "slug": "htx",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.htx.com/fee/",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "HTX fee materials and support note show base spot fee 0.2% and discounted 0.075% with TRX deduction in some plans; homepage advertises 600+ assets."
+  },
+  {
+    "company_name": "Crypto.com Exchange",
+    "slug": "crypto-com",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://crypto.com/exchange/document/fees-limits",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Official fees page shows spot base fees start at 0.250% maker and 0.500% taker."
+  },
+  {
+    "company_name": "CoinW",
+    "slug": "coinw",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.coinw.com/fees",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Official CoinW fees page states base spot maker/taker fee is 0.1%."
+  },
+  {
+    "company_name": "BingX",
+    "slug": "bingx",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://bingx.com/en/support/costs",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "perpetual"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Crypto Exchange"
+  },
+  {
+    "company_name": "BitMart",
+    "slug": "bitmart",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.bitmart.com/fee",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Crypto Exchange"
+  },
+  {
+    "company_name": "LBank",
+    "slug": "lbank",
+    "category": "crypto_exchange",
+    "category_label": "Crypto Exchange",
+    "official_website": "https://www.lbank.com/fee",
+    "status": "active",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "platforms": [
+      "web",
+      "mobile_app"
+    ],
+    "markets": [
+      "spot",
+      "futures"
+    ],
+    "lowest_price_or_deposit": null,
+    "max_account_size": null,
+    "summary": "Crypto Exchange"
+  }
+]

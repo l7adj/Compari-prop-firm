@@ -1,0 +1,3364 @@
+[
+  {
+    "company_name": "Binance",
+    "slug": "binance",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.binance.com/en/fee/trading",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "mixed",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "mixed",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": [
+        "proof_of_reserves"
+      ]
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "USDⓈ-M Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": "Official Binance materials show USDⓈ-M and COIN-M futures plus funding fees; futures fee values filled from official Binance article.",
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "bank",
+        "p2p",
+        "card"
+      ],
+      "withdrawal_methods": [
+        "true",
+        "bank",
+        "p2p"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": null,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": true,
+      "copy_trading": null,
+      "p2p_trading": true,
+      "fiat_deposit": true,
+      "kyc_required": true,
+      "proof_of_reserves": true,
+      "supported_coins_count": null,
+      "maker_fee": "0.10",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.10",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.05",
+      "withdrawal_fees_notes": "card,bank,p2p",
+      "restricted_countries": [],
+      "security_features": [
+        "proof_of_reserves",
+        "api_access",
+        "bot_trading",
+        "subaccounts_available",
+        "unified_account",
+        "staking_available",
+        "earn_products_available",
+        "launchpad_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": true,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": true
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "bank",
+        "p2p",
+        "card"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "Official Binance materials show Spot, Margin, Futures, P2P, Convert and Proof of Reserves; spot trading fee filled from official Binance article.",
+      "main_weakness": null,
+      "best_for": [
+        "Official Binance materials show Spot",
+        "Margin",
+        "Futures",
+        "P2P",
+        "Convert and Proof of Reserves; spot trading fee filled from official Binance article.",
+        "futures_liquidity"
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.binance.com/en/fee/trading",
+        "https://www.binance.com/en/fee/futureFee"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official Binance materials show USDⓈ-M and COIN-M futures plus funding fees; futures fee values filled from official Binance article."
+      ]
+    }
+  },
+  {
+    "company_name": "Bybit",
+    "slug": "bybit",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.bybit.com/en/help-center/article/Bybit-Spot-Fees-Explained",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "offshore",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "offshore",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": [
+        "proof_of_reserves"
+      ]
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "perpetual"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Perpetual",
+        "program_type": [
+          "perpetual"
+        ],
+        "program_status": "active",
+        "program_description": "Official Bybit materials show Perpetual & Futures fee structure and 1:1 reserves.",
+        "available_markets": [
+          "perpetual"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "p2p",
+        "crypto",
+        "card"
+      ],
+      "withdrawal_methods": [
+        "true",
+        "p2p",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": false,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": true,
+      "proof_of_reserves": true,
+      "supported_coins_count": null,
+      "maker_fee": "0.10",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.10",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.055",
+      "withdrawal_fees_notes": "card,p2p,crypto",
+      "restricted_countries": [],
+      "security_features": [
+        "proof_of_reserves",
+        "api_access",
+        "bot_trading",
+        "copy_trading",
+        "subaccounts_available",
+        "unified_account",
+        "staking_available",
+        "earn_products_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": true,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": true
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "p2p",
+        "crypto",
+        "card"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "Official Bybit materials show spot, futures, options, staking and Proof of Reserves; spot fees from official Bybit help article.",
+      "main_weakness": null,
+      "best_for": [
+        "Official Bybit materials show spot",
+        "futures",
+        "options",
+        "staking and Proof of Reserves; spot fees from official Bybit help article.",
+        "perpetual_trading"
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.bybit.com/en/help-center/article/Bybit-Spot-Fees-Explained",
+        "https://www.bybit.com/en/announcement-info/fee-rate/"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official Bybit materials show Perpetual & Futures fee structure and 1:1 reserves."
+      ]
+    }
+  },
+  {
+    "company_name": "OKX",
+    "slug": "okx",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.okx.com/fees",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "mixed",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "mixed",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": [
+        "proof_of_reserves"
+      ]
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usdt",
+        "btc",
+        "eth",
+        "usd"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": "Official OKX materials show futures/perpetual/options, API, sub-accounts, and Proof of Reserves.",
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "bank",
+        "p2p",
+        "card"
+      ],
+      "withdrawal_methods": [
+        "true",
+        "bank",
+        "p2p"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": null,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": true,
+      "copy_trading": null,
+      "p2p_trading": true,
+      "fiat_deposit": true,
+      "kyc_required": true,
+      "proof_of_reserves": true,
+      "supported_coins_count": null,
+      "maker_fee": "0.08",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.08",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.05",
+      "withdrawal_fees_notes": "card,bank,p2p",
+      "restricted_countries": [],
+      "security_features": [
+        "proof_of_reserves",
+        "api_access",
+        "bot_trading",
+        "subaccounts_available",
+        "portfolio_margin",
+        "unified_account",
+        "staking_available",
+        "earn_products_available",
+        "launchpad_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": true,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth",
+        "usd"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "yes",
+        "chat"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth",
+        "usd"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": true
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": true,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "bank",
+        "p2p",
+        "card"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "yes",
+        "chat"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "Official OKX materials show spot, futures, options, convert, P2P, bots, API, sub-accounts and Proof of Reserves.",
+      "main_weakness": null,
+      "best_for": [
+        "Official OKX materials show spot",
+        "futures",
+        "options",
+        "convert",
+        "P2P",
+        "bots",
+        "API",
+        "sub-accounts and Proof of Reserves.",
+        "futures_and_options"
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.okx.com/fees"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official OKX materials show futures/perpetual/options, API, sub-accounts, and Proof of Reserves."
+      ]
+    }
+  },
+  {
+    "company_name": "KuCoin",
+    "slug": "kucoin",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.kucoin.com/vip/privilege/fee",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": null,
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "offshore",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": [
+        "proof_of_reserves"
+      ]
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": "Official KuCoin materials show Spot, Futures, Margin, Trading Bot, Earn, Spotlight and Proof of Reserves; spot fee uses official support note for 0.1% base pairs.",
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": "Official KuCoin futures fee announcement states maker 0.02% and taker 0.06%.",
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "withdrawal_methods": [
+        "p2p",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": true,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": true,
+      "supported_coins_count": "1000",
+      "maker_fee": "0.10",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.10",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.06",
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "proof_of_reserves",
+        "bot_trading",
+        "copy_trading",
+        "subaccounts_available",
+        "staking_available",
+        "earn_products_available",
+        "launchpad_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "ticket",
+        "chat"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "ticket",
+        "chat"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "altcoin_selection",
+      "main_weakness": null,
+      "best_for": [
+        "altcoin_selection",
+        "futures_and_bots"
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.kucoin.com/vip/privilege/fee",
+        "https://www.kucoin.com/announcement/en-futures-fee"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official KuCoin materials show Spot, Futures, Margin, Trading Bot, Earn, Spotlight and Proof of Reserves; spot fee uses official support note for 0.1% base pairs.",
+        "Official KuCoin futures fee announcement states maker 0.02% and taker 0.06%."
+      ]
+    }
+  },
+  {
+    "company_name": "Bitget",
+    "slug": "bitget",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.bitget.com/support/articles/12560603820584",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "true",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": null,
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": "copy_trading",
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": "futures_copy",
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [],
+      "withdrawal_methods": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": true
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": true,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": null,
+      "supported_coins_count": null,
+      "maker_fee": "0.10",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.10",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.06",
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "bot_trading",
+        "copy_trading",
+        "portfolio_margin",
+        "earn_products_available",
+        "launchpad_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "true"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": false,
+      "support_channels": [
+        "true"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": null,
+      "main_weakness": null,
+      "best_for": [],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.bitget.com/support/articles/12560603820584",
+        "https://www.bitget.com/futures/introduction/trading-fee"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "copy_trading",
+        "futures_copy"
+      ]
+    }
+  },
+  {
+    "company_name": "Kraken",
+    "slug": "kraken",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.kraken.com/features/fee-schedule",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": null,
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "regulated",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": [
+        "proof_of_reserves"
+      ]
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usd",
+        "eur",
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": "Official Kraken Pro fee schedule states spot base tier maker 0.25% and taker 0.40%; Kraken has regular Proof of Reserves reviews.",
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "bank",
+        "card",
+        "crypto"
+      ],
+      "withdrawal_methods": [
+        "bank",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:5",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": true,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": true,
+      "proof_of_reserves": true,
+      "supported_coins_count": null,
+      "maker_fee": "0.25",
+      "taker_fee": "0.40",
+      "spot_maker_fee": "0.25",
+      "spot_taker_fee": "0.40",
+      "futures_maker_fee": null,
+      "futures_taker_fee": null,
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "proof_of_reserves",
+        "bot_trading",
+        "copy_trading",
+        "subaccounts_available",
+        "staking_available",
+        "earn_products_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": true,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usd",
+        "eur",
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usd",
+        "eur",
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": true
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "bank",
+        "card",
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "security_and_proof",
+      "main_weakness": null,
+      "best_for": [
+        "security_and_proof"
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.kraken.com/features/fee-schedule"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official Kraken Pro fee schedule states spot base tier maker 0.25% and taker 0.40%; Kraken has regular Proof of Reserves reviews."
+      ]
+    }
+  },
+  {
+    "company_name": "Coinbase Advanced",
+    "slug": "coinbase",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.coinbase.com/advanced-trade",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "united_states",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "regulated",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usd",
+        "usdc",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": "Official Coinbase Advanced page states 552 spot pairs, as low as 0.0% maker fees, TradingView charts, APIs, derivatives exploration, and assets held 1:1.",
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "bank",
+        "card",
+        "crypto"
+      ],
+      "withdrawal_methods": [
+        "bank",
+        "card",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": null,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": null,
+      "p2p_trading": null,
+      "fiat_deposit": true,
+      "kyc_required": true,
+      "proof_of_reserves": null,
+      "supported_coins_count": "552",
+      "maker_fee": "0.00",
+      "taker_fee": null,
+      "spot_maker_fee": "0.00",
+      "spot_taker_fee": null,
+      "futures_maker_fee": null,
+      "futures_taker_fee": null,
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "api_access",
+        "staking_available",
+        "earn_products_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": true,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usd",
+        "usdc",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "chat",
+        "email"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usd",
+        "usdc",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": true
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "bank",
+        "card",
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "chat",
+        "email"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "spot_pairs_and_tradingview",
+      "main_weakness": null,
+      "best_for": [
+        "spot_pairs_and_tradingview"
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.coinbase.com/advanced-trade"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official Coinbase Advanced page states 552 spot pairs, as low as 0.0% maker fees, TradingView charts, APIs, derivatives exploration, and assets held 1:1."
+      ]
+    }
+  },
+  {
+    "company_name": "MEXC",
+    "slug": "mexc",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.mexc.com/fee",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "offshore",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": null,
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "crypto"
+      ],
+      "withdrawal_methods": [
+        "true"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": null,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": null,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": null,
+      "supported_coins_count": null,
+      "maker_fee": "0.00",
+      "taker_fee": "0.05",
+      "spot_maker_fee": "0.00",
+      "spot_taker_fee": "0.05",
+      "futures_maker_fee": "0.00",
+      "futures_taker_fee": "0.02",
+      "withdrawal_fees_notes": "card,bank,crypto",
+      "restricted_countries": [],
+      "security_features": [
+        "api_access",
+        "bot_trading",
+        "unified_account",
+        "staking_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": false,
+      "support_channels": [],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": null,
+      "main_weakness": null,
+      "best_for": [],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.mexc.com/fee"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing."
+      ]
+    }
+  },
+  {
+    "company_name": "Gate",
+    "slug": "gate",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.gate.com/fee",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": null,
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "offshore",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "withdrawal_methods": [
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": true,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": null,
+      "supported_coins_count": null,
+      "maker_fee": "0.10",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.10",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.05",
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "bot_trading",
+        "copy_trading",
+        "subaccounts_available",
+        "portfolio_margin",
+        "unified_account",
+        "staking_available",
+        "earn_products_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "Official Gate fee materials and help center indicate spot VIP 0 fee example at 0.1% base rate and broad spot/margin/futures availability.",
+      "main_weakness": null,
+      "best_for": [
+        "Official Gate fee materials and help center indicate spot VIP 0 fee example at 0.1% base rate and broad spot/margin/futures availability.",
+        "Gate fee overview and futures help pages show futures fee tiers and funding-rate model."
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.gate.com/fee"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing."
+      ]
+    }
+  },
+  {
+    "company_name": "HTX",
+    "slug": "htx",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.htx.com/fee/",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": null,
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "offshore",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "withdrawal_methods": [
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": null,
+      "supported_coins_count": "600",
+      "maker_fee": "0.20",
+      "taker_fee": "0.20",
+      "spot_maker_fee": "0.20",
+      "spot_taker_fee": "0.20",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.05",
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "bot_trading",
+        "copy_trading",
+        "staking_available",
+        "earn_products_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "HTX fee materials and support note show base spot fee 0.2% and discounted 0.075% with TRX deduction in some plans; homepage advertises 600+ assets.",
+      "main_weakness": null,
+      "best_for": [
+        "HTX fee materials and support note show base spot fee 0.2% and discounted 0.075% with TRX deduction in some plans; homepage advertises 600+ assets.",
+        "HTX USDT-margined futures fee example uses maker 0.02% and taker 0.05%; site supports futures/perpetual products."
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.htx.com/fee/",
+        "https://www.htx.com/support/900000089923"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing."
+      ]
+    }
+  },
+  {
+    "company_name": "Crypto.com Exchange",
+    "slug": "crypto-com",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://crypto.com/exchange/document/fees-limits",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "singapore",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "mixed",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usd",
+        "usdc",
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Derivatives",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "bank",
+        "card",
+        "crypto"
+      ],
+      "withdrawal_methods": [
+        "bank",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": true,
+      "kyc_required": true,
+      "proof_of_reserves": null,
+      "supported_coins_count": null,
+      "maker_fee": "0.25",
+      "taker_fee": "0.50",
+      "spot_maker_fee": "0.25",
+      "spot_taker_fee": "0.50",
+      "futures_maker_fee": "0.017",
+      "futures_taker_fee": "0.034",
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "bot_trading",
+        "copy_trading",
+        "staking_available",
+        "earn_products_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": true,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usd",
+        "usdc",
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usd",
+        "usdc",
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": true
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "bank",
+        "card",
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": true,
+      "support_channels": [
+        "chat",
+        "ticket"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "Official fees page shows spot base fees start at 0.250% maker and 0.500% taker.",
+      "main_weakness": null,
+      "best_for": [
+        "Official fees page shows spot base fees start at 0.250% maker and 0.500% taker.",
+        "Official fees page shows derivatives base fees start at 0.017% maker and 0.034% taker; Crypto.com also operates regulated derivatives in the U.S."
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://crypto.com/exchange/document/fees-limits"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing."
+      ]
+    }
+  },
+  {
+    "company_name": "CoinW",
+    "slug": "coinw",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.coinw.com/fees",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": null,
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "offshore",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [
+        "crypto"
+      ],
+      "withdrawal_methods": [],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": null
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": null,
+      "supported_coins_count": null,
+      "maker_fee": "0.10",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.10",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.01",
+      "futures_taker_fee": "0.06",
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "bot_trading",
+        "copy_trading"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "support"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [
+        "usdt",
+        "btc",
+        "eth"
+      ],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [
+        "crypto"
+      ],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": false,
+      "support_channels": [
+        "support"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": "Official CoinW fees page states base spot maker/taker fee is 0.1%.",
+      "main_weakness": null,
+      "best_for": [
+        "Official CoinW fees page states base spot maker/taker fee is 0.1%.",
+        "Official CoinW fees page states futures maker fee 0.01% and taker fee 0.06%."
+      ],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.coinw.com/fees"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing."
+      ]
+    }
+  },
+  {
+    "company_name": "BingX",
+    "slug": "bingx",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://bingx.com/en/support/costs",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "true",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": null,
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "perpetual"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": "Official BingX costs page states spot maker and taker fee 0.1%; homepage highlights social trading/copy trading.",
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Perpetual",
+        "program_type": [
+          "perpetual"
+        ],
+        "program_status": "active",
+        "program_description": "Official BingX costs page states perpetual futures maker fee 0.02% and taker fee 0.05%.",
+        "available_markets": [
+          "perpetual"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [],
+      "withdrawal_methods": [
+        "card",
+        "p2p",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": true
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": null,
+      "supported_coins_count": null,
+      "maker_fee": "0.10",
+      "taker_fee": "0.10",
+      "spot_maker_fee": "0.10",
+      "spot_taker_fee": "0.10",
+      "futures_maker_fee": "0.02",
+      "futures_taker_fee": "0.05",
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "copy_trading"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": false,
+      "support_channels": [],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": null,
+      "main_weakness": null,
+      "best_for": [],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://bingx.com/en/support/costs"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official BingX costs page states spot maker and taker fee 0.1%; homepage highlights social trading/copy trading.",
+        "Official BingX costs page states perpetual futures maker fee 0.02% and taker fee 0.05%."
+      ]
+    }
+  },
+  {
+    "company_name": "BitMart",
+    "slug": "bitmart",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.bitmart.com/fee",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": null,
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": "true",
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": null,
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [],
+      "withdrawal_methods": [],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": null,
+      "tradingview_integration": true
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": null,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": true,
+      "proof_of_reserves": null,
+      "supported_coins_count": "1700",
+      "maker_fee": null,
+      "taker_fee": null,
+      "spot_maker_fee": null,
+      "spot_taker_fee": null,
+      "futures_maker_fee": null,
+      "futures_taker_fee": null,
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "bot_trading"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": true,
+      "kyc_timing": null,
+      "payout_methods": [],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "true"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": true
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": true,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": false,
+      "support_channels": [
+        "true"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": null,
+      "main_weakness": null,
+      "best_for": [],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.bitmart.com/fee"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing."
+      ]
+    }
+  },
+  {
+    "company_name": "LBank",
+    "slug": "lbank",
+    "category": "crypto_exchange",
+    "secondary_categories": [],
+    "official_website": "https://www.lbank.com/fee",
+    "status": "active",
+    "company_type": "Crypto Exchange",
+    "last_checked": "2026-04-17",
+    "data_quality_status": "partial",
+    "data_confidence": 7,
+    "company_profile": {
+      "legal_entity": null,
+      "headquarters_or_registered_country": "true",
+      "year_founded": null,
+      "supported_countries": [],
+      "restricted_countries": [],
+      "regulation_or_legal_status": null,
+      "trust_notes": [],
+      "red_flags": [],
+      "positive_signals": []
+    },
+    "markets_and_platforms": {
+      "markets": [
+        "spot",
+        "futures"
+      ],
+      "instruments": [],
+      "platforms": [
+        "web",
+        "mobile_app"
+      ],
+      "account_currency": [],
+      "execution_environment": "centralized_exchange"
+    },
+    "programs": [
+      {
+        "program_name": "Spot",
+        "program_type": [
+          "spot"
+        ],
+        "program_status": "active",
+        "program_description": "Official LBank fee page and support pages show spot trading fee tiers are available; exact base fee varies by pair/VIP tier.",
+        "available_markets": [
+          "spot"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      },
+      {
+        "program_name": "Futures",
+        "program_type": [
+          "futures"
+        ],
+        "program_status": "active",
+        "program_description": "Official LBank support material shows futures fee tiers exist and vary by VIP level; exact base fee depends on pair/tier.",
+        "available_markets": [
+          "futures"
+        ],
+        "available_platforms": [
+          "web",
+          "mobile_app"
+        ],
+        "plans": []
+      }
+    ],
+    "broker_specific": {
+      "account_types": [],
+      "minimum_deposit": null,
+      "regulators": [],
+      "client_fund_protection": null,
+      "negative_balance_protection": null,
+      "deposit_methods": [],
+      "withdrawal_methods": [
+        "card",
+        "crypto"
+      ],
+      "withdrawal_fees": null,
+      "inactivity_fee": null,
+      "spread_type": null,
+      "execution_model": "centralized_exchange",
+      "max_leverage_retail": "1:1",
+      "max_leverage_professional": null,
+      "islamic_account": null,
+      "demo_account": null,
+      "copy_trading_available": true,
+      "tradingview_integration": true
+    },
+    "crypto_exchange_specific": {
+      "spot_trading": true,
+      "futures_trading": true,
+      "margin_trading": null,
+      "copy_trading": true,
+      "p2p_trading": null,
+      "fiat_deposit": null,
+      "kyc_required": null,
+      "proof_of_reserves": null,
+      "supported_coins_count": null,
+      "maker_fee": null,
+      "taker_fee": null,
+      "spot_maker_fee": null,
+      "spot_taker_fee": null,
+      "futures_maker_fee": null,
+      "futures_taker_fee": null,
+      "withdrawal_fees_notes": null,
+      "restricted_countries": [],
+      "security_features": [
+        "copy_trading",
+        "launchpad_available"
+      ]
+    },
+    "company_level_rules": {
+      "kyc_required": null,
+      "kyc_timing": null,
+      "payout_methods": [],
+      "general_forbidden_practices": [],
+      "ip_or_device_rules": null,
+      "vpn_vps_rules": null,
+      "copy_trading_general_rule": null,
+      "account_merging": null,
+      "multiple_accounts_policy": null,
+      "challenge_reset_policy": null,
+      "refund_general_policy": null,
+      "customer_support_channels": [
+        "true"
+      ],
+      "community_presence": []
+    },
+    "execution_and_costs": {
+      "spread_table_available": null,
+      "typical_spreads": [],
+      "commission_per_lot": null,
+      "slippage_policy": null,
+      "execution_model": "centralized_exchange",
+      "liquidity_provider_or_broker": null,
+      "order_execution_notes": null,
+      "swap_or_overnight_fees": "funding fees apply on derivatives",
+      "data_feed_provider": null
+    },
+    "risk_rules": {
+      "daily_drawdown_resets_at": null,
+      "daily_drawdown_based_on": null,
+      "max_drawdown_based_on": null,
+      "equity_or_balance_rule": null,
+      "floating_loss_counts": null,
+      "profit_target_counts_floating_pnl": null,
+      "drawdown_trails_until": null,
+      "max_daily_loss_example": null,
+      "max_loss_example": null
+    },
+    "funded_stage_and_payouts": {
+      "funded_account_type": null,
+      "simulated_or_live": null,
+      "first_payout_requirements": null,
+      "minimum_payout_amount": null,
+      "payout_methods": [],
+      "payout_processing_time": null,
+      "profit_split_scaling": null,
+      "refund_after_passing": null,
+      "payout_denial_reasons": [],
+      "kyc_before_payout": null
+    },
+    "arab_user_relevance": {
+      "arabic_language_support": null,
+      "mena_countries_supported": [],
+      "mena_countries_restricted": [],
+      "payment_methods_for_arab_users": [],
+      "crypto_payments_available": true,
+      "bank_card_payments_available": false,
+      "support_channels": [
+        "true"
+      ],
+      "support_response_quality_notes": null,
+      "islamic_or_swap_free_relevance": null
+    },
+    "editorial_summary": {
+      "main_strength": null,
+      "main_weakness": null,
+      "best_for": [],
+      "not_suitable_for": [],
+      "ideal_trader_profile": null,
+      "beginner_friendliness": null,
+      "scalper_friendliness": null,
+      "swing_trader_friendliness": null,
+      "news_trader_friendliness": null,
+      "ea_trader_friendliness": null,
+      "alternatives": []
+    },
+    "research_audit": {
+      "official_pages_checked": [
+        "https://www.lbank.com/fee"
+      ],
+      "third_party_pages_checked": [],
+      "missing_critical_fields": [],
+      "fields_not_found": [],
+      "conflicting_information": [],
+      "notes_for_human_review": [
+        "Imported from final_sources_workbook-3.xlsx. Verify regional availability and fee schedules before publishing.",
+        "Official LBank fee page and support pages show spot trading fee tiers are available; exact base fee varies by pair/VIP tier.",
+        "Official LBank support material shows futures fee tiers exist and vary by VIP level; exact base fee depends on pair/tier."
+      ]
+    }
+  }
+]

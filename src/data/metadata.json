@@ -1,0 +1,90 @@
+{
+  "project_name": "محطة التمويل",
+  "generated_at": "2026-04-25",
+  "research_scope": "CFD Prop Firms, Futures Prop Firms, Crypto Prop Firms, Brokers, Crypto Exchanges",
+  "total_companies": 106,
+  "rules": {
+    "missing_values": "null فقط",
+    "no_unverified_claims": true,
+    "no_marketing_language": true,
+    "official_sources_required": true
+  },
+  "enrichment_note": "Priority enrichment applied to core 10 companies using official-source-first rules. Remaining companies still need source-level research before publication. Batch 2 enrichment added for futures prop firms and brokers using official-source-first rules. Batch 5 enrichment added 10 broker records with official account/platform/pricing/payment sources.",
+  "priority_enriched_companies": [
+    "FTMO",
+    "FundedNext",
+    "The5ers",
+    "FundingPips",
+    "E8 Markets",
+    "Exness",
+    "XM",
+    "IC Markets",
+    "Pepperstone",
+    "AvaTrade",
+    "Topstep",
+    "Apex Trader Funding",
+    "Earn2Trade",
+    "Bulenox",
+    "MyFundedFutures",
+    "FP Markets",
+    "Vantage",
+    "HFM",
+    "Tickmill",
+    "XTB",
+    "Admirals",
+    "BlackBull Markets",
+    "GO Markets",
+    "Swissquote",
+    "ActivTrades",
+    "FxPro",
+    "easyMarkets",
+    "FBS",
+    "LiteFinance",
+    "Trade Nation"
+  ],
+  "phase": "priority50_enriched",
+  "quality_counts": {
+    "ready": 38,
+    "partial": 29,
+    "research_needed": 24
+  },
+  "last_enrichment_batch": "priority70",
+  "quality_counts_after_priority70": {
+    "ready": 49,
+    "partial": 38,
+    "research_needed": 4,
+    "inactive": 0,
+    "unclear": 0
+  },
+  "last_enriched_at": "2026-04-25",
+  "enrichment_status_summary": {
+    "ready": 51,
+    "partial": 40,
+    "research_needed": 0,
+    "total_companies": 91
+  },
+  "crypto_exchanges_added_from_sources_workbook": 15,
+  "last_sources_comparison": "2026-04-25",
+  "split_generated_at": "2026-04-25",
+  "data_files": {
+    "cfd-prop-firms.json": "cfd_prop_firms",
+    "futures-prop-firms.json": "futures_prop_firms",
+    "crypto-prop-firms.json": "crypto_prop_firms",
+    "brokers.json": "brokers",
+    "crypto-exchanges.json": "crypto_exchanges"
+  },
+  "index_file": "index.json",
+  "total_companies_after_split": 106,
+  "counts_after_split": {
+    "cfd_prop_firms": 27,
+    "futures_prop_firms": 20,
+    "crypto_prop_firms": 5,
+    "brokers": 39,
+    "crypto_exchanges": 15
+  },
+  "quality_counts_after_split": {
+    "ready": 51,
+    "partial": 55,
+    "research_needed": 0
+  }
+}
