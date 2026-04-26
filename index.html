@@ -3,55 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>محطة التمويل | مراجعات ومقارنات شركات التمويل والبروكرات</title>
-  <meta name="description" content="محطة التمويل: دليل عربي لمراجعة ومقارنة شركات التمويل، البروكرات، ومنصات الكريبتو بجداول واضحة وتحذير مخاطر." />
+  <title>محطة التمويل | قاعدة بيانات شركات التمويل والبروكرات</title>
+  <meta name="description" content="محطة التمويل: قاعدة بيانات عربية لمقارنة شركات التمويل، البروكرات، ومنصات الكريبتو اعتمادًا على ملفات JSON وجداول قابلة للتصفية." />
   <meta name="robots" content="index,follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,system-ui,sans-serif;background:#f6f8fc;color:#111827}a{text-decoration:none;color:inherit}.shell{width:min(1120px,calc(100% - 28px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);border-bottom:1px solid #e5e7eb;backdrop-filter:blur(14px)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand strong{display:block;font-size:27px;font-weight:900;color:#1a73e8}.brand span{display:block;font-size:12px;color:#64748b;font-weight:700}.links{display:flex;gap:18px;color:#475569;font-weight:800;font-size:14px}.links a:hover{color:#1a73e8}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;padding:12px 16px;border:1px solid #d7dde7;background:#fff;font-weight:900}.btn.primary{background:#1a73e8;color:#fff;border-color:#1a73e8}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;padding:34px 0 20px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:22px;box-shadow:0 14px 38px rgba(15,23,42,.055)}.hero-main,.panel,.side{padding:26px}.eyebrow{margin:0 0 10px;color:#1a73e8;font-weight:900;font-size:13px}h1{margin:0 0 14px;font-size:43px;line-height:1.25;letter-spacing:-.8px}h2{margin:0 0 12px;font-size:28px;line-height:1.35}.lead,p{color:#5f6b7a;line-height:1.9}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:22px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{border:1px solid #e5e7eb;background:#f8fafc;border-radius:16px;padding:14px}.stat span{display:block;color:#64748b;font-size:13px;font-weight:700}.stat strong{display:block;font-size:25px}.risk{margin-top:14px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:15px;padding:14px;line-height:1.8;font-weight:700}.section{padding:20px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.category-card{padding:20px}.category-card small{color:#1a73e8;font-weight:900}.category-card h3{margin:8px 0 8px;font-size:21px}.category-card p{margin:0;font-size:14px}.table-wrap{overflow:auto;border:1px solid #e5e7eb;border-radius:16px;background:#fff}table{width:100%;border-collapse:collapse;min-width:760px;text-align:right}th{background:#f1f6ff;color:#334155;font-size:13px}th,td{padding:14px;border-bottom:1px solid #e5e7eb;white-space:nowrap}td a{color:#1a73e8;font-weight:900}.notice{background:#eff6ff;border:1px solid #bfdbfe;color:#1e3a5f;border-radius:16px;padding:17px;line-height:1.9;font-weight:700}.footer{background:#111827;color:#d1d5db;margin-top:30px;padding:30px 0}.footer .shell{display:flex;justify-content:space-between;gap:16px}.footer strong{color:#fff}@media(max-width:900px){.links{display:none}.hero,.grid{grid-template-columns:1fr}h1{font-size:31px}.footer .shell{display:block}.nav{height:66px}.brand strong{font-size:24px}}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,system-ui,sans-serif;background:#f6f8fc;color:#111827}a{text-decoration:none;color:inherit}.shell{width:min(1180px,calc(100% - 28px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);border-bottom:1px solid #e5e7eb;backdrop-filter:blur(14px)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand strong{display:block;font-size:27px;font-weight:900;color:#1a73e8}.brand span{display:block;font-size:12px;color:#64748b;font-weight:700}.links{display:flex;gap:18px;color:#475569;font-weight:800;font-size:14px}.links a:hover{color:#1a73e8}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;padding:12px 16px;border:1px solid #d7dde7;background:#fff;font-weight:900;cursor:pointer}.btn.primary{background:#1a73e8;color:#fff;border-color:#1a73e8}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;padding:34px 0 20px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:22px;box-shadow:0 14px 38px rgba(15,23,42,.055)}.hero-main,.panel,.side{padding:26px}.eyebrow{margin:0 0 10px;color:#1a73e8;font-weight:900;font-size:13px}h1{margin:0 0 14px;font-size:43px;line-height:1.25;letter-spacing:-.8px}h2{margin:0 0 12px;font-size:28px;line-height:1.35}.lead,p{color:#5f6b7a;line-height:1.9}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:22px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{border:1px solid #e5e7eb;background:#f8fafc;border-radius:16px;padding:14px}.stat span{display:block;color:#64748b;font-size:13px;font-weight:700}.stat strong{display:block;font-size:25px}.risk{margin-top:14px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:15px;padding:14px;line-height:1.8;font-weight:700}.section{padding:20px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.category-card{padding:20px}.category-card small{color:#1a73e8;font-weight:900}.category-card h3{margin:8px 0 8px;font-size:21px}.category-card p{margin:0;font-size:14px}.toolbar{display:grid;grid-template-columns:1fr 220px 170px;gap:10px;margin:16px 0}.input,.select{width:100%;height:46px;border:1px solid #d7dde7;border-radius:13px;padding:0 14px;font-family:inherit;background:#fff;color:#111827;font-weight:700}.table-wrap{overflow:auto;border:1px solid #e5e7eb;border-radius:16px;background:#fff}table{width:100%;border-collapse:collapse;min-width:980px;text-align:right}th{background:#f1f6ff;color:#334155;font-size:13px}th,td{padding:14px;border-bottom:1px solid #e5e7eb;white-space:nowrap}td a{color:#1a73e8;font-weight:900}.badge{display:inline-flex;border-radius:999px;padding:5px 10px;font-weight:900;font-size:12px;background:#eff6ff;color:#1d4ed8}.badge.ready{background:#dcfce7;color:#166534}.badge.partial{background:#fef3c7;color:#92400e}.notice{background:#eff6ff;border:1px solid #bfdbfe;color:#1e3a5f;border-radius:16px;padding:17px;line-height:1.9;font-weight:700}.footer{background:#111827;color:#d1d5db;margin-top:30px;padding:30px 0}.footer .shell{display:flex;justify-content:space-between;gap:16px}.footer strong{color:#fff}@media(max-width:900px){.links{display:none}.hero,.grid,.toolbar{grid-template-columns:1fr}h1{font-size:31px}.footer .shell{display:block}.nav{height:66px}.brand strong{font-size:24px}}
   </style>
 </head>
 <body>
-  <header class="top"><div class="shell nav"><a class="brand" href="/Compari-prop-firm/"><strong>محطة التمويل</strong><span>دليل المقارنات المالية العربية</span></a><nav class="links"><a href="/Compari-prop-firm/categories/">التصنيفات</a><a href="/Compari-prop-firm/compare/">المقارنات</a><a href="/Compari-prop-firm/tools/">الأدوات</a></nav><a class="btn primary" href="/Compari-prop-firm/category/cfd-prop-firms/">تصفح الشركات</a></div></header>
+  <header class="top"><div class="shell nav"><a class="brand" href="/Compari-prop-firm/"><strong>محطة التمويل</strong><span>قاعدة بيانات المقارنات المالية</span></a><nav class="links"><a href="#database">قاعدة البيانات</a><a href="/Compari-prop-firm/categories/">التصنيفات</a><a href="/Compari-prop-firm/compare/">المقارنات</a><a href="/Compari-prop-firm/tools/">الأدوات</a></nav><a class="btn primary" href="#database">عرض البيانات</a></div></header>
 
   <main>
     <section class="shell hero">
       <div class="card hero-main">
-        <p class="eyebrow">مراجعات وجداول مقارنة بدون حشو</p>
-        <h1>قارن شركات التمويل والبروكرات قبل أن تدفع</h1>
-        <p class="lead">محطة التمويل تجمع شركات التمويل، بروكرات التداول، ومنصات الكريبتو في هيكل واحد: تصنيفات واضحة، مراجعات مستقلة، جداول مقارنة، وتحذير مخاطر صريح.</p>
-        <div class="actions"><a class="btn primary" href="/Compari-prop-firm/categories/">افتح التصنيفات</a><a class="btn" href="/Compari-prop-firm/reviews/fundednext/">مراجعة FundedNext</a><a class="btn" href="/Compari-prop-firm/compare/">مركز المقارنات</a></div>
+        <p class="eyebrow">البيانات التي جُمعت ليست مفقودة</p>
+        <h1>قاعدة شركات التمويل والبروكرات معروضة من ملفات JSON</h1>
+        <p class="lead">هذه الصفحة تقرأ مباشرة من <strong>src/data/index.json</strong> وتعرض الشركات التي تم جمعها: الاسم، التصنيف، السعر أو الإيداع، حجم الحساب، المنصات، جودة البيانات، وآخر فحص.</p>
+        <div class="actions"><a class="btn primary" href="#database">افتح جدول البيانات</a><a class="btn" href="/Compari-prop-firm/category/cfd-prop-firms/">شركات CFD</a><a class="btn" href="/Compari-prop-firm/reviews/fundednext/">مراجعة FundedNext</a></div>
       </div>
       <aside class="card side">
-        <div class="stats"><div class="stat"><span>تصنيفات رئيسية</span><strong>5</strong></div><div class="stat"><span>صفحات مراجعة أولية</span><strong>3</strong></div><div class="stat"><span>منهجية</span><strong>RTL</strong></div><div class="stat"><span>النشر</span><strong>Static</strong></div></div>
+        <div class="stats"><div class="stat"><span>إجمالي العناصر</span><strong id="totalCount">...</strong></div><div class="stat"><span>Ready</span><strong id="readyCount">...</strong></div><div class="stat"><span>Partial</span><strong id="partialCount">...</strong></div><div class="stat"><span>التصنيفات</span><strong id="categoryCount">5</strong></div></div>
         <div class="risk">التداول وشركات التمويل والرافعة المالية تحمل مخاطر عالية. المعلومات تعليمية وتنظيمية وليست توصية مالية.</div>
       </aside>
     </section>
 
     <section class="shell section">
       <div class="grid">
-        <a class="card category-card" href="/Compari-prop-firm/category/cfd-prop-firms/"><small>01</small><h3>CFD Prop Firms</h3><p>فوركس، ذهب، مؤشرات، درو داون، قواعد السحب والمنصات.</p></a>
-        <a class="card category-card" href="/Compari-prop-firm/category/futures-prop-firms/"><small>02</small><h3>Futures Prop Firms</h3><p>العقود المستقبلية، Trailing Drawdown، الرسوم، والمنصات.</p></a>
-        <a class="card category-card" href="/Compari-prop-firm/category/crypto-prop-firms/"><small>03</small><h3>Crypto Prop Firms</h3><p>برامج تمويل الكريبتو وقواعد المخاطر والسيولة.</p></a>
-        <a class="card category-card" href="/Compari-prop-firm/category/brokers/"><small>04</small><h3>Brokers</h3><p>التنظيم، الإيداع، السحب، المنصات، والدول المدعومة.</p></a>
-        <a class="card category-card" href="/Compari-prop-firm/category/crypto-exchanges/"><small>05</small><h3>Crypto Exchanges</h3><p>الرسوم، KYC، الأمان، العقود، وطرق الدفع.</p></a>
+        <a class="card category-card" href="/Compari-prop-firm/category/cfd-prop-firms/"><small>01</small><h3>CFD Prop Firms</h3><p id="countCfd">يتم الحساب من JSON...</p></a>
+        <a class="card category-card" href="/Compari-prop-firm/category/futures-prop-firms/"><small>02</small><h3>Futures Prop Firms</h3><p id="countFutures">يتم الحساب من JSON...</p></a>
+        <a class="card category-card" href="/Compari-prop-firm/category/crypto-prop-firms/"><small>03</small><h3>Crypto Prop Firms</h3><p id="countCryptoProp">يتم الحساب من JSON...</p></a>
+        <a class="card category-card" href="/Compari-prop-firm/category/brokers/"><small>04</small><h3>Brokers</h3><p id="countBrokers">يتم الحساب من JSON...</p></a>
+        <a class="card category-card" href="/Compari-prop-firm/category/crypto-exchanges/"><small>05</small><h3>Crypto Exchanges</h3><p id="countExchanges">يتم الحساب من JSON...</p></a>
         <a class="card category-card" href="/Compari-prop-firm/tools/"><small>06</small><h3>الأدوات</h3><p>حاسبات المخاطرة والدرو داون واختيار الشركة المناسبة.</p></a>
       </div>
     </section>
 
-    <section class="shell section">
+    <section class="shell section" id="database">
       <div class="card panel">
-        <h2>مراجعات بدأت فعليًا</h2>
-        <p>هذه الصفحات هي بداية القوالب التي سيتم توسيعها وربطها بملفات البيانات لاحقًا.</p>
-        <div class="table-wrap"><table><thead><tr><th>الصفحة</th><th>التصنيف</th><th>ما الذي تفحصه؟</th></tr></thead><tbody><tr><td><a href="/Compari-prop-firm/reviews/fundednext/">مراجعة FundedNext</a></td><td>CFD Prop Firm</td><td>البرامج، المنصات، السحب، والدرو داون</td></tr><tr><td><a href="/Compari-prop-firm/reviews/ftmo/">مراجعة FTMO</a></td><td>CFD Prop Firm</td><td>قواعد التقييم والخسارة اليومية والقصوى</td></tr><tr><td><a href="/Compari-prop-firm/reviews/the5ers/">مراجعة The5ers</a></td><td>CFD Prop Firm</td><td>High Stakes، MT5، وطريقة حساب الدرو داون</td></tr></tbody></table></div>
+        <p class="eyebrow">جدول حي من ملف JSON</p>
+        <h2>الشركات والمنصات الموجودة في قاعدة البيانات</h2>
+        <p>استخدم البحث أو الفلترة. الجدول لا يعرض “غير مذكور”؛ الحقول الفارغة تبقى فارغة حتى لا نخترع معلومات.</p>
+        <div class="toolbar"><input id="searchInput" class="input" placeholder="ابحث عن FTMO، FundedNext، Topstep..." /><select id="categoryFilter" class="select"><option value="all">كل التصنيفات</option></select><select id="qualityFilter" class="select"><option value="all">كل الحالات</option><option value="ready">Ready</option><option value="partial">Partial</option></select></div>
+        <div class="table-wrap"><table><thead><tr><th>الشركة</th><th>التصنيف</th><th>أقل سعر/إيداع</th><th>أكبر حساب</th><th>المنصات</th><th>جودة البيانات</th><th>آخر فحص</th></tr></thead><tbody id="companyRows"><tr><td colspan="7">جاري تحميل قاعدة البيانات...</td></tr></tbody></table></div>
       </div>
     </section>
 
-    <section class="shell section"><div class="notice">الخطة التالية: تحويل هذه الصفحات إلى قوالب توليد كاملة من ملفات JSON، ثم إنشاء صفحات مراجعة ومقارنة كثيرة قابلة للأرشفة في Google.</div></section>
+    <section class="shell section"><div class="notice">الخطوة التالية بعد ظهور البيانات: تحويل صفحات المراجعة نفسها إلى قوالب تقرأ من ملفات JSON التفصيلية مثل cfd-prop-firms.json وfutures-prop-firms.json.</div></section>
   </main>
 
   <footer class="footer"><div class="shell"><strong>محطة التمويل</strong><span>راجع المصادر الرسمية قبل أي قرار مالي.</span></div></footer>
+
+<script>
+const base = '/Compari-prop-firm/';
+const categoryNames = {
+  cfd_prop_firm: 'CFD Prop Firm',
+  futures_prop_firm: 'Futures Prop Firm',
+  crypto_prop_firm: 'Crypto Prop Firm',
+  broker: 'Broker',
+  brokers: 'Broker',
+  crypto_exchange: 'Crypto Exchange',
+  crypto_exchanges: 'Crypto Exchange'
+};
+let companies = [];
+const $ = (id) => document.getElementById(id);
+function text(v){ return v === null || v === undefined ? '' : String(v); }
+function money(v){ return v && typeof v === 'object' && v.value !== null && v.value !== undefined ? `${v.currency || 'USD'} ${v.value}` : ''; }
+function platforms(v){ return Array.isArray(v) ? v.join(' / ') : ''; }
+function reviewUrl(c){ return `${base}reviews/${c.slug}/`; }
+function renderStats(){
+  const ready = companies.filter(c => c.data_quality_status === 'ready').length;
+  const partial = companies.filter(c => c.data_quality_status === 'partial').length;
+  $('totalCount').textContent = companies.length;
+  $('readyCount').textContent = ready;
+  $('partialCount').textContent = partial;
+  const count = (cat) => companies.filter(c => c.category === cat).length;
+  $('countCfd').textContent = `${count('cfd_prop_firm')} شركة في قاعدة البيانات`;
+  $('countFutures').textContent = `${count('futures_prop_firm')} شركة في قاعدة البيانات`;
+  $('countCryptoProp').textContent = `${count('crypto_prop_firm')} شركة في قاعدة البيانات`;
+  $('countBrokers').textContent = `${count('broker') || count('brokers')} عنصر في قاعدة البيانات`;
+  $('countExchanges').textContent = `${count('crypto_exchange') || count('crypto_exchanges')} منصة في قاعدة البيانات`;
+}
+function renderFilters(){
+  const cats = [...new Set(companies.map(c => c.category).filter(Boolean))];
+  $('categoryFilter').innerHTML = '<option value="all">كل التصنيفات</option>' + cats.map(c => `<option value="${c}">${categoryNames[c] || c}</option>`).join('');
+}
+function renderTable(){
+  const q = $('searchInput').value.trim().toLowerCase();
+  const cat = $('categoryFilter').value;
+  const quality = $('qualityFilter').value;
+  let rows = companies.filter(c => {
+    const hay = `${c.company_name || ''} ${c.category_label || ''} ${c.summary || ''}`.toLowerCase();
+    return (!q || hay.includes(q)) && (cat === 'all' || c.category === cat) && (quality === 'all' || c.data_quality_status === quality);
+  });
+  $('companyRows').innerHTML = rows.map(c => `<tr><td><a href="${reviewUrl(c)}">${text(c.company_name)}</a></td><td>${text(c.category_label || categoryNames[c.category] || c.category)}</td><td>${money(c.lowest_price_or_deposit)}</td><td>${text(c.max_account_size)}</td><td>${platforms(c.platforms)}</td><td><span class="badge ${c.data_quality_status || ''}">${text(c.data_quality_status)}</span></td><td>${text(c.last_checked)}</td></tr>`).join('') || '<tr><td colspan="7">لا توجد نتائج مطابقة.</td></tr>';
+}
+fetch(`${base}src/data/index.json`)
+  .then(r => r.json())
+  .then(data => { companies = data; renderStats(); renderFilters(); renderTable(); ['searchInput','categoryFilter','qualityFilter'].forEach(id => $(id).addEventListener('input', renderTable)); })
+  .catch(() => { $('companyRows').innerHTML = '<tr><td colspan="7">تعذر تحميل ملف البيانات.</td></tr>'; });
+</script>
 </body>
 </html>
