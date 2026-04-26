@@ -67,6 +67,9 @@ export const formatValue = (value) => {
 
 export const formatMoney = (value, currency = 'USD') => {
   if (!isPresent(value)) return null;
+  if (typeof value === 'object' && isPresent(value.value)) {
+    return formatMoney(value.value, value.currency || currency);
+  }
   if (typeof value === 'string' && /[$€£]/.test(value)) return value.trim();
   const num = Number(String(value).replace(/[^0-9.-]/g, ''));
   if (!Number.isFinite(num)) return formatValue(value);
@@ -92,7 +95,9 @@ export const getCategoryLabel = (category) => {
     futures_prop_firm: 'شركة تمويل Futures',
     crypto_prop_firm: 'شركة تمويل كريبتو',
     broker: 'بروكر تداول',
-    crypto_exchange: 'منصة كريبتو'
+    brokers: 'بروكر تداول',
+    crypto_exchange: 'منصة كريبتو',
+    crypto_exchanges: 'منصة كريبتو'
   };
   return labels[category] || formatValue(category);
 };
@@ -104,6 +109,8 @@ export const getInitials = (name = '') => {
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
   return parts.slice(0, 2).map((p) => p[0]).join('').toUpperCase();
 };
+
+export const getAllPrograms = (company) => (hasItems(company?.programs) ? company.programs : []);
 
 export const getAllPlans = (company) => {
   if (!hasItems(company?.programs)) return [];
@@ -124,14 +131,17 @@ export const getLowestPrice = (company) => {
   const prices = getAllPlans(company)
     .map((plan) => Number(String(plan?.price).replace(/[^0-9.-]/g, '')))
     .filter(Number.isFinite);
-  return prices.length ? Math.min(...prices) : null;
+  if (prices.length) return Math.min(...prices);
+  if (isPresent(company?.lowest_price_or_deposit?.value)) return company.lowest_price_or_deposit.value;
+  return null;
 };
 
 export const getMaxAccountSize = (company) => {
   const sizes = getAllPlans(company)
     .map((plan) => Number(String(plan?.account_size).replace(/[^0-9.-]/g, '')))
     .filter(Number.isFinite);
-  return sizes.length ? Math.max(...sizes) : null;
+  if (sizes.length) return Math.max(...sizes);
+  return isPresent(company?.max_account_size) ? company.max_account_size : null;
 };
 
 export const getBestPlan = (company) => {
@@ -179,14 +189,25 @@ export const getOfficialSources = (company) => {
 
 export const shouldShowSection = (data) => isPresent(data);
 
+export const getByPath = (object, path) => {
+  if (!object || !path) return undefined;
+  return String(path).split('.').reduce((acc, key) => (acc ? acc[key] : undefined), object);
+};
+
 export const shouldShowColumn = (rows, field) => {
   if (!Array.isArray(rows)) return false;
   return rows.some((row) => isPresent(getByPath(row, field)));
 };
 
-export const getByPath = (object, path) => {
-  if (!object || !path) return undefined;
-  return String(path).split('.').reduce((acc, key) => (acc ? acc[key] : undefined), object);
+export const getTemplateByCategory = (category) => {
+  const normalized = category === 'brokers' ? 'broker' : category === 'crypto_exchanges' ? 'crypto_exchange' : category;
+  return {
+    cfd_prop_firm: 'CFDPropFirmReviewTemplate',
+    futures_prop_firm: 'FuturesPropFirmReviewTemplate',
+    crypto_prop_firm: 'CryptoPropFirmReviewTemplate',
+    broker: 'BrokerReviewTemplate',
+    crypto_exchange: 'CryptoExchangeReviewTemplate'
+  }[normalized] || null;
 };
 
 export const buildRows = (pairs) =>
