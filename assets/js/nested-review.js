@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   var path = window.location.pathname;
   if (path.indexOf('/category/cfd-prop-firms/') === -1) return;
+  // في البنية الجديدة، app.js هو المسؤول عن الجدول والتفاصيل بالكامل.
+  // نخرج مبكراً لمنع التعارض مع واجهة التصنيف الحالية.
+  if (document.querySelector('#category-summary-table') || document.querySelector('#category-table-body')) return;
 
   var base = path.indexOf('/Compari-prop-firm/') === 0 ? '/Compari-prop-firm/' : '/';
 
