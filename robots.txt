@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Sitemap: https://l7adj.github.io/Compari-prop-firm/sitemap.xml
