@@ -1,0 +1,355 @@
+{
+  "version": "1.0",
+  "purpose": "Professional trader checklist for reviewing prop firms, brokers, and crypto exchanges.",
+  "categories": {
+    "cfd_prop_firm": {
+      "title": "ما يبحث عنه المتداول المحترف في CFD Prop Firm",
+      "core_question": "هل شروط الشركة تسمح بتحقيق ربح قابل للسحب بدون الوقوع في فخ قاعدة مخفية؟",
+      "sections": [
+        {
+          "title": "1. بنية التحدي والحسابات",
+          "items": [
+            "كل أحجام الحسابات المتاحة",
+            "سعر كل حجم حساب",
+            "نوع البرنامج: One-Phase / Two-Phase / Three-Phase / Instant Funding",
+            "أهداف الربح في كل مرحلة",
+            "الحد الأدنى والحد الأقصى لأيام التداول",
+            "هل الحساب Demo أم حساب حقيقي؟",
+            "هل يوجد إعادة محاولة مجانية؟",
+            "هل الرسوم قابلة للاسترداد بعد النجاح؟"
+          ]
+        },
+        {
+          "title": "2. قواعد المخاطر والـ Drawdown",
+          "items": [
+            "Daily Drawdown ونوع حسابه",
+            "Max Drawdown ونوع حسابه",
+            "هل الـ Drawdown مبني على Balance أم Equity؟",
+            "هل هو Static أم Trailing؟",
+            "هل يُحسب أثناء الصفقات المفتوحة؟",
+            "هل خرق القاعدة لحظي أم عند نهاية اليوم؟",
+            "هل الأرباح المفتوحة تؤثر على حد الخسارة؟"
+          ]
+        },
+        {
+          "title": "3. قواعد التداول الممنوعة",
+          "items": [
+            "News Trading",
+            "Weekend Holding",
+            "Overnight Holding",
+            "EA/Bots",
+            "Copy Trading",
+            "Hedging",
+            "Martingale",
+            "Arbitrage",
+            "HFT",
+            "IP/VPN/VPS Restrictions",
+            "Maximum Lot Size",
+            "Consistency Rule"
+          ]
+        },
+        {
+          "title": "4. السحب والمرحلة الممولة",
+          "items": [
+            "Profit Split",
+            "First Payout",
+            "Payout Frequency",
+            "Minimum Payout Amount",
+            "Payout Methods",
+            "KYC قبل السحب أم بعده؟",
+            "Scaling Plan",
+            "هل توجد حدود سحب أولية؟",
+            "هل يمكن رفض السحب بسبب أسلوب تداول؟"
+          ]
+        },
+        {
+          "title": "5. التنفيذ والتكاليف",
+          "items": [
+            "المنصات المتاحة",
+            "السبريد الحقيقي أو المتوسط",
+            "العمولة لكل Lot",
+            "الرافعة حسب الأصل",
+            "الأصول المتاحة",
+            "جودة التنفيذ والانزلاق السعري",
+            "مزود السيولة إن كان معلناً"
+          ]
+        }
+      ]
+    },
+    "futures_prop_firm": {
+      "title": "ما يبحث عنه المتداول المحترف في Futures Prop Firm",
+      "core_question": "هل نموذج الاشتراك والـ Drawdown يسمحان بتداول مستقر دون أن تخنقك القواعد؟",
+      "sections": [
+        {
+          "title": "1. الخطط والاشتراك",
+          "items": [
+            "كل أحجام الحسابات",
+            "Monthly Fee لكل حساب",
+            "هل توجد خطة Lifetime؟",
+            "Activation Fee",
+            "Data Fee",
+            "Reset Fee",
+            "Platform Fee",
+            "هل الرسوم تتكرر أثناء الحساب الممول؟"
+          ]
+        },
+        {
+          "title": "2. قواعد الـ Drawdown الخاصة بالفيوتشرز",
+          "items": [
+            "Trailing Drawdown",
+            "EOD Drawdown",
+            "Static Drawdown",
+            "Drawdown Lock",
+            "هل يتحرك مع unrealized profit؟",
+            "هل يُحسب Intraday أم نهاية اليوم؟",
+            "متى يتوقف الـ Trailing؟"
+          ]
+        },
+        {
+          "title": "3. العقود والتدرج",
+          "items": [
+            "Max Contracts لكل خطة",
+            "Micros Allowed",
+            "Scaling Rules",
+            "Product Restrictions",
+            "Daily Loss Limit",
+            "Max Loss Limit",
+            "Profit Target",
+            "Consistency Rule"
+          ]
+        },
+        {
+          "title": "4. المنصات والبيانات",
+          "items": [
+            "Platform",
+            "Data Feed",
+            "هل البيانات مجانية أم مدفوعة؟",
+            "هل يوجد DOM حقيقي؟",
+            "هل تعمل المنصة من الهاتف؟",
+            "Latency أو تأخير التنفيذ"
+          ]
+        },
+        {
+          "title": "5. السحب",
+          "items": [
+            "First Payout",
+            "Payout Frequency",
+            "Payout Cap",
+            "Minimum Trading Days قبل السحب",
+            "هل الأرباح الأولى محدودة؟",
+            "هل KYC مطلوب قبل السحب؟"
+          ]
+        }
+      ]
+    },
+    "crypto_prop_firm": {
+      "title": "ما يبحث عنه المتداول المحترف في Crypto Prop Firm",
+      "core_question": "هل الشركة تمنح تداول كريبتو حقيقي أم مجرد CFD، وما تكلفة الاحتفاظ بالمراكز؟",
+      "sections": [
+        {
+          "title": "1. نوع السوق الحقيقي",
+          "items": [
+            "Spot",
+            "Perpetual Futures",
+            "Margin",
+            "CFD Crypto",
+            "Supported Pairs",
+            "هل يوجد Order Book حقيقي؟",
+            "هل التنفيذ على منصة كريبتو أم بروكر CFD؟"
+          ]
+        },
+        {
+          "title": "2. الحسابات والبرامج",
+          "items": [
+            "كل أحجام الحسابات",
+            "سعر كل برنامج",
+            "Profit Target",
+            "Daily Drawdown",
+            "Max Drawdown",
+            "Leverage",
+            "Max Position Size",
+            "Liquidation Rules"
+          ]
+        },
+        {
+          "title": "3. الرسوم الخفية",
+          "items": [
+            "Maker Fee",
+            "Taker Fee",
+            "Funding Fees",
+            "Liquidation Fees",
+            "Withdrawal Fees",
+            "Spread / Slippage",
+            "هل Funding Fees تخصم من الحساب؟"
+          ]
+        },
+        {
+          "title": "4. API والروبوتات",
+          "items": [
+            "API Trading",
+            "Bots Allowed",
+            "Copy Trading",
+            "Rate Limits",
+            "Restrictions on Automation",
+            "HFT أو Latency Arbitrage"
+          ]
+        },
+        {
+          "title": "5. KYC والسحب",
+          "items": [
+            "KYC Required",
+            "Payout Method",
+            "Payout Currency",
+            "Crypto Withdrawal Network",
+            "First Payout",
+            "Payout Frequency",
+            "الدول المقيدة"
+          ]
+        }
+      ]
+    },
+    "broker": {
+      "title": "ما يبحث عنه المتداول المحترف في البروكر",
+      "core_question": "هل البروكر آمن قانونياً وتنفيذياً بما يكفي لأضع عنده مالي الحقيقي؟",
+      "sections": [
+        {
+          "title": "1. التنظيم والثقة",
+          "items": [
+            "Regulators",
+            "Legal Entities",
+            "Jurisdictions",
+            "License Number",
+            "رابط التحقق الرسمي",
+            "Client Fund Segregation",
+            "Negative Balance Protection",
+            "Investor Compensation",
+            "هل العميل العربي يتبع كياناً قوياً أم Offshore؟"
+          ]
+        },
+        {
+          "title": "2. الحسابات والتكاليف",
+          "items": [
+            "كل أنواع الحسابات",
+            "Minimum Deposit",
+            "Base Currencies",
+            "Spread From",
+            "Average Spread إن توفر",
+            "Spread Type",
+            "Commission",
+            "Execution Model",
+            "Min Lot Size",
+            "Max Leverage"
+          ]
+        },
+        {
+          "title": "3. التنفيذ والمنصات",
+          "items": [
+            "Platforms",
+            "Markets",
+            "Execution Speed",
+            "Slippage Policy",
+            "Requotes",
+            "Stop Level",
+            "Scalping Allowed",
+            "News Trading Allowed"
+          ]
+        },
+        {
+          "title": "4. الإيداع والسحب",
+          "items": [
+            "Deposit Methods",
+            "Withdrawal Methods",
+            "Deposit Fees",
+            "Withdrawal Fees",
+            "Processing Time",
+            "Minimum Withdrawal",
+            "Crypto Funding إن وجد",
+            "مشاكل السحب المعروفة"
+          ]
+        },
+        {
+          "title": "5. المستخدم العربي والحساب الإسلامي",
+          "items": [
+            "Islamic Account",
+            "Swap Policy",
+            "Arabic Website",
+            "Arabic Support",
+            "MENA Restrictions",
+            "هل توجد رسوم بديلة للحساب الإسلامي؟",
+            "هل الدعم يفهم مشاكل العملاء العرب؟"
+          ]
+        }
+      ]
+    },
+    "crypto_exchange": {
+      "title": "ما يبحث عنه المتداول المحترف في منصة كريبتو",
+      "core_question": "هل المنصة آمنة وسائلة ورخيصة بما يكفي للتداول أو الاحتفاظ المؤقت؟",
+      "sections": [
+        {
+          "title": "1. المنتجات المتاحة",
+          "items": [
+            "Spot",
+            "Futures",
+            "Margin",
+            "Options",
+            "P2P",
+            "Earn",
+            "Launchpad",
+            "API",
+            "Fiat Deposit"
+          ]
+        },
+        {
+          "title": "2. الرسوم والسيولة",
+          "items": [
+            "Maker Fee",
+            "Taker Fee",
+            "Futures Fees",
+            "Withdrawal Fees",
+            "Funding Rates",
+            "Liquidity",
+            "Order Book Depth",
+            "Slippage في الأزواج الصغيرة"
+          ]
+        },
+        {
+          "title": "3. الأمان والاحتياطيات",
+          "items": [
+            "Proof of Reserves",
+            "Cold Storage",
+            "2FA",
+            "Withdrawal Whitelist",
+            "Insurance Fund",
+            "Anti Phishing Code",
+            "هل تعرضت لاختراق؟",
+            "هل يوجد تدقيق خارجي؟"
+          ]
+        },
+        {
+          "title": "4. KYC والقيود القانونية",
+          "items": [
+            "KYC Required",
+            "KYC Tiers",
+            "Daily Limits",
+            "Restricted Countries",
+            "هل يمكن السحب بدون KYC؟",
+            "هل تقبل دول MENA؟",
+            "مخاطر تجميد الحساب"
+          ]
+        },
+        {
+          "title": "5. المستخدم العربي وP2P",
+          "items": [
+            "Arabic Interface",
+            "Local Currency Support",
+            "P2P Availability",
+            "طرق دفع محلية",
+            "دعم عربي",
+            "قيود العملات المحلية",
+            "سياسات النزاعات في P2P"
+          ]
+        }
+      ]
+    }
+  }
+}
