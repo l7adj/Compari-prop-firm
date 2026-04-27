@@ -1,1 +1,101 @@
-{}
+{
+  "version": "1.0",
+  "purpose": "Separate deep single-company Review pages from focused user-selected Compare pages for all categories.",
+  "global_rules": {
+    "review_page": "One company only. Show all nested details, tables, hidden rules and official sources.",
+    "compare_page": "Two or more companies. User selects category and comparison focus. Show only a focused summary table.",
+    "missing_value_display": "غير متوفر",
+    "verification_badge": "Needs Verification",
+    "risk_badge": "High Risk",
+    "full_review_button": "افتح المراجعة الكاملة",
+    "compare_disclaimer": "المقارنة لا تكفي وحدها، راجع صفحة الشركة الكاملة.",
+    "no_cross_category_mixing": true
+  },
+  "categories": {
+    "cfd_prop_firm": {
+      "label": "CFD Prop Firms",
+      "review_tabs": ["overview", "one_phase", "two_phase", "three_phase", "instant_funding", "drawdown_rules", "trading_rules", "payouts", "fees_execution", "platforms", "arab_user", "hidden_rules", "official_sources"],
+      "review_hierarchy": "company -> program_groups -> variants -> account_sizes -> phase_rules/drawdown/trading/payout/costs/hidden_rules",
+      "program_groups": ["one_phase", "two_phase", "three_phase", "instant_funding"],
+      "variant_examples": ["normal_challenge", "aggressive_challenge", "swing_challenge", "pro_challenge"],
+      "compare_focus": {
+        "overview": ["Available Programs", "Lowest Price", "Max Account Size", "Platforms", "Data Status"],
+        "account_sizes_prices": ["One Phase Types", "One Phase Lowest Price", "One Phase Max Size", "Two Phase Lowest Price", "Max Account Size", "Number of Sizes", "Refund Policy"],
+        "challenge_phases": ["One Phase Available", "Two Phase Available", "Three Phase Available", "Instant Funding", "Phase 1 Target", "Phase 2 Target", "Phase 3 Target", "Min Trading Days", "Max Trading Days"],
+        "drawdown_rules": ["Daily Drawdown", "Max Drawdown", "Drawdown Type", "Drawdown Basis", "Equity Based", "Balance Based", "Trailing", "Static", "Violation Moment"],
+        "trading_rules": ["News Trading", "Weekend Holding", "Overnight Holding", "EA/Bots", "Copy Trading", "Hedging", "Martingale", "Arbitrage", "HFT", "VPN/VPS", "Multiple Accounts"],
+        "payout_rules": ["Profit Split", "First Payout", "Payout Frequency", "Minimum Payout", "Payout Methods", "KYC Timing", "Payout Cap", "Withdrawal Denial Clauses"],
+        "hidden_rules": ["Consistency Rule", "Max Daily Profit Rule", "Lot Size Limits", "News Restriction Window", "Copy Trading Ambiguity", "VPN/IP Rule", "KYC After Profit", "Country Restrictions", "Terms Change Risk"]
+      },
+      "forbidden_fields": ["Maker Fee", "Taker Fee", "Proof of Reserves", "Cold Storage"]
+    },
+    "futures_prop_firm": {
+      "label": "Futures Prop Firms",
+      "review_tabs": ["overview", "plans_fees", "drawdown_mechanics", "contract_rules", "platforms_data", "payout_rules", "hidden_rules", "arab_user", "official_sources"],
+      "review_hierarchy": "company -> account_models -> plans -> drawdown/contract_rules/fees/platforms/payout/hidden_rules",
+      "account_models": ["evaluation_monthly", "evaluation_lifetime", "static_drawdown", "trailing_drawdown", "eod_drawdown", "instant_funding", "addons_resets"],
+      "compare_focus": {
+        "overview": ["Account Models", "Lowest Monthly Fee", "Max Account Size", "Data Feed", "Data Status"],
+        "plans_fees": ["Lowest Monthly Fee", "Lifetime Fee", "Activation Fee", "Data Fee", "Reset Fee", "Platform Fee", "Recurring Costs"],
+        "drawdown_mechanics": ["Trailing Drawdown", "EOD Drawdown", "Static Drawdown", "Drawdown Lock", "Intraday Calculation", "Unrealized Profit Included", "Risk Level"],
+        "contract_rules": ["Max Contracts", "Micros Allowed", "Scaling Rules", "Product Restrictions", "Daily Loss Limit", "Max Loss Limit"],
+        "platforms_data": ["Platform", "Data Feed", "DOM Available", "Mobile Support", "Data Cost", "Execution Notes"],
+        "payout_rules": ["First Payout", "Payout Frequency", "Payout Cap", "Minimum Trading Days", "Consistency Rule", "KYC Timing"],
+        "hidden_rules": ["Activation Fee After Passing", "Data Fee After Funding", "Reset Dependency", "Contract Limit Breach", "Trailing Drawdown Trap", "Overnight Restriction", "News Restriction"]
+      },
+      "forbidden_fields": ["Phase 1 Target", "Phase 2 Target", "Phase 3 Target", "CFD Leverage", "Crypto Pairs", "Proof of Reserves"]
+    },
+    "crypto_prop_firm": {
+      "label": "Crypto Prop Firms",
+      "review_tabs": ["overview", "market_type", "account_sizes", "fees", "risk_liquidation", "api_bots", "kyc_payout", "hidden_rules", "arab_user", "official_sources"],
+      "review_hierarchy": "company -> market_models -> programs -> account_sizes -> fees/risk/api/kyc/hidden_rules",
+      "market_models": ["spot", "perpetual_futures", "margin", "cfd_crypto", "api_bot_trading", "instant_funding"],
+      "compare_focus": {
+        "overview": ["Market Models", "Lowest Price", "Max Account Size", "Supported Pairs", "KYC Required", "Data Status"],
+        "market_type": ["Spot", "Perpetual Futures", "Margin", "CFD Crypto", "Real Crypto or CFD", "Supported Pairs", "Custody Model"],
+        "account_sizes_prices": ["Lowest Price", "Max Account Size", "Profit Target Range", "Daily Drawdown Range", "Max Drawdown Range", "Leverage"],
+        "fees": ["Maker Fee", "Taker Fee", "Funding Fees", "Liquidation Fees", "Withdrawal Fees", "Spread / Slippage"],
+        "risk_liquidation": ["Daily Drawdown", "Max Drawdown", "Max Position Size", "Leverage", "Liquidation Rules", "Weekend Volatility Risk"],
+        "api_bots": ["API Trading", "Bots Allowed", "Copy Trading", "HFT", "Rate Limits", "Automation Restrictions"],
+        "kyc_payout": ["KYC Required", "KYC Timing", "Payout Method", "Payout Currency", "First Payout", "Payout Frequency", "Restricted Countries"],
+        "hidden_rules": ["CFD Disguised As Crypto", "Funding Fees Not Disclosed", "API Restriction", "KYC After Profit", "Pair Restrictions", "Country Restrictions", "Payout Currency Limitation"]
+      },
+      "forbidden_fields": ["Phase 1 Target", "Phase 2 Target", "Phase 3 Target", "Monthly Subscription", "Data Feed", "Proof of Reserves"]
+    },
+    "broker": {
+      "label": "Brokers",
+      "review_tabs": ["overview", "regulation", "account_types", "trading_costs", "execution", "deposit_withdrawal", "fees", "islamic_account", "arab_user", "hidden_risks", "official_sources"],
+      "review_hierarchy": "broker -> legal_entities -> account_types -> trading_conditions/fees/deposit_withdrawal/islamic/hidden_risks",
+      "entity_types": ["fca_entity", "asic_entity", "cysec_entity", "offshore_entity", "mena_client_entity"],
+      "compare_focus": {
+        "overview": ["Main Regulator", "Client Entity", "Minimum Deposit", "Spread From", "Commission", "Max Leverage", "Islamic Account", "Platforms", "Arabic Support"],
+        "regulation_trust": ["Main Regulator", "Legal Entity", "Jurisdiction", "License Number", "Verification Link", "Client Fund Segregation", "Negative Balance Protection", "Investor Compensation", "Offshore Entity"],
+        "account_types": ["Minimum Deposit", "Account Types", "Base Currencies", "Demo Account", "Islamic Account", "Max Leverage", "Min Lot Size"],
+        "trading_costs": ["Spread From", "Average Spread", "Spread Type", "Commission", "Swap Policy", "Inactivity Fee", "Islamic Account Fees"],
+        "execution": ["Execution Model", "Scalping Allowed", "News Trading Allowed", "VPS Allowed", "Hedging", "Stop Level", "Slippage Policy", "Requotes"],
+        "deposit_withdrawal": ["Deposit Methods", "Withdrawal Methods", "Deposit Fees", "Withdrawal Fees", "Processing Time", "Minimum Withdrawal", "Crypto Funding"],
+        "arab_user": ["Arabic Website", "Arabic Support", "MENA Restrictions", "Local Payment Methods", "Support Quality"],
+        "hidden_risks": ["Offshore Entity For Arab Clients", "Withdrawal Delays", "Hidden Swap Replacement Fees", "Bonus Terms", "Account Closure Clause", "Spread Widening", "Jurisdiction Mismatch"]
+      },
+      "forbidden_fields": ["Challenge", "Funded Account", "Drawdown Rule", "Profit Target", "Payout Split"]
+    },
+    "crypto_exchange": {
+      "label": "Crypto Exchanges",
+      "review_tabs": ["overview", "products", "fees", "kyc_limits", "security", "fiat_p2p", "api_liquidity", "restrictions", "hidden_risks", "arab_user", "official_sources"],
+      "review_hierarchy": "exchange -> products -> fees/kyc/security/fiat_p2p/api/restrictions/hidden_risks",
+      "products": ["spot", "futures", "margin", "options", "p2p", "earn", "launchpad"],
+      "compare_focus": {
+        "overview": ["Products", "Maker Fee", "Taker Fee", "KYC Required", "Proof of Reserves", "P2P", "Arabic Interface"],
+        "products": ["Spot", "Futures", "Margin", "Options", "P2P", "Earn", "Launchpad"],
+        "fees": ["Maker Fee", "Taker Fee", "Futures Fees", "Funding Rates", "Withdrawal Fees", "Deposit Fees"],
+        "kyc_limits": ["KYC Required", "KYC Tiers", "No-KYC Limits", "Daily Withdrawal Limit", "Fiat Access", "P2P Access", "Futures Access"],
+        "security": ["Proof of Reserves", "Reserve Audit Link", "Cold Storage", "2FA", "Withdrawal Whitelist", "Anti-Phishing Code", "Insurance Fund", "Past Hacks"],
+        "fiat_p2p": ["Fiat Deposit", "Local Currency Support", "P2P Available", "P2P Dispute System", "Arabic Interface", "Arabic Support"],
+        "api_liquidity": ["API", "Rate Limits", "Liquidity", "Order Book Depth", "Institutional Features"],
+        "restrictions": ["Restricted Countries", "Regional Restrictions", "Withdrawal Suspension Risk", "Delisting Risk"],
+        "hidden_risks": ["No Proof of Reserves", "KYC Freeze Risk", "Custodial Risk", "P2P Dispute Risk", "Low Liquidity Pairs", "High Funding Rates", "API Rate Limit"]
+      },
+      "forbidden_fields": ["Drawdown", "Profit Target", "Payout Split", "Funded Account", "Challenge", "Phase 1", "Phase 2"]
+    }
+  }
+}
