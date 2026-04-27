@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "description": "Detailed data file manifest for Mahatat Altamwil comparison pages.",
+  "files": {
+    "cfd_prop_firm": "src/data/detailed/cfd-prop-firms.json",
+    "futures_prop_firm": "src/data/detailed/futures-prop-firms.json",
+    "crypto_prop_firm": "src/data/detailed/crypto-prop-firms.json",
+    "broker": "src/data/detailed/brokers.json",
+    "crypto_exchange": "src/data/detailed/crypto-exchanges.json"
+  }
+}
