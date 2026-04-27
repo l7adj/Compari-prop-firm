@@ -1,0 +1,94 @@
+{
+  "category": "broker",
+  "category_label": "Brokers",
+  "version": "1.0",
+  "companies": [
+    {
+      "company_name": "[Company Name]",
+      "slug": "[Description]",
+      "official_website": "[Official Source]",
+      "last_checked": "[Last Checked]",
+      "data_status": "Needs Review",
+      "summary": "[Description]",
+      "regulation_and_trust": {
+        "regulators": ["[Value]", "[Value]", "[Value]"],
+        "legal_entities": [
+          { "entity_name": "[Company Name]", "jurisdiction": "[Value]", "regulator": "[Value]", "license_number": "[Value]", "verification_url": "[Official Source]" },
+          { "entity_name": "[Company Name]", "jurisdiction": "[Value]", "regulator": "[Value]", "license_number": "[Value]", "verification_url": "[Official Source]" },
+          { "entity_name": "[Company Name]", "jurisdiction": "[Value]", "regulator": "[Value]", "license_number": "[Value]", "verification_url": "[Official Source]" }
+        ],
+        "client_fund_segregation": "[Value]",
+        "negative_balance_protection": "[Value]",
+        "investor_compensation": "[Value]"
+      },
+      "account_types": [
+        {
+          "account_type": "[Value]",
+          "minimum_deposit": "[Value]",
+          "base_currencies": ["[Value]", "[Value]", "[Value]"],
+          "spread_from": "[Value]",
+          "spread_type": "[Value]",
+          "commission": "[Value]",
+          "execution_model": "[Value]",
+          "max_leverage": "[Value]",
+          "min_lot_size": "[Value]",
+          "islamic_available": "[Value]",
+          "demo_available": "[Value]"
+        },
+        {
+          "account_type": "[Value]",
+          "minimum_deposit": "[Value]",
+          "base_currencies": ["[Value]", "[Value]", "[Value]"],
+          "spread_from": "[Value]",
+          "spread_type": "[Value]",
+          "commission": "[Value]",
+          "execution_model": "[Value]",
+          "max_leverage": "[Value]",
+          "min_lot_size": "[Value]",
+          "islamic_available": "[Value]",
+          "demo_available": "[Value]"
+        },
+        {
+          "account_type": "[Value]",
+          "minimum_deposit": "[Value]",
+          "base_currencies": ["[Value]", "[Value]", "[Value]"],
+          "spread_from": "[Value]",
+          "spread_type": "[Value]",
+          "commission": "[Value]",
+          "execution_model": "[Value]",
+          "max_leverage": "[Value]",
+          "min_lot_size": "[Value]",
+          "islamic_available": "[Value]",
+          "demo_available": "[Value]"
+        }
+      ],
+      "platforms_and_markets": {
+        "platforms": ["[Value]", "[Value]", "[Value]"],
+        "markets": ["Forex", "Indices", "Metals", "Commodities", "Shares", "Crypto"],
+        "execution_notes": "[Description]"
+      },
+      "deposit_and_withdrawal": [
+        { "method": "[Value]", "deposit_available": "[Value]", "withdrawal_available": "[Value]", "fees": "[Value]", "processing_time": "[Value]" },
+        { "method": "[Value]", "deposit_available": "[Value]", "withdrawal_available": "[Value]", "fees": "[Value]", "processing_time": "[Value]" },
+        { "method": "[Value]", "deposit_available": "[Value]", "withdrawal_available": "[Value]", "fees": "[Value]", "processing_time": "[Value]" }
+      ],
+      "fees": {
+        "deposit_fees": "[Value]",
+        "withdrawal_fees": "[Value]",
+        "inactivity_fee": "[Value]",
+        "swap_policy": "[Description]"
+      },
+      "arab_user_relevance": {
+        "arabic_website": "[Value]",
+        "arabic_support": "[Value]",
+        "mena_restrictions": "[Description]",
+        "islamic_account_notes": "[Description]"
+      },
+      "official_sources": [
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" }
+      ]
+    }
+  ]
+}
