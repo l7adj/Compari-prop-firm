@@ -1,0 +1,69 @@
+{
+  "category": "crypto_exchange",
+  "category_label": "Crypto Exchanges",
+  "version": "1.0",
+  "companies": [
+    {
+      "company_name": "[Company Name]",
+      "slug": "[Description]",
+      "official_website": "[Official Source]",
+      "last_checked": "[Last Checked]",
+      "data_status": "Needs Review",
+      "summary": "[Description]",
+      "products": {
+        "spot": "[Value]",
+        "futures": "[Value]",
+        "margin": "[Value]",
+        "options": "[Value]",
+        "p2p": "[Value]",
+        "earn": "[Value]",
+        "launchpad": "[Value]"
+      },
+      "products_and_fees": [
+        { "product": "Spot", "maker_fee": "[X%]", "taker_fee": "[X%]", "max_leverage": "[Value]", "notes": "[Description]" },
+        { "product": "Futures", "maker_fee": "[X%]", "taker_fee": "[X%]", "max_leverage": "[Value]", "notes": "[Description]" },
+        { "product": "Margin", "maker_fee": "[X%]", "taker_fee": "[X%]", "max_leverage": "[Value]", "notes": "[Description]" },
+        { "product": "Options", "maker_fee": "[X%]", "taker_fee": "[X%]", "max_leverage": "[Value]", "notes": "[Description]" }
+      ],
+      "fees": {
+        "maker_fee": "[X%]",
+        "taker_fee": "[X%]",
+        "futures_fees": "[Value]",
+        "withdrawal_fees": "[Description]",
+        "deposit_fees": "[Description]"
+      },
+      "kyc_and_restrictions": [
+        { "tier": "[Value]", "requirements": "[Description]", "daily_limit": "[Value]", "restricted_countries": "[Description]" },
+        { "tier": "[Value]", "requirements": "[Description]", "daily_limit": "[Value]", "restricted_countries": "[Description]" },
+        { "tier": "[Value]", "requirements": "[Description]", "daily_limit": "[Value]", "restricted_countries": "[Description]" }
+      ],
+      "security_and_reserves": {
+        "proof_of_reserves": "[Value]",
+        "proof_of_reserves_source": "[Official Source]",
+        "cold_storage": "[X%]",
+        "insurance_fund": "[Value]",
+        "two_factor_authentication": "[Value]",
+        "withdrawal_whitelist": "[Value]",
+        "anti_phishing_code": "[Value]"
+      },
+      "fiat_and_p2p": {
+        "fiat_deposit": "[Value]",
+        "local_currency_support": "[Value]",
+        "p2p_available": "[Value]",
+        "arabic_interface": "[Value]",
+        "mena_payment_notes": "[Description]"
+      },
+      "liquidity_and_api": {
+        "liquidity": "[Value]",
+        "api": "[Value]",
+        "rate_limits": "[Description]",
+        "institutional_features": "[Description]"
+      },
+      "official_sources": [
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" }
+      ]
+    }
+  ]
+}
