@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مراجعة شركة واحدة بعمق | محطة التمويل</title>
-  <meta name="description" content="صفحة مراجعة عميقة لشركة واحدة: اختيار التصنيف والشركة، ثم عرض Metrics وTabs والمصادر والقواعد المخفية.">
+  <title>مراجعة عميقة لشركة واحدة | محطة التمويل</title>
+  <meta name="description" content="مراجعة عميقة ومنظمة لكل شركة حسب نوعها: Prop Firms، Futures، Brokers، Crypto Exchanges، مع تبويبات وجداول وحقول دقيقة من قاعدة البيانات.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://l7adj.github.io/Compari-prop-firm/review/">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -25,14 +25,25 @@
   </header>
 
   <main>
-    <section class="section">
-      <div class="container">
-        <h1 class="page-title">مراجعة عميقة لشركة واحدة</h1>
-        <p class="section-subtitle">اختر التصنيف ثم الشركة لعرض مراجعة تشغيلية كاملة بدون خلط مع صفحة المقارنة.</p>
+    <section class="pro-hero review-hero">
+      <div class="container pro-hero-grid">
+        <div>
+          <span class="kicker">Deep Research Review</span>
+          <h1 class="page-title">مراجعة عميقة تفصل المهم عن الضجيج</h1>
+          <p class="section-subtitle">المراجعة ليست مقارنة. هنا يتم عرض ملف الشركة كاملًا حسب نوعها: قواعد التحدي، السحب، المنصات، المخاطر، القيود، والمصادر.</p>
+        </div>
+        <aside class="pro-hero-panel">
+          <strong>منهج العرض</strong>
+          <p>كل تصنيف له خصائصه. لا يتم إجبار شركات التمويل والبروكرات ومنصات الكريبتو على نفس الجدول.</p>
+        </aside>
+      </div>
+    </section>
 
-        <div class="filters-bar">
+    <section class="section compact-section">
+      <div class="container">
+        <div class="filters-bar premium-filter">
           <div class="filter-group">
-            <label for="review-category">اختر التصنيف</label>
+            <label for="review-category">نوع الشركة</label>
             <select id="review-category">
               <option value="cfd_prop_firm">CFD Prop Firms</option>
               <option value="futures_prop_firm">Futures Prop Firms</option>
@@ -41,25 +52,25 @@
               <option value="crypto_exchange">Crypto Exchanges</option>
             </select>
           </div>
-          <div class="filter-group">
-            <label for="review-company">اختر الشركة</label>
+          <div class="filter-group wide-filter">
+            <label for="review-company">الشركة المراد تحليلها</label>
             <select id="review-company"></select>
           </div>
         </div>
 
         <div id="review-header"></div>
         <div id="review-metrics"></div>
-        <div id="review-tabs" class="tabs-container"></div>
+        <div id="review-tabs" class="tabs-container premium-tabs"></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div><h3>محطة التمويل</h3><p>مراجعات عميقة منظمة للمتداولين.</p></div>
+      <div><h3>محطة التمويل</h3><p>مراجعات تشغيلية عميقة مبنية على قاعدة بيانات حقيقية.</p></div>
       <div><h3>روابط</h3><ul><li><a href="/Compari-prop-firm/compare/">المقارنة السريعة</a></li></ul></div>
       <div><h3>أدوات</h3><ul><li><a href="/Compari-prop-firm/tools/">الأدوات</a></li></ul></div>
-      <div><h3>تنبيه</h3><p>القيم الناقصة تظهر: غير متوفر + Needs Verification.</p></div>
+      <div><h3>تنبيه</h3><p>أي حقل ناقص يظهر بوضوح بدل اختراع بيانات غير موثقة.</p></div>
     </div>
   </footer>
 
