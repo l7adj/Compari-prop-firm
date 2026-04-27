@@ -1,142 +1,66 @@
-window.ProTableEngine = (() => {
-  const missing = (value) => value === null || value === undefined || value === '' || (Array.isArray(value) && value.length === 0);
-  const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  const yesNo = (value) => {
-    if (value === true) return '<span class="badge ready">نعم</span>';
-    if (value === false) return '<span class="badge risk">لا</span>';
-    if (String(value).toLowerCase() === 'restricted') return '<span class="badge partial">مقيد</span>';
-    return format(value);
-  };
-  const format = (value) => {
-    if (missing(value)) return '<span class="badge info">غير موثق</span>';
-    if (Array.isArray(value)) return value.map(format).join('، ');
-    if (typeof value === 'boolean') return yesNo(value);
-    if (typeof value === 'number') return Number.isInteger(value) ? esc(value) : esc(value.toFixed(2));
-    if (typeof value === 'object') return Object.entries(value).map(([key, val]) => `<b>${esc(key)}</b>: ${format(val)}`).join('<br>');
-    return `<span class="ltr">${esc(value)}</span>`;
-  };
-  const money = (price, currency = 'USD') => missing(price) ? '<span class="badge info">غير موثق</span>' : `<b class="ltr">${esc(currency)} ${esc(price)}</b>`;
-  const companyAbbr = (name) => String(name || '?').split(/\s+/).filter(Boolean).slice(0, 3).map((part) => part[0]).join('').toUpperCase();
-  const table = ({ columns, rows, className = '' }) => `
-    <div class="tableBox proTableBox ${className}">
-      <table class="proTable">
-        <thead><tr>${columns.map((col, index) => `<th class="${index === 0 ? 'sticky' : ''}">${esc(col.label)}</th>`).join('')}</tr></thead>
-        <tbody>${rows.map((row) => `<tr>${columns.map((col, index) => `<td class="${index === 0 ? 'sticky' : ''}">${col.render ? col.render(row) : format(row[col.key])}</td>`).join('')}</tr>`).join('')}</tbody>
-      </table>
-    </div>`;
-  const planColumns = [
-    { key: 'plan_name', label: 'الحساب', render: (p) => `<b>${format(p.plan_name)}</b><small>${format(p.account_size)} ${format(p.currency)}</small>` },
-    { key: 'price', label: 'السعر', render: (p) => money(p.price, p.currency) },
-    { key: 'phase_1_profit_target', label: 'هدف 1', render: (p) => format(p.phase_1_profit_target) },
-    { key: 'phase_2_profit_target', label: 'هدف 2', render: (p) => format(p.phase_2_profit_target) },
-    { key: 'daily_drawdown', label: 'Daily DD', render: (p) => format(p.daily_drawdown) },
-    { key: 'max_drawdown', label: 'Max DD', render: (p) => format(p.max_drawdown) },
-    { key: 'drawdown_type', label: 'نوع DD', render: (p) => format(p.drawdown_type) },
-    { key: 'drawdown_calculation_notes', label: 'حساب DD', render: (p) => format(p.drawdown_calculation_notes) },
-    { key: 'minimum_trading_days', label: 'أقل أيام', render: (p) => format(p.minimum_trading_days) },
-    { key: 'maximum_trading_days', label: 'أقصى أيام', render: (p) => format(p.maximum_trading_days) },
-    { key: 'profit_split', label: 'Profit Split', render: (p) => format(p.profit_split) },
-    { key: 'first_payout_time', label: 'أول سحب', render: (p) => format(p.first_payout_time) },
-    { key: 'payout_frequency', label: 'تكرار السحب', render: (p) => format(p.payout_frequency) },
-    { key: 'refund_policy', label: 'Refund', render: (p) => format(p.refund_policy) }
-  ];
-  const tradingRuleColumns = [
-    { key: 'plan_name', label: 'الحساب', render: (p) => `<b>${format(p.plan_name)}</b><small>${format(p.account_size)}</small>` },
-    { key: 'news_trading', label: 'الأخبار', render: (p) => yesNo(p.news_trading) },
-    { key: 'weekend_holding', label: 'Weekend', render: (p) => yesNo(p.weekend_holding) },
-    { key: 'overnight_holding', label: 'Overnight', render: (p) => yesNo(p.overnight_holding) },
-    { key: 'ea_bots', label: 'EA/Bots', render: (p) => yesNo(p.ea_bots) },
-    { key: 'copy_trading', label: 'Copy', render: (p) => yesNo(p.copy_trading) },
-    { key: 'hedging', label: 'Hedging', render: (p) => yesNo(p.hedging) },
-    { key: 'martingale', label: 'Martingale', render: (p) => yesNo(p.martingale) },
-    { key: 'arbitrage', label: 'Arbitrage', render: (p) => yesNo(p.arbitrage) },
-    { key: 'high_frequency_trading', label: 'HFT', render: (p) => yesNo(p.high_frequency_trading) },
-    { key: 'grid_trading', label: 'Grid', render: (p) => yesNo(p.grid_trading) },
-    { key: 'tick_scalping', label: 'Tick Scalping', render: (p) => yesNo(p.tick_scalping) }
-  ];
-  const executionColumns = [
-    { key: 'plan_name', label: 'الحساب', render: (p) => `<b>${format(p.plan_name)}</b>` },
-    { key: 'leverage_forex', label: 'Forex Lev.', render: (p) => format(p.leverage_forex) },
-    { key: 'leverage_indices', label: 'Indices Lev.', render: (p) => format(p.leverage_indices) },
-    { key: 'leverage_metals', label: 'Metals Lev.', render: (p) => format(p.leverage_metals) },
-    { key: 'leverage_crypto', label: 'Crypto Lev.', render: (p) => format(p.leverage_crypto) },
-    { key: 'commission', label: 'Commission', render: (p) => format(p.commission) },
-    { key: 'spreads_notes', label: 'Spreads', render: (p) => format(p.spreads_notes) },
-    { key: 'swap_rules', label: 'Swap', render: (p) => format(p.swap_rules) },
-    { key: 'max_contracts_or_lots', label: 'Max Lots/Contracts', render: (p) => format(p.max_contracts_or_lots) },
-    { key: 'max_position_size', label: 'Max Position', render: (p) => format(p.max_position_size) }
-  ];
-  const sourcesColumns = [
-    { key: 'plan_name', label: 'الحساب', render: (p) => `<b>${format(p.plan_name)}</b>` },
-    { key: 'official_sources', label: 'المصادر الرسمية', render: (p) => missing(p.official_sources) ? format(null) : `<div class="sourceList">${p.official_sources.map((url) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(url)}</a>`).join('')}</div>` },
-    { key: 'important_notes', label: 'ملاحظات مهمة', render: (p) => format(p.important_notes) },
-    { key: 'plan_data_confidence', label: 'ثقة الخطة', render: (p) => format(p.plan_data_confidence) }
-  ];
-  const renderProgram = (program) => {
-    const plans = Array.isArray(program.plans) ? program.plans : [];
-    return `
-      <section class="program">
-        <div class="programHead">
-          <h3>${format(program.program_name)}</h3>
-          <p>${format(program.program_type)} · ${format(program.available_platforms)} · ${format(program.available_markets)}</p>
-        </div>
-        <div class="programBody">
-          <h4>الحسابات والأسعار والشروط</h4>${table({ columns: planColumns, rows: plans })}
-          <h4>قواعد التداول لكل حساب</h4>${table({ columns: tradingRuleColumns, rows: plans })}
-          <h4>الرافعة والتكاليف والتنفيذ</h4>${table({ columns: executionColumns, rows: plans })}
-          <h4>المصادر والملاحظات</h4>${table({ columns: sourcesColumns, rows: plans })}
-        </div>
-      </section>`;
-  };
-  const renderPrograms = (company) => {
-    const programs = Array.isArray(company.programs) ? company.programs : [];
-    if (!programs.length) return '<div class="note">لا توجد برامج تفصيلية موثقة لهذه الشركة حالياً.</div>';
-    return programs.map(renderProgram).join('');
-  };
-  const renderHiddenRules = (company) => {
-    const cards = [];
-    const add = (title, value, source = '') => { if (!missing(value)) cards.push(`<article class="riskCard"><h4>${esc(title)}</h4><p>${format(value)}</p>${source ? `<small>${format(source)}</small>` : ''}</article>`); };
-    (company.programs || []).forEach((program) => (program.plans || []).forEach((plan) => {
-      add(`${program.program_name} / ${plan.plan_name}: Forbidden Practices`, plan.forbidden_practices, plan.official_sources);
-      add(`${program.program_name} / ${plan.plan_name}: Breach Rules`, plan.breach_rules, plan.official_sources);
-      add(`${program.program_name} / ${plan.plan_name}: Important Notes`, plan.important_notes, plan.official_sources);
-    }));
-    add('Company Level Rules', company.company_level_rules, company.official_sources);
-    add('Risk Rules', company.risk_rules, company.official_sources);
-    add('Payout Denial Reasons', company.funded_stage_and_payouts?.payout_denial_reasons, company.official_sources);
-    return cards.length ? cards.join('') : '<div class="note">لا توجد قواعد مخفية موثقة في قاعدة البيانات لهذه الشركة، أو ما زالت تحتاج بحثاً.</div>';
-  };
-  const renderCompanyHeader = (company) => `
-    <section class="card companyReviewHead">
-      <div class="companyCell"><span class="abbr">${esc(companyAbbr(company.company_name))}</span><div><h2>${esc(company.company_name)}</h2><small>${format(company.company_type)} · ${format(company.category)} · آخر تحقق: ${format(company.last_checked)}</small></div></div>
-      <div class="statRow"><span class="badge ${company.data_quality_status === 'ready' ? 'ready' : 'partial'}">${format(company.data_quality_status)}</span><span class="badge info">ثقة البيانات: ${format(company.data_confidence)}/10</span><a class="btn" href="${esc(company.official_website || '#')}" target="_blank" rel="noopener">الموقع الرسمي</a></div>
-      <p>${format(company.editorial_summary?.main_strength || company.summary || company.programs?.[0]?.program_description)}</p>
-    </section>`;
-  const renderReview = (company) => `
-    ${renderCompanyHeader(company)}
-    <div class="tabs" data-pro-tabs>
-      <button class="tab active" data-tab="programs">البرامج والحسابات</button>
-      <button class="tab" data-tab="rules">القواعد المخفية</button>
-      <button class="tab" data-tab="profile">الملف والتشغيل</button>
-      <button class="tab" data-tab="arab">المتداول العربي</button>
-      <button class="tab" data-tab="audit">المصادر والتدقيق</button>
-    </div>
-    <section id="programs" class="panel active">${renderPrograms(company)}</section>
-    <section id="rules" class="panel">${renderHiddenRules(company)}</section>
-    <section id="profile" class="panel">${table({ columns: [{ key: 'k', label: 'القسم' }, { key: 'v', label: 'التفاصيل', render: (r) => format(r.v) }], rows: [{ k: 'Company Profile', v: company.company_profile }, { k: 'Markets & Platforms', v: company.markets_and_platforms }, { k: 'Execution & Costs', v: company.execution_and_costs }, { k: 'Funded Stage & Payouts', v: company.funded_stage_and_payouts }] })}</section>
-    <section id="arab" class="panel">${table({ columns: [{ key: 'k', label: 'العنصر' }, { key: 'v', label: 'التفاصيل', render: (r) => format(r.v) }], rows: Object.entries(company.arab_user_relevance || {}).map(([k, v]) => ({ k, v })) })}</section>
-    <section id="audit" class="panel">${table({ columns: [{ key: 'k', label: 'العنصر' }, { key: 'v', label: 'التفاصيل', render: (r) => format(r.v) }], rows: [{ k: 'Official Sources', v: company.official_sources }, { k: 'Research Audit', v: company.research_audit }, { k: 'Editorial Summary', v: company.editorial_summary }] })}</section>`;
-  const initTabs = (root = document) => {
-    root.querySelectorAll('[data-pro-tabs] .tab').forEach((button) => {
-      button.addEventListener('click', () => {
-        const tabs = button.closest('[data-pro-tabs]');
-        const scope = tabs.parentElement;
-        tabs.querySelectorAll('.tab').forEach((item) => item.classList.remove('active'));
-        scope.querySelectorAll('.panel').forEach((panel) => panel.classList.remove('active'));
-        button.classList.add('active');
-        scope.querySelector('#' + button.dataset.tab)?.classList.add('active');
-      });
-    });
-  };
-  return { format, table, renderPrograms, renderHiddenRules, renderReview, initTabs };
+window.ProTableEngine=(()=>{
+const missing=v=>v==null||v===''||(Array.isArray(v)&&v.length===0)||(typeof v==='object'&&!Array.isArray(v)&&Object.keys(v).length===0);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const raw=(r,c)=>c.value?c.value(r):r[c.key];
+const hasData=(rows,c)=>rows.some(r=>!missing(raw(r,c)));
+const yesNo=v=>{if(v===true)return'<span class="badge ready">نعم</span>';if(v===false)return'<span class="badge risk">لا</span>';if(String(v).toLowerCase()==='restricted')return'<span class="badge partial">مقيد</span>';return format(v)};
+const format=v=>{if(missing(v))return'<span class="muted">—</span>';if(Array.isArray(v))return v.map(format).join('، ');if(typeof v==='boolean')return yesNo(v);if(typeof v==='number')return Number.isInteger(v)?esc(v):esc(v.toFixed(2));if(typeof v==='object')return Object.entries(v).filter(([,x])=>!missing(x)).map(([k,x])=>`<b>${esc(k)}</b>: ${format(x)}`).join('<br>')||'<span class="muted">—</span>';return`<span class="ltr">${esc(v)}</span>`};
+const money=(p,c='USD')=>missing(p)?'<span class="muted">—</span>':`<b class="ltr">${esc(c)} ${esc(p)}</b>`;
+const abbr=n=>String(n||'?').split(/\s+/).filter(Boolean).slice(0,3).map(x=>x[0]).join('').toUpperCase();
+const table=({columns,rows,className=''})=>{const cols=columns.filter((c,i)=>i===0||!c.optional||hasData(rows,c));return`<div class="tableBox proTableBox ${className}"><table class="proTable"><thead><tr>${cols.map((c,i)=>`<th class="${i===0?'sticky':''}">${esc(c.label)}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${cols.map((c,i)=>`<td class="${i===0?'sticky':''}">${c.render?c.render(r):format(raw(r,c))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`};
+const planColumns=[
+{key:'plan_name',label:'الحساب',render:p=>`<b>${format(p.plan_name)}</b><small>${format(p.account_size)} ${format(p.currency)}</small>`},
+{key:'price',label:'السعر',optional:true,render:p=>money(p.price,p.currency)},
+{key:'account_size',label:'الحجم',optional:true},
+{key:'phase_1_profit_target',label:'هدف 1',optional:true},
+{key:'phase_2_profit_target',label:'هدف 2',optional:true},
+{key:'phase_3_profit_target',label:'هدف 3',optional:true},
+{key:'daily_drawdown',label:'Daily DD',optional:true},
+{key:'max_drawdown',label:'Max DD',optional:true},
+{key:'drawdown_type',label:'نوع DD',optional:true},
+{key:'drawdown_calculation_notes',label:'حساب DD',optional:true},
+{key:'trailing_drawdown_rules',label:'Trailing',optional:true},
+{key:'minimum_trading_days',label:'أقل أيام',optional:true},
+{key:'maximum_trading_days',label:'أقصى أيام',optional:true},
+{key:'consistency_rule',label:'Consistency',optional:true},
+{key:'profit_split',label:'Profit Split',optional:true},
+{key:'first_payout_time',label:'أول سحب',optional:true},
+{key:'payout_frequency',label:'تكرار السحب',optional:true},
+{key:'refund_policy',label:'Refund',optional:true}
+];
+const tradingRuleColumns=[
+{key:'plan_name',label:'الحساب',render:p=>`<b>${format(p.plan_name)}</b><small>${format(p.account_size)}</small>`},
+{key:'news_trading',label:'الأخبار',optional:true,render:p=>yesNo(p.news_trading)},
+{key:'news_trading_details',label:'تفاصيل الأخبار',optional:true},
+{key:'weekend_holding',label:'Weekend',optional:true,render:p=>yesNo(p.weekend_holding)},
+{key:'overnight_holding',label:'Overnight',optional:true,render:p=>yesNo(p.overnight_holding)},
+{key:'ea_bots',label:'EA/Bots',optional:true,render:p=>yesNo(p.ea_bots)},
+{key:'ea_bots_details',label:'تفاصيل EA',optional:true},
+{key:'copy_trading',label:'Copy',optional:true,render:p=>yesNo(p.copy_trading)},
+{key:'copy_trading_details',label:'تفاصيل Copy',optional:true},
+{key:'hedging',label:'Hedging',optional:true,render:p=>yesNo(p.hedging)},
+{key:'hedging_details',label:'تفاصيل Hedging',optional:true},
+{key:'martingale',label:'Martingale',optional:true,render:p=>yesNo(p.martingale)},
+{key:'arbitrage',label:'Arbitrage',optional:true,render:p=>yesNo(p.arbitrage)},
+{key:'high_frequency_trading',label:'HFT',optional:true,render:p=>yesNo(p.high_frequency_trading)},
+{key:'grid_trading',label:'Grid',optional:true,render:p=>yesNo(p.grid_trading)},
+{key:'tick_scalping',label:'Tick Scalping',optional:true,render:p=>yesNo(p.tick_scalping)}
+];
+const executionColumns=[
+{key:'plan_name',label:'الحساب',render:p=>`<b>${format(p.plan_name)}</b>`},
+{key:'leverage_forex',label:'Forex Lev.',optional:true},{key:'leverage_indices',label:'Indices Lev.',optional:true},{key:'leverage_metals',label:'Metals Lev.',optional:true},{key:'leverage_crypto',label:'Crypto Lev.',optional:true},{key:'leverage_futures',label:'Futures Lev.',optional:true},{key:'commission',label:'Commission',optional:true},{key:'spreads_notes',label:'Spreads',optional:true},{key:'swap_rules',label:'Swap',optional:true},{key:'max_contracts_or_lots',label:'Max Lots/Contracts',optional:true},{key:'max_position_size',label:'Max Position',optional:true}
+];
+const sourcesColumns=[
+{key:'plan_name',label:'الحساب',render:p=>`<b>${format(p.plan_name)}</b>`},
+{key:'official_sources',label:'المصادر الرسمية',optional:true,render:p=>missing(p.official_sources)?'<span class="muted">—</span>':`<div class="sourceList">${p.official_sources.map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`).join('')}</div>`},
+{key:'important_notes',label:'ملاحظات مهمة',optional:true},{key:'plan_data_confidence',label:'ثقة الخطة',optional:true}
+];
+const renderProgram=program=>{const plans=Array.isArray(program.plans)?program.plans:[];return`<section class="program"><div class="programHead"><h3>${format(program.program_name)}</h3><p>${format(program.program_type)} · ${format(program.available_platforms)} · ${format(program.available_markets)}</p></div><div class="programBody"><h4>الحسابات والأسعار والشروط</h4>${table({columns:planColumns,rows:plans})}<h4>قواعد التداول لكل حساب</h4>${table({columns:tradingRuleColumns,rows:plans})}<h4>الرافعة والتكاليف والتنفيذ</h4>${table({columns:executionColumns,rows:plans})}<h4>المصادر والملاحظات</h4>${table({columns:sourcesColumns,rows:plans})}</div></section>`};
+const renderPrograms=c=>{const ps=Array.isArray(c.programs)?c.programs:[];return ps.length?ps.map(renderProgram).join(''):'<div class="note">لا توجد برامج تفصيلية موثقة لهذه الشركة حالياً.</div>'};
+const renderHiddenRules=c=>{const cards=[];const add=(t,v,s='')=>{if(!missing(v))cards.push(`<article class="riskCard"><h4>${esc(t)}</h4><p>${format(v)}</p>${s?`<small>${format(s)}</small>`:''}</article>`)};(c.programs||[]).forEach(p=>(p.plans||[]).forEach(pl=>{add(`${p.program_name} / ${pl.plan_name}: Forbidden Practices`,pl.forbidden_practices,pl.official_sources);add(`${p.program_name} / ${pl.plan_name}: Breach Rules`,pl.breach_rules,pl.official_sources);add(`${p.program_name} / ${pl.plan_name}: Important Notes`,pl.important_notes,pl.official_sources)}));add('Company Level Rules',c.company_level_rules,c.official_sources);add('Risk Rules',c.risk_rules,c.official_sources);add('Payout Denial Reasons',c.funded_stage_and_payouts?.payout_denial_reasons,c.official_sources);return cards.length?cards.join(''):'<div class="note">لا توجد قواعد مخفية موثقة في قاعدة البيانات لهذه الشركة.</div>'};
+const companyHeader=c=>`<section class="card companyReviewHead"><div class="companyCell"><span class="abbr">${esc(abbr(c.company_name))}</span><div><h2>${esc(c.company_name)}</h2><small>${format(c.company_type)} · ${format(c.category)} · آخر تحقق: ${format(c.last_checked)}</small></div></div><div class="statRow"><span class="badge ${c.data_quality_status==='ready'?'ready':'partial'}">${format(c.data_quality_status)}</span><span class="badge info">ثقة البيانات: ${format(c.data_confidence)}/10</span><a class="btn" href="${esc(c.official_website||'#')}" target="_blank" rel="noopener">الموقع الرسمي</a></div><p>${format(c.editorial_summary?.main_strength||c.summary||c.programs?.[0]?.program_description)}</p></section>`;
+const kvRows=o=>Object.entries(o||{}).filter(([,v])=>!missing(v)).map(([k,v])=>({k,v}));
+const renderReview=c=>`${companyHeader(c)}<div class="tabs" data-pro-tabs><button class="tab active" data-tab="programs">البرامج والحسابات</button><button class="tab" data-tab="rules">القواعد المخفية</button><button class="tab" data-tab="profile">الملف والتشغيل</button><button class="tab" data-tab="arab">المتداول العربي</button><button class="tab" data-tab="audit">المصادر والتدقيق</button></div><section id="programs" class="panel active">${renderPrograms(c)}</section><section id="rules" class="panel">${renderHiddenRules(c)}</section><section id="profile" class="panel">${table({columns:[{key:'k',label:'القسم'},{key:'v',label:'التفاصيل',render:r=>format(r.v)}],rows:[...kvRows(c.company_profile),...kvRows(c.markets_and_platforms),...kvRows(c.execution_and_costs),...kvRows(c.funded_stage_and_payouts)]})}</section><section id="arab" class="panel">${table({columns:[{key:'k',label:'العنصر'},{key:'v',label:'التفاصيل',render:r=>format(r.v)}],rows:kvRows(c.arab_user_relevance)})}</section><section id="audit" class="panel">${table({columns:[{key:'k',label:'العنصر'},{key:'v',label:'التفاصيل',render:r=>format(r.v)}],rows:[{k:'Official Sources',v:c.official_sources},...kvRows(c.research_audit),...kvRows(c.editorial_summary)]})}</section>`;
+const initTabs=(root=document)=>root.querySelectorAll('[data-pro-tabs] .tab').forEach(b=>b.addEventListener('click',()=>{const tabs=b.closest('[data-pro-tabs]'),scope=tabs.parentElement;tabs.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));scope.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');scope.querySelector('#'+b.dataset.tab)?.classList.add('active')}));
+return{format,table,renderPrograms,renderHiddenRules,renderReview,initTabs};
 })();
