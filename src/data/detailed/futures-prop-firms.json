@@ -1,0 +1,109 @@
+{
+  "category": "futures_prop_firm",
+  "category_label": "Futures Prop Firms",
+  "version": "1.0",
+  "companies": [
+    {
+      "company_name": "[Company Name]",
+      "slug": "[Description]",
+      "official_website": "[Official Source]",
+      "last_checked": "[Last Checked]",
+      "data_status": "Needs Review",
+      "summary": "[Description]",
+      "platforms": ["[Value]", "[Value]", "[Value]"],
+      "exchanges": ["[Value]", "[Value]", "[Value]"],
+      "products": ["Futures", "Micros", "[Value]"],
+      "plans": [
+        {
+          "plan_name": "[Description]",
+          "billing_type": "Monthly",
+          "account_size": "[Value]",
+          "monthly_fee": "[Value]",
+          "profit_target": "[Value]",
+          "daily_loss_limit": "[Value]",
+          "max_loss_limit": "[Value]",
+          "trailing_drawdown": "[Value]",
+          "eod_drawdown": "[Value]",
+          "static_drawdown": "[Value]",
+          "drawdown_lock": "[Value]",
+          "activation_fee": "[Value]",
+          "data_fee": "[Value]",
+          "reset_fee": "[Value]",
+          "platform_fee": "[Value]",
+          "first_payout": "[Value]",
+          "payout_frequency": "[Value]",
+          "payout_cap": "[Value]",
+          "consistency_rule": "[Value]",
+          "data_confidence": "[Value]"
+        },
+        {
+          "plan_name": "[Description]",
+          "billing_type": "Monthly",
+          "account_size": "[Value]",
+          "monthly_fee": "[Value]",
+          "profit_target": "[Value]",
+          "daily_loss_limit": "[Value]",
+          "max_loss_limit": "[Value]",
+          "trailing_drawdown": "[Value]",
+          "eod_drawdown": "[Value]",
+          "static_drawdown": "[Value]",
+          "drawdown_lock": "[Value]",
+          "activation_fee": "[Value]",
+          "data_fee": "[Value]",
+          "reset_fee": "[Value]",
+          "platform_fee": "[Value]",
+          "first_payout": "[Value]",
+          "payout_frequency": "[Value]",
+          "payout_cap": "[Value]",
+          "consistency_rule": "[Value]",
+          "data_confidence": "[Value]"
+        },
+        {
+          "plan_name": "[Description]",
+          "billing_type": "Lifetime",
+          "account_size": "[Value]",
+          "monthly_fee": "[Value]",
+          "profit_target": "[Value]",
+          "daily_loss_limit": "[Value]",
+          "max_loss_limit": "[Value]",
+          "trailing_drawdown": "[Value]",
+          "eod_drawdown": "[Value]",
+          "static_drawdown": "[Value]",
+          "drawdown_lock": "[Value]",
+          "activation_fee": "[Value]",
+          "data_fee": "[Value]",
+          "reset_fee": "[Value]",
+          "platform_fee": "[Value]",
+          "first_payout": "[Value]",
+          "payout_frequency": "[Value]",
+          "payout_cap": "[Value]",
+          "consistency_rule": "[Value]",
+          "data_confidence": "[Value]"
+        }
+      ],
+      "contract_rules": [
+        { "product": "[Value]", "max_contracts": "[N]", "micros_allowed": "[Value]", "scaling_rules": "[Description]" },
+        { "product": "[Value]", "max_contracts": "[N]", "micros_allowed": "[Value]", "scaling_rules": "[Description]" },
+        { "product": "[Value]", "max_contracts": "[N]", "micros_allowed": "[Value]", "scaling_rules": "[Description]" }
+      ],
+      "data_feed": {
+        "feed_name": "[Value]",
+        "included": "[Value]",
+        "monthly_cost": "[Value]",
+        "notes": "[Description]"
+      },
+      "trading_rules": {
+        "news_trading": "[Value]",
+        "overnight_holding": "[Value]",
+        "weekend_holding": "[Value]",
+        "max_position_size": "[Value]",
+        "forbidden_practices": "[Description]"
+      },
+      "official_sources": [
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" }
+      ]
+    }
+  ]
+}
