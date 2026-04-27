@@ -1,0 +1,120 @@
+{
+  "category": "cfd_prop_firm",
+  "category_label": "CFD Prop Firms",
+  "version": "1.0",
+  "companies": [
+    {
+      "company_name": "[Company Name]",
+      "slug": "[Description]",
+      "official_website": "[Official Source]",
+      "last_checked": "[Last Checked]",
+      "data_status": "Needs Review",
+      "review_link": "[Review Link]",
+      "summary": "[Description]",
+      "platforms": ["[Value]", "[Value]", "[Value]"],
+      "markets": ["Forex", "Indices", "Metals", "Crypto", "Commodities"],
+      "programs": [
+        {
+          "program_name": "[Description]",
+          "program_type": "One-Phase",
+          "challenge_model": "Challenge",
+          "accounts": [
+            {
+              "account_size": "[Value]",
+              "price": "[Value]",
+              "phase_1_profit_target": "[X%]",
+              "phase_2_profit_target": "[X%]",
+              "phase_3_profit_target": "[X%]",
+              "daily_drawdown": "[X%]",
+              "max_drawdown": "[X%]",
+              "drawdown_type": "[Value]",
+              "drawdown_basis": "[Value]",
+              "minimum_trading_days": "[N]",
+              "maximum_trading_days": "[N]",
+              "profit_split": "[X%]",
+              "first_payout": "[Value]",
+              "payout_frequency": "[Value]",
+              "refund_policy": "[Value]",
+              "scaling_plan": "[Description]",
+              "data_confidence": "[Value]"
+            },
+            {
+              "account_size": "[Value]",
+              "price": "[Value]",
+              "phase_1_profit_target": "[X%]",
+              "phase_2_profit_target": "[X%]",
+              "phase_3_profit_target": "[X%]",
+              "daily_drawdown": "[X%]",
+              "max_drawdown": "[X%]",
+              "drawdown_type": "[Value]",
+              "drawdown_basis": "[Value]",
+              "minimum_trading_days": "[N]",
+              "maximum_trading_days": "[N]",
+              "profit_split": "[X%]",
+              "first_payout": "[Value]",
+              "payout_frequency": "[Value]",
+              "refund_policy": "[Value]",
+              "scaling_plan": "[Description]",
+              "data_confidence": "[Value]"
+            },
+            {
+              "account_size": "[Value]",
+              "price": "[Value]",
+              "phase_1_profit_target": "[X%]",
+              "phase_2_profit_target": "[X%]",
+              "phase_3_profit_target": "[X%]",
+              "daily_drawdown": "[X%]",
+              "max_drawdown": "[X%]",
+              "drawdown_type": "[Value]",
+              "drawdown_basis": "[Value]",
+              "minimum_trading_days": "[N]",
+              "maximum_trading_days": "[N]",
+              "profit_split": "[X%]",
+              "first_payout": "[Value]",
+              "payout_frequency": "[Value]",
+              "refund_policy": "[Value]",
+              "scaling_plan": "[Description]",
+              "data_confidence": "[Value]"
+            }
+          ]
+        }
+      ],
+      "leverage": {
+        "forex": "[Value]",
+        "indices": "[Value]",
+        "metals": "[Value]",
+        "crypto": "[Value]",
+        "commodities": "[Value]"
+      },
+      "execution_costs": {
+        "commission": "[Value]",
+        "spread_notes": "[Description]",
+        "swap_policy": "[Description]",
+        "server_location": "[Value]"
+      },
+      "trading_rules": {
+        "news_trading": "[Value]",
+        "weekend_holding": "[Value]",
+        "overnight_holding": "[Value]",
+        "ea_bots": "[Value]",
+        "copy_trading": "[Value]",
+        "hedging": "[Value]",
+        "martingale": "[Value]",
+        "arbitrage": "[Value]",
+        "hft": "[Value]",
+        "forbidden_practices": "[Description]"
+      },
+      "arab_user_relevance": {
+        "arabic_website": "[Value]",
+        "arabic_support": "[Value]",
+        "payment_methods_mena": "[Description]",
+        "restricted_countries_mena": "[Description]"
+      },
+      "official_sources": [
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" }
+      ]
+    }
+  ]
+}
