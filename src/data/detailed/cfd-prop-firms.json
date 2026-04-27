@@ -1,11 +1,13 @@
 {
   "category": "cfd_prop_firm",
   "category_label": "CFD Prop Firms",
-  "version": "1.0",
+  "version": "2.0",
+  "data_model": "company -> program_groups -> variants -> account_sizes -> rules",
   "companies": [
     {
       "company_name": "[Company Name]",
       "slug": "[Description]",
+      "logo": "[Official Source]",
       "official_website": "[Official Source]",
       "last_checked": "[Last Checked]",
       "data_status": "Needs Review",
@@ -13,107 +15,225 @@
       "summary": "[Description]",
       "platforms": ["[Value]", "[Value]", "[Value]"],
       "markets": ["Forex", "Indices", "Metals", "Crypto", "Commodities"],
-      "programs": [
+      "program_groups": [
         {
-          "program_name": "[Description]",
-          "program_type": "One-Phase",
-          "challenge_model": "Challenge",
-          "accounts": [
+          "group_name": "One Phase Challenge",
+          "group_type": "one_phase",
+          "available": "[Value]",
+          "description": "[Description]",
+          "variants": [
             {
-              "account_size": "[Value]",
-              "price": "[Value]",
-              "phase_1_profit_target": "[X%]",
-              "phase_2_profit_target": "[X%]",
-              "phase_3_profit_target": "[X%]",
-              "daily_drawdown": "[X%]",
-              "max_drawdown": "[X%]",
-              "drawdown_type": "[Value]",
-              "drawdown_basis": "[Value]",
-              "minimum_trading_days": "[N]",
-              "maximum_trading_days": "[N]",
-              "profit_split": "[X%]",
-              "first_payout": "[Value]",
-              "payout_frequency": "[Value]",
-              "refund_policy": "[Value]",
-              "scaling_plan": "[Description]",
-              "data_confidence": "[Value]"
+              "variant_name": "Normal Challenge",
+              "variant_id": "normal_challenge",
+              "program_type": "One Phase",
+              "challenge_model": "Challenge",
+              "evaluation_phases": "1",
+              "description": "[Description]",
+              "refundable_fee": "[Value]",
+              "data_confidence": "[Value]",
+              "official_source": "[Official Source]",
+              "account_sizes": [
+                {
+                  "account_size": "[Value]",
+                  "price": "[Value]",
+                  "currency": "[Value]",
+                  "phase_1_target": "[X%]",
+                  "phase_2_target": "غير متوفر",
+                  "phase_3_target": "غير متوفر",
+                  "daily_drawdown": "[X%]",
+                  "max_drawdown": "[X%]",
+                  "drawdown_type": "[Value]",
+                  "drawdown_basis": "[Value]",
+                  "minimum_trading_days": "[N]",
+                  "maximum_trading_days": "[N]",
+                  "profit_split": "[X%]",
+                  "first_payout": "[Value]",
+                  "payout_frequency": "[Value]",
+                  "refund_policy": "[Value]",
+                  "scaling_plan": "[Description]",
+                  "notes": "[Description]"
+                },
+                {
+                  "account_size": "[Value]",
+                  "price": "[Value]",
+                  "currency": "[Value]",
+                  "phase_1_target": "[X%]",
+                  "phase_2_target": "غير متوفر",
+                  "phase_3_target": "غير متوفر",
+                  "daily_drawdown": "[X%]",
+                  "max_drawdown": "[X%]",
+                  "drawdown_type": "[Value]",
+                  "drawdown_basis": "[Value]",
+                  "minimum_trading_days": "[N]",
+                  "maximum_trading_days": "[N]",
+                  "profit_split": "[X%]",
+                  "first_payout": "[Value]",
+                  "payout_frequency": "[Value]",
+                  "refund_policy": "[Value]",
+                  "scaling_plan": "[Description]",
+                  "notes": "[Description]"
+                },
+                {
+                  "account_size": "[Value]",
+                  "price": "[Value]",
+                  "currency": "[Value]",
+                  "phase_1_target": "[X%]",
+                  "phase_2_target": "غير متوفر",
+                  "phase_3_target": "غير متوفر",
+                  "daily_drawdown": "[X%]",
+                  "max_drawdown": "[X%]",
+                  "drawdown_type": "[Value]",
+                  "drawdown_basis": "[Value]",
+                  "minimum_trading_days": "[N]",
+                  "maximum_trading_days": "[N]",
+                  "profit_split": "[X%]",
+                  "first_payout": "[Value]",
+                  "payout_frequency": "[Value]",
+                  "refund_policy": "[Value]",
+                  "scaling_plan": "[Description]",
+                  "notes": "[Description]"
+                }
+              ],
+              "phase_rules": [
+                { "phase": "Phase 1", "profit_target": "[X%]", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "consistency_rule": "[Value]", "pass_condition": "[Description]", "failure_condition": "[Description]", "notes": "[Description]" }
+              ],
+              "drawdown_mechanics": [
+                { "rule": "Daily Drawdown", "value": "[X%]", "type": "[Value]", "basis": "[Value]", "calculation_moment": "[Value]", "applies_to": "[Value]", "example": "[Description]", "risk_level": "[Value]", "notes": "[Description]" },
+                { "rule": "Max Drawdown", "value": "[X%]", "type": "[Value]", "basis": "[Value]", "calculation_moment": "[Value]", "applies_to": "[Value]", "example": "[Description]", "risk_level": "[Value]", "notes": "[Description]" }
+              ],
+              "trading_permissions": [
+                { "rule": "News Trading", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" },
+                { "rule": "Weekend Holding", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" },
+                { "rule": "EA/Bots", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" },
+                { "rule": "Copy Trading", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" },
+                { "rule": "HFT", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" }
+              ],
+              "payout_and_funded_stage": [
+                { "item": "Profit Split", "value": "[X%]", "conditions": "[Description]", "notes": "[Description]" },
+                { "item": "First Payout", "value": "[Value]", "conditions": "[Description]", "notes": "[Description]" },
+                { "item": "Payout Frequency", "value": "[Value]", "conditions": "[Description]", "notes": "[Description]" },
+                { "item": "KYC Timing", "value": "[Value]", "conditions": "[Description]", "notes": "[Description]" }
+              ],
+              "costs_and_execution": [
+                { "item": "Commission", "value": "[Value]", "applies_to": "[Value]", "notes": "[Description]" },
+                { "item": "Spread Notes", "value": "[Description]", "applies_to": "[Value]", "notes": "[Description]" },
+                { "item": "Forex Leverage", "value": "[Value]", "applies_to": "Forex", "notes": "[Description]" },
+                { "item": "Crypto Leverage", "value": "[Value]", "applies_to": "Crypto", "notes": "[Description]" }
+              ],
+              "hidden_rules_red_flags": [
+                { "hidden_rule": "Consistency Rule", "risk_level": "[Value]", "what_it_means": "[Description]", "how_it_affects_trader": "[Description]", "where_to_verify": "[Official Source]", "status": "Needs Verification" },
+                { "hidden_rule": "News Restriction Window", "risk_level": "[Value]", "what_it_means": "[Description]", "how_it_affects_trader": "[Description]", "where_to_verify": "[Official Source]", "status": "Needs Verification" },
+                { "hidden_rule": "Payout Denial Clauses", "risk_level": "[Value]", "what_it_means": "[Description]", "how_it_affects_trader": "[Description]", "where_to_verify": "[Official Source]", "status": "Needs Verification" }
+              ]
             },
             {
-              "account_size": "[Value]",
-              "price": "[Value]",
-              "phase_1_profit_target": "[X%]",
-              "phase_2_profit_target": "[X%]",
-              "phase_3_profit_target": "[X%]",
-              "daily_drawdown": "[X%]",
-              "max_drawdown": "[X%]",
-              "drawdown_type": "[Value]",
-              "drawdown_basis": "[Value]",
-              "minimum_trading_days": "[N]",
-              "maximum_trading_days": "[N]",
-              "profit_split": "[X%]",
-              "first_payout": "[Value]",
-              "payout_frequency": "[Value]",
-              "refund_policy": "[Value]",
-              "scaling_plan": "[Description]",
-              "data_confidence": "[Value]"
-            },
-            {
-              "account_size": "[Value]",
-              "price": "[Value]",
-              "phase_1_profit_target": "[X%]",
-              "phase_2_profit_target": "[X%]",
-              "phase_3_profit_target": "[X%]",
-              "daily_drawdown": "[X%]",
-              "max_drawdown": "[X%]",
-              "drawdown_type": "[Value]",
-              "drawdown_basis": "[Value]",
-              "minimum_trading_days": "[N]",
-              "maximum_trading_days": "[N]",
-              "profit_split": "[X%]",
-              "first_payout": "[Value]",
-              "payout_frequency": "[Value]",
-              "refund_policy": "[Value]",
-              "scaling_plan": "[Description]",
-              "data_confidence": "[Value]"
+              "variant_name": "Aggressive Challenge",
+              "variant_id": "aggressive_challenge",
+              "program_type": "One Phase",
+              "challenge_model": "Challenge",
+              "evaluation_phases": "1",
+              "description": "[Description]",
+              "refundable_fee": "[Value]",
+              "data_confidence": "[Value]",
+              "official_source": "[Official Source]",
+              "account_sizes": [
+                { "account_size": "[Value]", "price": "[Value]", "currency": "[Value]", "phase_1_target": "[X%]", "phase_2_target": "غير متوفر", "phase_3_target": "غير متوفر", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "drawdown_type": "[Value]", "drawdown_basis": "[Value]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "profit_split": "[X%]", "first_payout": "[Value]", "payout_frequency": "[Value]", "refund_policy": "[Value]", "scaling_plan": "[Description]", "notes": "[Description]" },
+                { "account_size": "[Value]", "price": "[Value]", "currency": "[Value]", "phase_1_target": "[X%]", "phase_2_target": "غير متوفر", "phase_3_target": "غير متوفر", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "drawdown_type": "[Value]", "drawdown_basis": "[Value]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "profit_split": "[X%]", "first_payout": "[Value]", "payout_frequency": "[Value]", "refund_policy": "[Value]", "scaling_plan": "[Description]", "notes": "[Description]" },
+                { "account_size": "[Value]", "price": "[Value]", "currency": "[Value]", "phase_1_target": "[X%]", "phase_2_target": "غير متوفر", "phase_3_target": "غير متوفر", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "drawdown_type": "[Value]", "drawdown_basis": "[Value]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "profit_split": "[X%]", "first_payout": "[Value]", "payout_frequency": "[Value]", "refund_policy": "[Value]", "scaling_plan": "[Description]", "notes": "[Description]" }
+              ],
+              "phase_rules": [
+                { "phase": "Phase 1", "profit_target": "[X%]", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "consistency_rule": "[Value]", "pass_condition": "[Description]", "failure_condition": "[Description]", "notes": "[Description]" }
+              ],
+              "drawdown_mechanics": [
+                { "rule": "Daily Drawdown", "value": "[X%]", "type": "[Value]", "basis": "[Value]", "calculation_moment": "[Value]", "applies_to": "[Value]", "example": "[Description]", "risk_level": "[Value]", "notes": "[Description]" },
+                { "rule": "Max Drawdown", "value": "[X%]", "type": "[Value]", "basis": "[Value]", "calculation_moment": "[Value]", "applies_to": "[Value]", "example": "[Description]", "risk_level": "[Value]", "notes": "[Description]" }
+              ],
+              "trading_permissions": [
+                { "rule": "News Trading", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" },
+                { "rule": "Weekend Holding", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" },
+                { "rule": "EA/Bots", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" }
+              ],
+              "payout_and_funded_stage": [
+                { "item": "Profit Split", "value": "[X%]", "conditions": "[Description]", "notes": "[Description]" },
+                { "item": "First Payout", "value": "[Value]", "conditions": "[Description]", "notes": "[Description]" }
+              ],
+              "costs_and_execution": [
+                { "item": "Commission", "value": "[Value]", "applies_to": "[Value]", "notes": "[Description]" }
+              ],
+              "hidden_rules_red_flags": [
+                { "hidden_rule": "Max Daily Profit Rule", "risk_level": "[Value]", "what_it_means": "[Description]", "how_it_affects_trader": "[Description]", "where_to_verify": "[Official Source]", "status": "Needs Verification" }
+              ]
             }
           ]
+        },
+        {
+          "group_name": "Two Phase Challenge",
+          "group_type": "two_phase",
+          "available": "[Value]",
+          "description": "[Description]",
+          "variants": [
+            {
+              "variant_name": "Standard Two Phase",
+              "variant_id": "standard_two_phase",
+              "program_type": "Two Phase",
+              "challenge_model": "Challenge",
+              "evaluation_phases": "2",
+              "description": "[Description]",
+              "refundable_fee": "[Value]",
+              "data_confidence": "[Value]",
+              "official_source": "[Official Source]",
+              "account_sizes": [
+                { "account_size": "[Value]", "price": "[Value]", "currency": "[Value]", "phase_1_target": "[X%]", "phase_2_target": "[X%]", "phase_3_target": "غير متوفر", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "drawdown_type": "[Value]", "drawdown_basis": "[Value]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "profit_split": "[X%]", "first_payout": "[Value]", "payout_frequency": "[Value]", "refund_policy": "[Value]", "scaling_plan": "[Description]", "notes": "[Description]" },
+                { "account_size": "[Value]", "price": "[Value]", "currency": "[Value]", "phase_1_target": "[X%]", "phase_2_target": "[X%]", "phase_3_target": "غير متوفر", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "drawdown_type": "[Value]", "drawdown_basis": "[Value]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "profit_split": "[X%]", "first_payout": "[Value]", "payout_frequency": "[Value]", "refund_policy": "[Value]", "scaling_plan": "[Description]", "notes": "[Description]" },
+                { "account_size": "[Value]", "price": "[Value]", "currency": "[Value]", "phase_1_target": "[X%]", "phase_2_target": "[X%]", "phase_3_target": "غير متوفر", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "drawdown_type": "[Value]", "drawdown_basis": "[Value]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "profit_split": "[X%]", "first_payout": "[Value]", "payout_frequency": "[Value]", "refund_policy": "[Value]", "scaling_plan": "[Description]", "notes": "[Description]" }
+              ],
+              "phase_rules": [
+                { "phase": "Phase 1", "profit_target": "[X%]", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "consistency_rule": "[Value]", "pass_condition": "[Description]", "failure_condition": "[Description]", "notes": "[Description]" },
+                { "phase": "Phase 2", "profit_target": "[X%]", "daily_drawdown": "[X%]", "max_drawdown": "[X%]", "minimum_trading_days": "[N]", "maximum_trading_days": "[N]", "consistency_rule": "[Value]", "pass_condition": "[Description]", "failure_condition": "[Description]", "notes": "[Description]" }
+              ],
+              "drawdown_mechanics": [
+                { "rule": "Daily Drawdown", "value": "[X%]", "type": "[Value]", "basis": "[Value]", "calculation_moment": "[Value]", "applies_to": "[Value]", "example": "[Description]", "risk_level": "[Value]", "notes": "[Description]" }
+              ],
+              "trading_permissions": [
+                { "rule": "News Trading", "allowed": "[Value]", "conditions": "[Description]", "violation_consequence": "[Description]", "official_source": "[Official Source]" }
+              ],
+              "payout_and_funded_stage": [
+                { "item": "Profit Split", "value": "[X%]", "conditions": "[Description]", "notes": "[Description]" }
+              ],
+              "costs_and_execution": [
+                { "item": "Commission", "value": "[Value]", "applies_to": "[Value]", "notes": "[Description]" }
+              ],
+              "hidden_rules_red_flags": [
+                { "hidden_rule": "Consistency Rule", "risk_level": "[Value]", "what_it_means": "[Description]", "how_it_affects_trader": "[Description]", "where_to_verify": "[Official Source]", "status": "Needs Verification" }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Three Phase Challenge",
+          "group_type": "three_phase",
+          "available": "[Value]",
+          "description": "[Description]",
+          "variants": []
+        },
+        {
+          "group_name": "Instant Funding",
+          "group_type": "instant_funding",
+          "available": "[Value]",
+          "description": "[Description]",
+          "variants": []
         }
       ],
-      "leverage": {
-        "forex": "[Value]",
-        "indices": "[Value]",
-        "metals": "[Value]",
-        "crypto": "[Value]",
-        "commodities": "[Value]"
-      },
-      "execution_costs": {
-        "commission": "[Value]",
-        "spread_notes": "[Description]",
-        "swap_policy": "[Description]",
-        "server_location": "[Value]"
-      },
-      "trading_rules": {
-        "news_trading": "[Value]",
-        "weekend_holding": "[Value]",
-        "overnight_holding": "[Value]",
-        "ea_bots": "[Value]",
-        "copy_trading": "[Value]",
-        "hedging": "[Value]",
-        "martingale": "[Value]",
-        "arbitrage": "[Value]",
-        "hft": "[Value]",
-        "forbidden_practices": "[Description]"
-      },
-      "arab_user_relevance": {
-        "arabic_website": "[Value]",
-        "arabic_support": "[Value]",
-        "payment_methods_mena": "[Description]",
-        "restricted_countries_mena": "[Description]"
-      },
+      "arab_user_relevance": [
+        { "item": "Arabic Website", "value": "[Value]", "notes": "[Description]" },
+        { "item": "Arabic Support", "value": "[Value]", "notes": "[Description]" },
+        { "item": "Accepted MENA Countries", "value": "[Value]", "notes": "[Description]" },
+        { "item": "Payment Methods", "value": "[Value]", "notes": "[Description]" }
+      ],
       "official_sources": [
-        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
-        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
-        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" }
+        { "source_type": "Pricing Page", "url": "[Official Source]", "last_checked": "[Last Checked]", "evidence_notes": "[Description]" },
+        { "source_type": "Trading Rules", "url": "[Official Source]", "last_checked": "[Last Checked]", "evidence_notes": "[Description]" },
+        { "source_type": "Payout Policy", "url": "[Official Source]", "last_checked": "[Last Checked]", "evidence_notes": "[Description]" }
       ]
     }
   ]
