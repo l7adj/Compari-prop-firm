@@ -1,0 +1,94 @@
+{
+  "category": "crypto_prop_firm",
+  "category_label": "Crypto Prop Firms",
+  "version": "1.0",
+  "companies": [
+    {
+      "company_name": "[Company Name]",
+      "slug": "[Description]",
+      "official_website": "[Official Source]",
+      "last_checked": "[Last Checked]",
+      "data_status": "Needs Review",
+      "summary": "[Description]",
+      "market_type_warning": "[Description]",
+      "programs": [
+        {
+          "program_name": "[Description]",
+          "market_type": "Perpetual Futures",
+          "program_type": "[Value]",
+          "account_size": "[Value]",
+          "price": "[Value]",
+          "profit_target": "[X%]",
+          "daily_drawdown": "[X%]",
+          "max_drawdown": "[X%]",
+          "crypto_leverage": "[Value]",
+          "max_position_size": "[Value]",
+          "data_confidence": "[Value]"
+        },
+        {
+          "program_name": "[Description]",
+          "market_type": "Spot",
+          "program_type": "[Value]",
+          "account_size": "[Value]",
+          "price": "[Value]",
+          "profit_target": "[X%]",
+          "daily_drawdown": "[X%]",
+          "max_drawdown": "[X%]",
+          "crypto_leverage": "[Value]",
+          "max_position_size": "[Value]",
+          "data_confidence": "[Value]"
+        },
+        {
+          "program_name": "[Description]",
+          "market_type": "Margin",
+          "program_type": "[Value]",
+          "account_size": "[Value]",
+          "price": "[Value]",
+          "profit_target": "[X%]",
+          "daily_drawdown": "[X%]",
+          "max_drawdown": "[X%]",
+          "crypto_leverage": "[Value]",
+          "max_position_size": "[Value]",
+          "data_confidence": "[Value]"
+        }
+      ],
+      "supported_pairs": ["[Value]", "[Value]", "[Value]"],
+      "market_access": {
+        "spot": "[Value]",
+        "perpetual_futures": "[Value]",
+        "margin": "[Value]",
+        "cfd_crypto": "[Value]"
+      },
+      "fees": {
+        "maker_fee": "[X%]",
+        "taker_fee": "[X%]",
+        "funding_fees": "[Description]",
+        "liquidation_fees": "[Description]"
+      },
+      "risk_rules": {
+        "liquidation_rules": "[Description]",
+        "max_position_size": "[Value]",
+        "drawdown_basis": "[Value]",
+        "weekend_trading": "[Value]"
+      },
+      "kyc_and_payouts": {
+        "kyc_required": "[Value]",
+        "payout_method": "[Value]",
+        "payout_currency": "[Value]",
+        "first_payout": "[Value]",
+        "payout_frequency": "[Value]"
+      },
+      "api_and_bots": {
+        "api_trading": "[Value]",
+        "bots_allowed": "[Value]",
+        "copy_trading": "[Value]",
+        "restrictions": "[Description]"
+      },
+      "official_sources": [
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" },
+        { "source": "[Official Source]", "url": "[Official Source]", "last_checked": "[Last Checked]" }
+      ]
+    }
+  ]
+}
