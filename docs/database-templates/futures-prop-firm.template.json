@@ -15,79 +15,109 @@
     "restricted_countries": [],
     "red_flags": []
   },
-  "platforms_and_data": {
+  "company_level_platforms_and_data": {
     "platforms": [],
     "data_feed_provider": null,
     "dom_available": null,
     "mobile_support": null,
-    "data_cost": null,
-    "execution_notes": null
+    "data_cost_policy": null,
+    "execution_notes": null,
+    "supported_exchanges": [],
+    "supported_products": []
   },
-  "programs": [
-    {
-      "program_name": null,
-      "program_group": "evaluation_monthly|evaluation_lifetime|instant_funding|funded_account",
-      "variant_name": null,
-      "billing_model": "monthly|lifetime|one_time",
-      "available_platforms": [],
-      "available_exchanges": [],
-      "available_products": [],
-      "data_feed": null,
-      "official_sources": [],
-      "plans": [
+  "evaluation_models": {
+    "monthly_evaluation": {
+      "available": null,
+      "billing_model": "monthly",
+      "model_description": null,
+      "rule_models": [
         {
-          "account_size": null,
-          "monthly_fee": null,
-          "lifetime_fee": null,
-          "price": null,
-          "currency": "USD",
-          "activation_fee": null,
-          "reset_fee": null,
-          "data_fee": null,
-          "platform_fee": null,
-          "total_first_month": null,
-          "profit_target": null,
-          "daily_loss_limit": null,
-          "max_loss_limit": null,
-          "trailing_drawdown": null,
-          "trailing_drawdown_rules": null,
-          "eod_drawdown": null,
-          "static_drawdown": null,
-          "drawdown_lock": null,
-          "intraday_calculation": null,
-          "unrealized_profit_included": null,
-          "reset_time": null,
-          "max_contracts": null,
-          "max_contracts_or_lots": null,
-          "micros_allowed": null,
-          "scaling_rules": null,
-          "products": [],
-          "exchanges": [],
+          "rule_model_name": null,
+          "rule_model_key": "trailing_drawdown|eod_drawdown|static_drawdown|express|custom",
+          "drawdown_model_description": null,
+          "available_platforms": [],
+          "available_exchanges": [],
+          "available_products": [],
           "data_feed": null,
-          "minimum_trading_days": null,
-          "first_payout_time": null,
-          "payout_frequency": null,
-          "payout_cap": null,
-          "consistency_rule": null,
-          "kyc_timing": null,
-          "overnight_holding": null,
-          "news_trading": null,
-          "forbidden_practices": null,
-          "breach_rules": null,
-          "important_notes": null,
-          "official_sources": []
+          "official_sources": [],
+          "account_plans": [
+            {
+              "account_size": null,
+              "account_size_label": null,
+              "monthly_fee": null,
+              "currency": "USD",
+              "activation_fee": null,
+              "reset_fee": null,
+              "data_fee": null,
+              "platform_fee": null,
+              "total_first_month": null,
+              "profit_target": null,
+              "daily_loss_limit": null,
+              "max_loss_limit": null,
+              "trailing_drawdown": null,
+              "trailing_drawdown_rules": null,
+              "eod_drawdown": null,
+              "static_drawdown": null,
+              "drawdown_lock": null,
+              "intraday_calculation": null,
+              "unrealized_profit_included": null,
+              "reset_time": null,
+              "max_contracts": null,
+              "max_micros": null,
+              "micros_allowed": null,
+              "mini_contracts_allowed": null,
+              "scaling_rules": null,
+              "products_allowed": [],
+              "products_restricted": [],
+              "exchanges_allowed": [],
+              "minimum_trading_days": null,
+              "first_payout_time": null,
+              "payout_frequency": null,
+              "payout_cap": null,
+              "minimum_payout": null,
+              "consistency_rule": null,
+              "kyc_timing": null,
+              "overnight_holding": null,
+              "news_trading": null,
+              "forbidden_practices": null,
+              "breach_rules": null,
+              "important_notes": null,
+              "official_sources": []
+            }
+          ]
         }
       ]
+    },
+    "lifetime_evaluation": {
+      "available": null,
+      "billing_model": "lifetime",
+      "model_description": null,
+      "rule_models": []
+    },
+    "instant_funding": {
+      "available": null,
+      "billing_model": "one_time|monthly",
+      "model_description": null,
+      "rule_models": []
+    },
+    "funded_account": {
+      "available": null,
+      "model_description": null,
+      "rule_models": []
     }
-  ],
-  "hidden_rules": {
+  },
+  "futures_specific_hidden_rules": {
     "activation_fee_after_passing": null,
     "data_fee_after_funding": null,
     "reset_dependency": null,
     "contract_limit_breach": null,
     "trailing_drawdown_trap": null,
+    "unrealized_profit_trap": null,
     "overnight_restrictions": null,
-    "news_restrictions": null
+    "news_restrictions": null,
+    "consistency_rule_risk": null,
+    "payout_cap_risk": null,
+    "evaluation_renewal_fees": null
   },
   "arab_user_relevance": {
     "arabic_language_support": null,
