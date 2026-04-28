@@ -14,69 +14,137 @@
     "restricted_countries": [],
     "red_flags": []
   },
-  "market_types": {
-    "spot_available": null,
-    "perpetual_futures_available": null,
-    "margin_available": null,
-    "cfd_crypto_available": null,
-    "real_crypto_or_cfd": null,
+  "company_level_crypto_profile": {
     "custody_model": null,
-    "supported_pairs": []
+    "real_crypto_or_cfd_policy": null,
+    "supported_pairs_global": [],
+    "restricted_countries": [],
+    "payout_currencies": [],
+    "api_available_company_level": null
   },
-  "programs": [
-    {
-      "program_name": null,
-      "program_group": "spot|perpetual_futures|margin|cfd_crypto",
-      "variant_name": null,
-      "available_markets": [],
-      "official_sources": [],
-      "plans": [
+  "market_types": {
+    "spot": {
+      "available": null,
+      "real_crypto_or_cfd": "real|cfd|needs_verification|null",
+      "custody_model": null,
+      "supported_pairs": [],
+      "funding_models": [
         {
-          "account_size": null,
-          "price": null,
-          "currency": "USD",
-          "leverage_crypto": null,
-          "leverage_futures": null,
-          "max_position_size": null,
-          "daily_drawdown": null,
-          "max_drawdown": null,
-          "liquidation_rules": null,
-          "maker_fee": null,
-          "taker_fee": null,
-          "funding_fees": null,
-          "liquidation_fee": null,
-          "withdrawal_fee": null,
-          "spread_slippage_notes": null,
-          "api_trading": null,
-          "api_types": [],
-          "rate_limits": null,
-          "ea_bots": null,
-          "copy_trading": null,
-          "high_frequency_trading": null,
-          "automation_restrictions": null,
-          "kyc_required": null,
-          "kyc_timing": null,
-          "payout_method": null,
-          "payout_currency": null,
-          "first_payout_time": null,
-          "payout_frequency": null,
-          "restricted_countries": [],
-          "forbidden_practices": null,
-          "breach_rules": null,
-          "important_notes": null,
-          "official_sources": []
+          "funding_model_name": null,
+          "funding_model_key": "evaluation|instant|challenge|custom",
+          "model_description": null,
+          "official_sources": [],
+          "account_sizes": [
+            {
+              "account_size": null,
+              "account_size_label": null,
+              "price": null,
+              "currency": "USD",
+              "leverage": "1:1",
+              "max_position_size": null,
+              "daily_drawdown": null,
+              "max_drawdown": null,
+              "liquidation_rules": null,
+              "maker_fee": null,
+              "taker_fee": null,
+              "withdrawal_fee": null,
+              "spread_slippage_notes": null,
+              "minimum_trade_size": null,
+              "api_trading": null,
+              "api_types": [],
+              "rate_limits": null,
+              "bots_allowed": null,
+              "copy_trading": null,
+              "high_frequency_trading": null,
+              "automation_restrictions": null,
+              "kyc_required": null,
+              "kyc_timing": null,
+              "payout_method": null,
+              "payout_currency": null,
+              "first_payout_time": null,
+              "payout_frequency": null,
+              "forbidden_practices": null,
+              "breach_rules": null,
+              "important_notes": null,
+              "official_sources": []
+            }
+          ]
         }
       ]
+    },
+    "perpetual_futures": {
+      "available": null,
+      "real_crypto_or_cfd": "real|cfd|needs_verification|null",
+      "supported_pairs": [],
+      "funding_interval": null,
+      "funding_models": [
+        {
+          "funding_model_name": null,
+          "funding_model_key": "evaluation|instant|challenge|custom",
+          "model_description": null,
+          "official_sources": [],
+          "account_sizes": [
+            {
+              "account_size": null,
+              "account_size_label": null,
+              "price": null,
+              "currency": "USD",
+              "leverage": null,
+              "max_position_size": null,
+              "daily_drawdown": null,
+              "max_drawdown": null,
+              "liquidation_rules": null,
+              "maker_fee": null,
+              "taker_fee": null,
+              "funding_fees": null,
+              "liquidation_fee": null,
+              "spread_slippage_notes": null,
+              "api_trading": null,
+              "api_types": [],
+              "rate_limits": null,
+              "bots_allowed": null,
+              "copy_trading": null,
+              "high_frequency_trading": null,
+              "automation_restrictions": null,
+              "kyc_required": null,
+              "kyc_timing": null,
+              "payout_method": null,
+              "payout_currency": null,
+              "first_payout_time": null,
+              "payout_frequency": null,
+              "weekend_volatility_risk": null,
+              "forbidden_practices": null,
+              "breach_rules": null,
+              "important_notes": null,
+              "official_sources": []
+            }
+          ]
+        }
+      ]
+    },
+    "margin": {
+      "available": null,
+      "supported_pairs": [],
+      "funding_models": []
+    },
+    "cfd_crypto": {
+      "available": null,
+      "disguised_as_real_crypto_risk": null,
+      "supported_pairs": [],
+      "funding_models": []
     }
-  ],
-  "hidden_rules": {
+  },
+  "crypto_prop_hidden_rules": {
     "cfd_disguised_as_real_crypto": null,
     "undisclosed_funding_fees": null,
     "api_restrictions": null,
     "kyc_after_profit": null,
     "pair_restrictions": null,
     "country_restrictions": null,
-    "payout_currency_limitation": null
+    "payout_currency_limitation": null,
+    "weekend_volatility_risk": null,
+    "liquidity_risk": null,
+    "hidden_liquidation_conditions": null
   },
   "arab_user_relevance": {
     "arabic_language_support": null,
