@@ -1,0 +1,88 @@
+{
+  "company_name": null,
+  "slug": null,
+  "category": "crypto_prop_firm",
+  "official_website": null,
+  "logo": null,
+  "data_quality_status": "missing",
+  "data_confidence": null,
+  "last_checked": null,
+  "review_updated": null,
+  "company_profile": {
+    "legal_entity": null,
+    "headquarters_or_registered_country": null,
+    "restricted_countries": [],
+    "red_flags": []
+  },
+  "market_types": {
+    "spot_available": null,
+    "perpetual_futures_available": null,
+    "margin_available": null,
+    "cfd_crypto_available": null,
+    "real_crypto_or_cfd": null,
+    "custody_model": null,
+    "supported_pairs": []
+  },
+  "programs": [
+    {
+      "program_name": null,
+      "program_group": "spot|perpetual_futures|margin|cfd_crypto",
+      "variant_name": null,
+      "available_markets": [],
+      "official_sources": [],
+      "plans": [
+        {
+          "account_size": null,
+          "price": null,
+          "currency": "USD",
+          "leverage_crypto": null,
+          "leverage_futures": null,
+          "max_position_size": null,
+          "daily_drawdown": null,
+          "max_drawdown": null,
+          "liquidation_rules": null,
+          "maker_fee": null,
+          "taker_fee": null,
+          "funding_fees": null,
+          "liquidation_fee": null,
+          "withdrawal_fee": null,
+          "spread_slippage_notes": null,
+          "api_trading": null,
+          "api_types": [],
+          "rate_limits": null,
+          "ea_bots": null,
+          "copy_trading": null,
+          "high_frequency_trading": null,
+          "automation_restrictions": null,
+          "kyc_required": null,
+          "kyc_timing": null,
+          "payout_method": null,
+          "payout_currency": null,
+          "first_payout_time": null,
+          "payout_frequency": null,
+          "restricted_countries": [],
+          "forbidden_practices": null,
+          "breach_rules": null,
+          "important_notes": null,
+          "official_sources": []
+        }
+      ]
+    }
+  ],
+  "hidden_rules": {
+    "cfd_disguised_as_real_crypto": null,
+    "undisclosed_funding_fees": null,
+    "api_restrictions": null,
+    "kyc_after_profit": null,
+    "pair_restrictions": null,
+    "country_restrictions": null,
+    "payout_currency_limitation": null
+  },
+  "arab_user_relevance": {
+    "arabic_language_support": null,
+    "support_response_quality_notes": null,
+    "mena_countries_restricted": [],
+    "payment_methods_for_arab_users": []
+  },
+  "official_sources": []
+}
