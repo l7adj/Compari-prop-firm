@@ -1,0 +1,37 @@
+/* Professional site shell for Mahattat Altamweel */
+:root{
+  --bg:#0a0e1a;
+  --ink:#f8fafc;
+  --muted:#94a3b8;
+  --line:#1e293b;
+  --card:#111827;
+  --blue:#3b82f6;
+  --navy:#020617;
+  --green:#22c55e;
+  --amber:#f59e0b;
+  --red:#ef4444;
+  --info:#0ea5e9;
+  --shadow:0 18px 50px rgba(0,0,0,.28);
+  --r:18px;
+}
+body{
+  background:radial-gradient(circle at top left,rgba(59,130,246,.15),transparent 420px),radial-gradient(circle at top right,rgba(124,58,237,.12),transparent 360px),var(--bg)!important;
+  color:var(--ink)!important;
+}
+.top{background:rgba(17,24,39,.88)!important;border-bottom-color:#1e293b!important}.brand,.links a:hover,.links a.active{color:#fff}.links a,.pill{color:#cbd5e1}.mark{background:linear-gradient(135deg,#3b82f6,#14b8a6)}
+.card,.statCard,.companyCard,.miniResult,.rxBox,.rxKpi,.rxTile,.rxProgram,.rxAccount,.rxRule,.v9Card,.v9Kpi,.v9Tile,.v10Card,.v10Kpi,.v10Tile,.coverageBox,.coverageItem{
+  background:linear-gradient(180deg,rgba(17,24,39,.96),rgba(15,23,42,.96))!important;
+  border-color:#1e293b!important;
+  color:#f8fafc!important;
+  box-shadow:var(--shadow)!important;
+}
+.hero h1,.head h2,.companyCard h3,.statCard b,.card h2,.card h3{color:#f8fafc!important}.lead,.muted,.companyCard p,.catCard p,.statRow,.stat-label,.v9Text,.v10Text{color:#94a3b8!important}
+input,select,.control{background:#0f172a!important;border-color:#334155!important;color:#f8fafc!important}.btn{background:#0f172a!important;border-color:#334155!important;color:#dbeafe!important}.btn.primary{background:linear-gradient(135deg,#2563eb,#1d4ed8)!important;border-color:#3b82f6!important;color:#fff!important}
+.kicker{background:rgba(59,130,246,.12)!important;border-color:rgba(59,130,246,.35)!important;color:#93c5fd!important}.catCard{border-top:3px solid #3b82f6}.catCard:nth-child(2){border-top-color:#f59e0b}.catCard:nth-child(3){border-top-color:#10b981}.catCard:nth-child(4){border-top-color:#ef4444}.catCard:nth-child(5){border-top-color:#8b5cf6}
+.tableBox,.v9Table,.v10Table,.rxTable{background:#111827!important;border-color:#1e293b!important;box-shadow:var(--shadow)!important}table{color:#e5e7eb!important}th,.v9Table th,.v10Table th,.rxTable th{background:#0f172a!important;color:#cbd5e1!important;border-bottom-color:#334155!important}td,.v9Table td,.v10Table td,.rxTable td{border-bottom-color:#1e293b!important;background:#111827!important}.sticky{background:#111827!important}.companyCell small{color:#94a3b8!important}
+.tabs{background:rgba(10,14,26,.92)!important}.tab{background:#111827!important;border-color:#334155!important;color:#cbd5e1!important}.tab.active{background:#2563eb!important;border-color:#3b82f6!important;color:#fff!important}
+.badge{background:rgba(15,23,42,.9)!important}.ready{color:#86efac!important}.partial{color:#fcd34d!important}.risk{color:#fca5a5!important}.info{color:#93c5fd!important}.note{background:rgba(14,165,233,.10)!important;border-color:rgba(14,165,233,.35)!important;color:#bae6fd!important}.riskCard,.v9Risk,.v10Risk,.rxRisk{background:rgba(245,158,11,.10)!important;border-color:rgba(245,158,11,.35)!important;color:#fed7aa!important}.sourceList a,.v9Src a,.v10Src a,.rxSources a{background:rgba(59,130,246,.10)!important;border-color:rgba(59,130,246,.35)!important;color:#bfdbfe!important}
+.program,.v10Acc,.v9Acc{background:#111827!important;border-color:#1e293b!important}.programHead,.v10Acc>summary,.v9Acc>summary{background:linear-gradient(135deg,#020617,#1d4ed8)!important}.v10Sub,.v9Sub{background:#111827!important;border-color:#334155!important}.v10Sub>summary,.v9Sub>summary{background:#0f172a!important;color:#e5e7eb!important}
+.homeStats,.companyGrid,.featuredGrid{display:grid;gap:16px}.homeStats{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:18px}.featuredGrid{grid-template-columns:repeat(4,minmax(0,1fr))}.companyGrid{grid-template-columns:repeat(3,minmax(0,1fr))}.statCard{border-radius:20px;padding:16px}.statCard b{display:block;font-size:1.7rem}.directoryToolbar{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin-bottom:16px}.companyCard{display:flex;flex-direction:column;gap:12px;min-height:250px}.companyCardHead{display:flex;align-items:center;gap:12px}.companyCardHead .abbr{width:46px;height:46px}.companyCard h3{margin:0;font-size:1.08rem}.companyCard p{margin:0;font-size:.92rem;line-height:1.65}.companyMeta,.companyActions{display:flex;gap:7px;flex-wrap:wrap}.companyActions{margin-top:auto}.homeSearchResults{display:grid;gap:10px;margin-top:12px;max-height:420px;overflow:auto}.miniResult{display:flex;justify-content:space-between;align-items:center;gap:12px;border-radius:18px;padding:12px}.emptyState{background:#111827;border:1px dashed #334155;border-radius:22px;padding:26px;text-align:center;color:#94a3b8}
+@media(max-width:1050px){.companyGrid,.featuredGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.homeStats{grid-template-columns:repeat(2,minmax(0,1fr))}.directoryToolbar{grid-template-columns:1fr}}
+@media(max-width:640px){.companyGrid,.featuredGrid,.homeStats{grid-template-columns:1fr}.companyCard{min-height:auto}.miniResult{align-items:flex-start;flex-direction:column}}
