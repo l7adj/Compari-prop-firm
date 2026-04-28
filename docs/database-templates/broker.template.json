@@ -1,0 +1,119 @@
+{
+  "company_name": null,
+  "slug": null,
+  "category": "broker",
+  "official_website": null,
+  "logo": null,
+  "data_quality_status": "missing",
+  "data_confidence": null,
+  "last_checked": null,
+  "review_updated": null,
+  "company_profile": {
+    "year_founded": null,
+    "legal_entity": null,
+    "headquarters_or_registered_country": null,
+    "restricted_countries": [],
+    "red_flags": []
+  },
+  "regulation_and_entities": {
+    "regulators": [
+      {
+        "regulator_name": null,
+        "jurisdiction": null,
+        "license_number": null,
+        "verification_url": null,
+        "client_fund_segregation": null,
+        "negative_balance_protection": null,
+        "investor_compensation": null
+      }
+    ],
+    "legal_entities": [
+      {
+        "entity_name": null,
+        "jurisdiction": null,
+        "client_type": null
+      }
+    ],
+    "offshore_entity_exists": null,
+    "offshore_entity_for_arab_clients": null,
+    "offshore_risk_note": null
+  },
+  "account_types": [
+    {
+      "account_type_name": null,
+      "minimum_deposit": null,
+      "currency": null,
+      "spread_from": null,
+      "average_spread": null,
+      "spread_type": null,
+      "commission": null,
+      "swap_policy": null,
+      "inactivity_fee": null,
+      "islamic_account_available": null,
+      "islamic_account_fee": null,
+      "base_currencies": [],
+      "demo_account": null,
+      "max_leverage_forex": null,
+      "max_leverage_indices": null,
+      "max_leverage_crypto": null,
+      "min_lot_size": null,
+      "platforms": [],
+      "official_sources": []
+    }
+  ],
+  "trading_costs": [
+    {
+      "instrument": null,
+      "spread_from": null,
+      "average_spread": null,
+      "commission": null,
+      "swap_or_overnight_fees": null,
+      "notes": null,
+      "official_sources": []
+    }
+  ],
+  "execution": {
+    "execution_model": null,
+    "scalping_allowed": null,
+    "news_trading_allowed": null,
+    "vps_allowed": null,
+    "hedging_allowed": null,
+    "stop_level": null,
+    "slippage_policy": null,
+    "requotes": null,
+    "server_locations": []
+  },
+  "deposit_withdrawal": {
+    "deposit_methods": [],
+    "withdrawal_methods": [],
+    "deposit_fee": null,
+    "withdrawal_fee": null,
+    "processing_time": null,
+    "minimum_withdrawal": null,
+    "currencies": [],
+    "crypto_funding": null
+  },
+  "islamic_account": {
+    "available": null,
+    "admin_fee": null,
+    "swap_replacement": null,
+    "restrictions": null
+  },
+  "hidden_risks": {
+    "offshore_entity_for_arab_clients": null,
+    "withdrawal_delays": null,
+    "hidden_swap_replacement_fees": null,
+    "bonus_terms": null,
+    "account_closure_clause": null,
+    "spread_widening": null,
+    "jurisdiction_mismatch": null
+  },
+  "arab_user_relevance": {
+    "arabic_language_support": null,
+    "support_response_quality_notes": null,
+    "mena_countries_restricted": [],
+    "payment_methods_for_arab_users": [],
+    "islamic_or_swap_free_relevance": null
+  },
+  "official_sources": []
+}
