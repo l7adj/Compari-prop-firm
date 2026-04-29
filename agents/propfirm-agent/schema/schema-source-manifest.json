@@ -1,0 +1,30 @@
+{
+  "package_name": "schema_and_company_sources_by_type_v1-1.zip",
+  "purpose": "Detailed source manifest for schema-by-type and company-source CSVs. This manifest makes the detailed schema package the reference set for the prop firm agent.",
+  "rules": {
+    "schema_is_authority": true,
+    "use_company_sources_as_seed_only_not_final_truth": true,
+    "missing_values_must_remain_null": true,
+    "official_source_required_for_verified_status": true,
+    "do_not_write_final_database_without_schema_mapping": true
+  },
+  "files": [
+    {"path":"00_READ_ME_AR.md","sha256":"4a277d7cd003adb59c8b83c48871d5adbec05a11ee6729ab2ac93b42b23d446c"},
+    {"path":"SCHEMA_PLUS_COMPANY_SOURCES_FILL_RULE_AR.md","sha256":"12934a9c06323163e09c9e0f4cfa435c37dd7d94e0f5dec2e5375cfd76ccc713"},
+    {"path":"01_brokers/00_schema_core_shared.sql","entity_type":"broker","kind":"schema","sha256":"590d42dddfb0583898ccffa24320084928000d05091ed6ec6068571d1547ed11"},
+    {"path":"01_brokers/01_schema_brokers_v3_2_lite_clean.sql","entity_type":"broker","kind":"schema","sha256":"8f6fe1a040fe913fc5c2054f3f854a4ccb5509e624c2077dbf2dbca4cd7600c0"},
+    {"path":"01_brokers/company_sources_brokers.csv","entity_type":"broker","kind":"company_sources","sha256":"2070cc0f574a2f28a3d1f4cd323540dcc89e42f41007b4f774deedecddeaa470"},
+    {"path":"02_cfd_prop_firms/00_schema_core_shared.sql","entity_type":"cfd_prop_firm","kind":"schema","sha256":"590d42dddfb0583898ccffa24320084928000d05091ed6ec6068571d1547ed11"},
+    {"path":"02_cfd_prop_firms/02_schema_cfd_prop_firms_v3_1.sql","entity_type":"cfd_prop_firm","kind":"schema","sha256":"f5698bc7a2b0d5d33c63408bddc23e3a22ec699cd6426dff499202842e61553c"},
+    {"path":"02_cfd_prop_firms/company_sources_cfd_prop_firms.csv","entity_type":"cfd_prop_firm","kind":"company_sources","sha256":"b2ef6619b20f69fc455a2270d2e79d9265e8ab91da6f10dd5ae511b864c4d907"},
+    {"path":"03_futures_prop_firms/00_schema_core_shared.sql","entity_type":"futures_prop_firm","kind":"schema","sha256":"590d42dddfb0583898ccffa24320084928000d05091ed6ec6068571d1547ed11"},
+    {"path":"03_futures_prop_firms/03_schema_futures_prop_firms_v3_1.sql","entity_type":"futures_prop_firm","kind":"schema","sha256":"9b7834a55f1b337a6c45d135f7e409f8393f1407aa4c16dc75bcd8722951f169"},
+    {"path":"03_futures_prop_firms/company_sources_futures_prop_firms.csv","entity_type":"futures_prop_firm","kind":"company_sources","sha256":"d7634797ad4097cbe2268b5d1e5308dddc49e3d083eb7abb32d474de9f91ade9"},
+    {"path":"04_crypto_exchanges/00_schema_core_shared.sql","entity_type":"crypto_exchange","kind":"schema","sha256":"590d42dddfb0583898ccffa24320084928000d05091ed6ec6068571d1547ed11"},
+    {"path":"04_crypto_exchanges/05_schema_crypto_exchanges_v3_core_aligned.sql","entity_type":"crypto_exchange","kind":"schema","sha256":"966a79e4501e7ffc413b0d6f0284bfdd38441d5db955dcaf51c0bb79dc1e2cff"},
+    {"path":"04_crypto_exchanges/company_sources_crypto_exchanges.csv","entity_type":"crypto_exchange","kind":"company_sources","sha256":"879b9bfc80761370423449ae5ad655871f69216b2a6741a5a17bf4af4227ff27"},
+    {"path":"05_crypto_prop_firms/00_schema_core_shared.sql","entity_type":"crypto_prop_firm","kind":"schema","sha256":"590d42dddfb0583898ccffa24320084928000d05091ed6ec6068571d1547ed11"},
+    {"path":"05_crypto_prop_firms/04_schema_crypto_prop_firms_v3_1.sql","entity_type":"crypto_prop_firm","kind":"schema","sha256":"5b241611b3a64258a3f70a28bb991aab5eb2ca79ca1b995038280a7b1789bc01"},
+    {"path":"05_crypto_prop_firms/company_sources_crypto_prop_firms.csv","entity_type":"crypto_prop_firm","kind":"company_sources","sha256":"8a80e7555e90e0164c5639e3082cc4b500fe463ae25842a47ccbd0b3f976db19"}
+  ]
+}
