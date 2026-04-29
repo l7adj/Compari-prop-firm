@@ -27,6 +27,10 @@ on:
         description: Optional comma-separated entity types
         required: false
         default: "cfd_prop_firm,futures_prop_firm,crypto_prop_firm"
+      schema:
+        description: Schema driver path
+        required: false
+        default: agents/propfirm-agent/schema/schema-driver.json
   schedule:
     - cron: "0 7 * * 1"
 
@@ -69,7 +73,19 @@ jobs:
           OUTPUT_DIR: output
           SAVE_SCREENSHOTS: "false"
 
-      - name: Upload scrape output
+      - name: Review extracted data against schema
+        if: always()
+        run: |
+          if [ -f output/normalized_pending_review.csv ]; then
+            npm run agent:review -- --input output/normalized_pending_review.csv --output output --schema "${SCHEMA_DRIVER}"
+          else
+            echo "No normalized_pending_review.csv found; skipping schema review."
+          fi
+        env:
+          SCHEMA_DRIVER: ${{ github.event.inputs.schema || 'agents/propfirm-agent/schema/schema-driver.json' }}
+          OUTPUT_DIR: output
+
+      - name: Upload scrape and schema-review output
         if: always()
         uses: actions/upload-artifact@v4
         with:
