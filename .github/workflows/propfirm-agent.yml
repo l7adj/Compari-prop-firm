@@ -53,14 +53,20 @@ jobs:
 
       - name: Build schema driver from detailed schema bundle
         run: |
-          if [ -f agents/propfirm-agent/schema/schema-bundle.b64 ]; then
+          if [ -f agents/propfirm-agent/schema/schema-bundle ]; then
+            npm run agent:schema -- \
+              --bundle agents/propfirm-agent/schema/schema-bundle \
+              --outSchema agents/propfirm-agent/schema/schema-driver.generated.json \
+              --outCompanySeed agents/propfirm-agent/companies/company-seed.generated.json \
+              --outPropSeed agents/propfirm-agent/companies/prop-firms-seed.generated.json
+          elif [ -f agents/propfirm-agent/schema/schema-bundle.b64 ]; then
             npm run agent:schema -- \
               --bundle agents/propfirm-agent/schema/schema-bundle.b64 \
               --outSchema agents/propfirm-agent/schema/schema-driver.generated.json \
               --outCompanySeed agents/propfirm-agent/companies/company-seed.generated.json \
               --outPropSeed agents/propfirm-agent/companies/prop-firms-seed.generated.json
           else
-            echo "schema-bundle.b64 not found. Using committed schema driver if present."
+            echo "schema bundle not found. Using committed schema driver if present."
             test -f agents/propfirm-agent/schema/schema-driver.generated.json || test -f agents/propfirm-agent/schema/schema-driver.json
           fi
 
