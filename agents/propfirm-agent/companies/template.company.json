@@ -1,0 +1,26 @@
+{
+  "company_name": "Example Prop Firm",
+  "entity_type": "cfd_prop_firm",
+  "source_url": "https://example.com/pricing",
+  "program_types": ["One Step", "Two Step"],
+  "account_sizes": ["5K", "10K", "25K", "50K", "100K"],
+  "selectors": {
+    "ready": "body",
+    "result_scope": "body"
+  },
+  "click_strategy": {
+    "program_type": "text_exact",
+    "account_size": "text_exact"
+  },
+  "field_patterns": {
+    "base_fee": ["(?:fee|price|challenge fee|registration fee)\\s*[:\\-]?\\s*[$€£]?\\s*([0-9][0-9,.]*)"],
+    "profit_target_phase_1": ["(?:phase\\s*1\\s*)?(?:profit target|target)\\s*[:\\-]?\\s*([0-9]{1,2}(?:\\.[0-9]+)?%)"],
+    "profit_target_phase_2": ["phase\\s*2\\s*(?:profit target|target)\\s*[:\\-]?\\s*([0-9]{1,2}(?:\\.[0-9]+)?%)"],
+    "max_daily_loss": ["(?:daily loss|daily drawdown|max daily loss|daily limit)\\s*[:\\-]?\\s*([0-9]{1,2}(?:\\.[0-9]+)?%)"],
+    "max_total_loss": ["(?:max loss|maximum loss|overall loss|total loss|max drawdown|overall drawdown)\\s*[:\\-]?\\s*([0-9]{1,2}(?:\\.[0-9]+)?%)"],
+    "profit_split": ["(?:profit split|payout split|split)\\s*[:\\-]?\\s*([0-9]{1,3}(?:\\.[0-9]+)?%)"],
+    "min_trading_days": ["(?:minimum trading days|min trading days|trading days)\\s*[:\\-]?\\s*([0-9]+)"],
+    "refund": ["(?:refund|refundable)\\s*[:\\-]?\\s*([^\\n]+)"]
+  },
+  "review_flags": ["discount", "coupon", "promo", "save", "off", "limited time", "code"]
+}
