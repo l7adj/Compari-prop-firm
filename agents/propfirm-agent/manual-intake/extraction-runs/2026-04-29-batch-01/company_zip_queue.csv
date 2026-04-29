@@ -1,0 +1,15 @@
+company_name,zip_file,entity_type,images_count,status,priority,output_folder
+Alpha Capital Group,alpha capital group.zip,cfd_prop_firm,21,extracted_partial,1,agents/propfirm-agent/manual-intake/companies/alpha-capital-group
+AquaFunded,AquaFunded.zip,cfd_prop_firm,51,pending,2,agents/propfirm-agent/manual-intake/companies/aquafunded
+Atlas Funded,Atlas Funded.zip,cfd_prop_firm,53,pending,3,agents/propfirm-agent/manual-intake/companies/atlas-funded
+Audacity Capital,Audacity Capital.zip,cfd_prop_firm,37,pending,4,agents/propfirm-agent/manual-intake/companies/audacity-capital
+City Traders Imperium,City Traders Imperium.zip,cfd_prop_firm,25,pending,5,agents/propfirm-agent/manual-intake/companies/city-traders-imperium
+FTMO,FTMO.zip,cfd_prop_firm,9,pending,6,agents/propfirm-agent/manual-intake/companies/ftmo
+Funded Trading Plus,Funded Trading Plus.zip,cfd_prop_firm,14,pending,7,agents/propfirm-agent/manual-intake/companies/funded-trading-plus
+FundingPips,FundingPips.zip,cfd_prop_firm,18,pending,8,agents/propfirm-agent/manual-intake/companies/fundingpips
+FundingTraders,FundingTraders.zip,cfd_prop_firm,8,pending,9,agents/propfirm-agent/manual-intake/companies/fundingtraders
+Goat Funded Trader,Goat Funded Trader.zip,cfd_prop_firm,52,pending,10,agents/propfirm-agent/manual-intake/companies/goat-funded-trader
+Blueberry Funded,blueberryfunded.zip,cfd_prop_firm,34,pending,11,agents/propfirm-agent/manual-intake/companies/blueberry-funded
+BrightFunded,brightfunded.zip,cfd_prop_firm,19,pending,12,agents/propfirm-agent/manual-intake/companies/brightfunded
+Goat Funded Futures,goatfundedfutures.zip,futures_prop_firm,11,pending,13,agents/propfirm-agent/manual-intake/companies/goat-funded-futures
+Maven Trading,maventrading.zip,cfd_prop_firm,22,pending,14,agents/propfirm-agent/manual-intake/companies/maven-trading
