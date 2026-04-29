@@ -1,57 +1,57 @@
-name: Prop Firm Data Agent
+name: "Prop Firm Data Agent"
 
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: Run mode: single or batch
+        description: "Run mode: single or batch"
         required: false
-        default: single
+        default: "single"
       config:
-        description: Single company config path
+        description: "Single company config path"
         required: false
-        default: agents/propfirm-agent/companies/template.company.json
+        default: "agents/propfirm-agent/companies/template.company.json"
       batch:
-        description: Batch company seed path
+        description: "Batch company seed path"
         required: false
-        default: agents/propfirm-agent/companies/prop-firms-seed.generated.json
+        default: "agents/propfirm-agent/companies/prop-firms-seed.generated.json"
       limit:
-        description: Max companies for batch mode
+        description: "Max companies for batch mode"
         required: false
         default: "5"
       offset:
-        description: Batch offset
+        description: "Batch offset"
         required: false
         default: "0"
       categories:
-        description: Optional comma-separated entity types
+        description: "Optional comma-separated entity types"
         required: false
         default: "cfd_prop_firm,futures_prop_firm,crypto_prop_firm"
       schema:
-        description: Schema driver path
+        description: "Schema driver path"
         required: false
-        default: agents/propfirm-agent/schema/schema-driver.generated.json
+        default: "agents/propfirm-agent/schema/schema-driver.generated.json"
   schedule:
     - cron: "0 7 * * 1"
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: "ubuntu-latest"
     timeout-minutes: 60
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: "Setup Node.js"
+        uses: "actions/setup-node@v4"
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - name: "Install dependencies"
+        run: "npm install"
 
-      - name: Build schema driver from detailed schema bundle
+      - name: "Build schema driver from detailed schema bundle"
         run: |
           if [ -f agents/propfirm-agent/schema/schema-bundle ]; then
             npm run agent:schema -- \
@@ -70,29 +70,29 @@ jobs:
             test -f agents/propfirm-agent/schema/schema-driver.generated.json || test -f agents/propfirm-agent/schema/schema-driver.json
           fi
 
-      - name: Install Playwright Chromium
-        run: npx playwright install --with-deps chromium
+      - name: "Install Playwright Chromium"
+        run: "npx playwright install --with-deps chromium"
 
-      - name: Run single scraper
+      - name: "Run single scraper"
         if: ${{ github.event.inputs.mode != 'batch' }}
-        run: npm run agent:scrape -- --config "${COMPANY_CONFIG}"
+        run: "npm run agent:scrape -- --config \"${COMPANY_CONFIG}\""
         env:
           COMPANY_CONFIG: ${{ github.event.inputs.config || 'agents/propfirm-agent/companies/template.company.json' }}
-          OUTPUT_DIR: output
+          OUTPUT_DIR: "output"
           SAVE_SCREENSHOTS: "false"
 
-      - name: Run batch scraper
+      - name: "Run batch scraper"
         if: ${{ github.event.inputs.mode == 'batch' }}
-        run: npm run agent:batch -- --batch "${COMPANY_BATCH}" --limit "${AGENT_LIMIT}" --offset "${AGENT_OFFSET}" --categories "${AGENT_CATEGORIES}"
+        run: "npm run agent:batch -- --batch \"${COMPANY_BATCH}\" --limit \"${AGENT_LIMIT}\" --offset \"${AGENT_OFFSET}\" --categories \"${AGENT_CATEGORIES}\""
         env:
           COMPANY_BATCH: ${{ github.event.inputs.batch || 'agents/propfirm-agent/companies/prop-firms-seed.generated.json' }}
           AGENT_LIMIT: ${{ github.event.inputs.limit || '5' }}
           AGENT_OFFSET: ${{ github.event.inputs.offset || '0' }}
           AGENT_CATEGORIES: ${{ github.event.inputs.categories || 'cfd_prop_firm,futures_prop_firm,crypto_prop_firm' }}
-          OUTPUT_DIR: output
+          OUTPUT_DIR: "output"
           SAVE_SCREENSHOTS: "false"
 
-      - name: Review extracted data against schema
+      - name: "Review extracted data against schema"
         if: always()
         run: |
           if [ -f output/normalized_pending_review.csv ]; then
@@ -106,12 +106,12 @@ jobs:
           fi
         env:
           SCHEMA_DRIVER: ${{ github.event.inputs.schema || 'agents/propfirm-agent/schema/schema-driver.generated.json' }}
-          OUTPUT_DIR: output
+          OUTPUT_DIR: "output"
 
-      - name: Upload scrape and schema-review output
+      - name: "Upload scrape and schema-review output"
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: "actions/upload-artifact@v4"
         with:
-          name: propfirm-agent-output
-          path: output/
-          if-no-files-found: warn
+          name: "propfirm-agent-output"
+          path: "output/"
+          if-no-files-found: "warn"
