@@ -8,6 +8,7 @@
     "build": "node scripts/generate-site.mjs",
     "dev": "vite",
     "preview": "vite preview",
+    "agent:schema": "node agents/propfirm-agent/src/build-schema-driver.mjs",
     "agent:scrape": "node agents/propfirm-agent/src/scrape.mjs",
     "agent:batch": "node agents/propfirm-agent/src/batch.mjs",
     "agent:review": "node agents/propfirm-agent/src/review.mjs"
