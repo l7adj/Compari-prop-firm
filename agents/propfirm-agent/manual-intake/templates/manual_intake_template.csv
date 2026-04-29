@@ -1,0 +1,5 @@
+company_name,entity_type,program_type,account_size,field_name,value,source_url,interaction_path,source_text,confidence,needs_review,review_reason,captured_at
+FundedNext,cfd_prop_firm,Express,15K,base_fee,49,https://fundednext.com/express/,Express > 15K > pricing card,"Price shown in screenshot",medium,false,,2026-04-29T00:00:00.000Z
+FundedNext,cfd_prop_firm,Express,15K,profit_target_phase_1,25%,https://fundednext.com/express/,Express > 15K > rules table,"Profit target shown in screenshot",medium,false,,2026-04-29T00:00:00.000Z
+FundedNext,cfd_prop_firm,Express,15K,max_daily_loss,5%,https://fundednext.com/express/,Express > 15K > rules table,"Daily loss shown in screenshot",medium,false,,2026-04-29T00:00:00.000Z
+FundedNext,cfd_prop_firm,Express,15K,max_total_loss,10%,https://fundednext.com/express/,Express > 15K > rules table,"Max loss shown in screenshot",medium,false,,2026-04-29T00:00:00.000Z
