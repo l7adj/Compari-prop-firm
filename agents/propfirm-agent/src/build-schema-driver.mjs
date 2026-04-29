@@ -5,36 +5,11 @@ import process from 'node:process';
 import { execFileSync } from 'node:child_process';
 
 const ENTITY_PACKAGES = [
-  {
-    entity_type: 'broker',
-    folder: '01_brokers',
-    schema_files: ['00_schema_core_shared.sql', '01_schema_brokers_v3_2_lite_clean.sql'],
-    company_sources: 'company_sources_brokers.csv'
-  },
-  {
-    entity_type: 'cfd_prop_firm',
-    folder: '02_cfd_prop_firms',
-    schema_files: ['00_schema_core_shared.sql', '02_schema_cfd_prop_firms_v3_1.sql'],
-    company_sources: 'company_sources_cfd_prop_firms.csv'
-  },
-  {
-    entity_type: 'futures_prop_firm',
-    folder: '03_futures_prop_firms',
-    schema_files: ['00_schema_core_shared.sql', '03_schema_futures_prop_firms_v3_1.sql'],
-    company_sources: 'company_sources_futures_prop_firms.csv'
-  },
-  {
-    entity_type: 'crypto_exchange',
-    folder: '04_crypto_exchanges',
-    schema_files: ['00_schema_core_shared.sql', '05_schema_crypto_exchanges_v3_core_aligned.sql'],
-    company_sources: 'company_sources_crypto_exchanges.csv'
-  },
-  {
-    entity_type: 'crypto_prop_firm',
-    folder: '05_crypto_prop_firms',
-    schema_files: ['00_schema_core_shared.sql', '04_schema_crypto_prop_firms_v3_1.sql'],
-    company_sources: 'company_sources_crypto_prop_firms.csv'
-  }
+  { entity_type: 'broker', folder: '01_brokers', schema_files: ['00_schema_core_shared.sql', '01_schema_brokers_v3_2_lite_clean.sql'], company_sources: 'company_sources_brokers.csv' },
+  { entity_type: 'cfd_prop_firm', folder: '02_cfd_prop_firms', schema_files: ['00_schema_core_shared.sql', '02_schema_cfd_prop_firms_v3_1.sql'], company_sources: 'company_sources_cfd_prop_firms.csv' },
+  { entity_type: 'futures_prop_firm', folder: '03_futures_prop_firms', schema_files: ['00_schema_core_shared.sql', '03_schema_futures_prop_firms_v3_1.sql'], company_sources: 'company_sources_futures_prop_firms.csv' },
+  { entity_type: 'crypto_exchange', folder: '04_crypto_exchanges', schema_files: ['00_schema_core_shared.sql', '05_schema_crypto_exchanges_v3_core_aligned.sql'], company_sources: 'company_sources_crypto_exchanges.csv' },
+  { entity_type: 'crypto_prop_firm', folder: '05_crypto_prop_firms', schema_files: ['00_schema_core_shared.sql', '04_schema_crypto_prop_firms_v3_1.sql'], company_sources: 'company_sources_crypto_prop_firms.csv' }
 ];
 
 const BASE_FIELD_MAPPINGS = {
@@ -83,13 +58,8 @@ function parseArgs() {
   return out;
 }
 
-async function ensureDir(dir) {
-  await fs.mkdir(dir, { recursive: true });
-}
-
-function stripBom(value) {
-  return String(value || '').replace(/^\uFEFF/, '');
-}
+async function ensureDir(dir) { await fs.mkdir(dir, { recursive: true }); }
+function stripBom(value) { return String(value || '').replace(/^\uFEFF/, ''); }
 
 function splitCsvLine(line) {
   const cells = [];
@@ -98,20 +68,9 @@ function splitCsvLine(line) {
   for (let i = 0; i < line.length; i += 1) {
     const char = line[i];
     const next = line[i + 1];
-    if (char === '"' && inQuotes && next === '"') {
-      current += '"';
-      i += 1;
-      continue;
-    }
-    if (char === '"') {
-      inQuotes = !inQuotes;
-      continue;
-    }
-    if (char === ',' && !inQuotes) {
-      cells.push(current);
-      current = '';
-      continue;
-    }
+    if (char === '"' && inQuotes && next === '"') { current += '"'; i += 1; continue; }
+    if (char === '"') { inQuotes = !inQuotes; continue; }
+    if (char === ',' && !inQuotes) { cells.push(current); current = ''; continue; }
     current += char;
   }
   cells.push(current);
@@ -126,9 +85,7 @@ async function readCsv(filePath) {
   return lines.slice(1).map((line) => {
     const cells = splitCsvLine(line);
     const row = {};
-    headers.forEach((header, index) => {
-      row[header] = cells[index] ?? '';
-    });
+    headers.forEach((header, index) => { row[header] = cells[index] ?? ''; });
     return row;
   });
 }
@@ -154,14 +111,28 @@ function parseTables(sql, sourceFile) {
   return tables;
 }
 
-async function decodeAndExtractBundle(bundlePath, workDir) {
-  if (!fsSync.existsSync(bundlePath)) {
-    throw new Error(`Schema bundle not found: ${bundlePath}`);
+async function writeBundleAsZip(bundlePath, zipPath) {
+  const raw = await fs.readFile(bundlePath);
+  const isZip = raw.length >= 4 && raw[0] === 0x50 && raw[1] === 0x4b && raw[2] === 0x03 && raw[3] === 0x04;
+  if (isZip) {
+    await fs.writeFile(zipPath, raw);
+    return 'zip_binary';
   }
+
+  const asText = raw.toString('utf8').replace(/\s+/g, '');
+  if (!/^[A-Za-z0-9+/=]+$/.test(asText) || asText.length < 100) {
+    throw new Error(`Schema bundle is neither ZIP binary nor base64 text: ${bundlePath}`);
+  }
+  await fs.writeFile(zipPath, Buffer.from(asText, 'base64'));
+  return 'base64_text';
+}
+
+async function decodeAndExtractBundle(bundlePath, workDir) {
+  if (!fsSync.existsSync(bundlePath)) throw new Error(`Schema bundle not found: ${bundlePath}`);
   await ensureDir(workDir);
   const zipPath = path.join(workDir, 'schema_bundle.zip');
-  const b64 = await fs.readFile(bundlePath, 'utf8');
-  await fs.writeFile(zipPath, Buffer.from(b64.replace(/\s+/g, ''), 'base64'));
+  const bundleFormat = await writeBundleAsZip(bundlePath, zipPath);
+  console.log(`Schema bundle format: ${bundleFormat}`);
   execFileSync('unzip', ['-o', zipPath, '-d', workDir], { stdio: 'inherit' });
   const entries = await fs.readdir(workDir, { withFileTypes: true });
   const root = entries.find((entry) => entry.isDirectory() && entry.name.startsWith('schema_and_company_sources_by_type'));
@@ -169,9 +140,7 @@ async function decodeAndExtractBundle(bundlePath, workDir) {
   return path.join(workDir, root.name);
 }
 
-function tableHasColumn(tables, table, column) {
-  return Boolean(tables[table]?.columns?.some((c) => c.name === column));
-}
+function tableHasColumn(tables, table, column) { return Boolean(tables[table]?.columns?.some((c) => c.name === column)); }
 
 function buildMappings(tables) {
   const result = {};
@@ -236,9 +205,7 @@ async function main() {
       const parsed = parseTables(sql, `${spec.folder}/${schemaFile}`);
       for (const [tableName, meta] of Object.entries(parsed)) {
         tables[tableName] = meta;
-        if (!['categories', 'companies', 'company_sources', 'data_quality_flags'].includes(tableName)) {
-          allowedTables.add(tableName);
-        }
+        if (!['categories', 'companies', 'company_sources', 'data_quality_flags'].includes(tableName)) allowedTables.add(tableName);
       }
     }
     const seedRows = await readCsv(path.join(folderPath, spec.company_sources));
@@ -283,7 +250,6 @@ async function main() {
   };
 
   const propFirms = companySources.filter((row) => ['cfd_prop_firm', 'futures_prop_firm', 'crypto_prop_firm'].includes(row.entity_type));
-
   await ensureDir(path.dirname(outSchema));
   await ensureDir(path.dirname(outCompanySeed));
   await fs.writeFile(outSchema, JSON.stringify(driver, null, 2), 'utf8');
@@ -298,7 +264,4 @@ async function main() {
   console.log(`Wrote: ${outPropSeed}`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+main().catch((error) => { console.error(error); process.exit(1); });
