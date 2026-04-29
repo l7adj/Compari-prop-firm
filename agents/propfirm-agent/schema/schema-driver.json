@@ -1,0 +1,261 @@
+{
+  "version": "schema_driver_v1",
+  "purpose": "Make the project schema the authority for prop firm extraction, review, and fill decisions.",
+  "source_schema_files": [
+    "00_schema_core_shared.sql",
+    "02_schema_cfd_prop_firms_v3_1.sql",
+    "03_schema_futures_prop_firms_v3_1.sql",
+    "04_schema_crypto_prop_firms_v3_1.sql",
+    "SCHEMA_PLUS_COMPANY_SOURCES_FILL_RULE_AR.md"
+  ],
+  "entity_types": {
+    "cfd_prop_firm": {
+      "allowed_tables": [
+        "companies",
+        "company_sources",
+        "data_quality_flags",
+        "cfd_prop_programs",
+        "cfd_prop_account_sizes",
+        "cfd_prop_phase_rules",
+        "cfd_prop_drawdown_rules",
+        "cfd_prop_trading_rules",
+        "cfd_prop_payout_rules"
+      ]
+    },
+    "futures_prop_firm": {
+      "allowed_tables": [
+        "companies",
+        "company_sources",
+        "data_quality_flags",
+        "futures_prop_programs",
+        "futures_prop_account_sizes",
+        "futures_prop_phase_rules",
+        "futures_prop_position_rules",
+        "futures_prop_trading_rules",
+        "futures_prop_payout_rules"
+      ]
+    },
+    "crypto_prop_firm": {
+      "allowed_tables": [
+        "companies",
+        "company_sources",
+        "data_quality_flags",
+        "crypto_prop_market_types",
+        "crypto_prop_funding_models",
+        "crypto_prop_account_sizes",
+        "crypto_prop_phase_drawdown_rules",
+        "crypto_prop_fee_rules",
+        "crypto_prop_trading_permissions",
+        "crypto_prop_kyc_payout_rules"
+      ]
+    }
+  },
+  "common_required_source_columns": [
+    "source_url",
+    "source_checked_at",
+    "source_confidence",
+    "data_status"
+  ],
+  "fill_policy": {
+    "no_guessing": true,
+    "never_final_if_click_failed": true,
+    "never_final_if_discount_context": true,
+    "never_final_if_empty_or_invalid": true,
+    "only_approved_candidate_can_become_import_candidate": true,
+    "final_database_write_requires_review_status": "approved_candidate",
+    "default_unverified_data_status": "needs_review",
+    "default_verified_data_status": "verified_from_source",
+    "minimum_source_confidence_for_import_candidate": 85
+  },
+  "field_mappings": {
+    "cfd_prop_firm": {
+      "base_fee": {
+        "target_table": "cfd_prop_account_sizes",
+        "target_column": "price",
+        "also_consider_columns": ["original_price", "price_currency", "discount_pct", "discount_code"],
+        "condition_group": "pricing",
+        "expected_format": "money_or_number",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_target_phase_1": {
+        "target_table": "cfd_prop_phase_rules",
+        "target_column": "profit_target_pct",
+        "fixed_columns": {"phase_number": 1},
+        "condition_group": "profit_target",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_target_phase_2": {
+        "target_table": "cfd_prop_phase_rules",
+        "target_column": "profit_target_pct",
+        "fixed_columns": {"phase_number": 2},
+        "condition_group": "profit_target",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "max_daily_loss": {
+        "target_table": "cfd_prop_drawdown_rules",
+        "target_column": "daily_drawdown_pct",
+        "condition_group": "risk_limit",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "max_total_loss": {
+        "target_table": "cfd_prop_drawdown_rules",
+        "target_column": "max_drawdown_pct",
+        "condition_group": "risk_limit",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_split": {
+        "target_table": "cfd_prop_payout_rules",
+        "target_column": "profit_split",
+        "condition_group": "payout",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "min_trading_days": {
+        "target_table": "cfd_prop_phase_rules",
+        "target_column": "min_trading_days",
+        "condition_group": "trading_rule",
+        "expected_format": "integer",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "refund": {
+        "target_table": "cfd_prop_account_sizes",
+        "target_column": "source_notes",
+        "condition_group": "pricing",
+        "expected_format": "text",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      }
+    },
+    "futures_prop_firm": {
+      "base_fee": {
+        "target_table": "futures_prop_account_sizes",
+        "target_column": "monthly_price",
+        "also_consider_columns": ["one_time_price", "activation_fee", "reset_fee", "data_fee", "platform_fee"],
+        "condition_group": "pricing",
+        "expected_format": "money_or_number",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_target_phase_1": {
+        "target_table": "futures_prop_phase_rules",
+        "target_column": "profit_target_amount",
+        "condition_group": "profit_target",
+        "expected_format": "money_or_number",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"],
+        "note": "Futures firms commonly publish amount targets instead of percentages. Percent values must stay needs_review unless source explicitly says percent."
+      },
+      "max_daily_loss": {
+        "target_table": "futures_prop_phase_rules",
+        "target_column": "daily_loss_limit_amount",
+        "condition_group": "risk_limit",
+        "expected_format": "money_or_number",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "max_total_loss": {
+        "target_table": "futures_prop_phase_rules",
+        "target_column": "max_drawdown_amount",
+        "condition_group": "risk_limit",
+        "expected_format": "money_or_number",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_split": {
+        "target_table": "futures_prop_payout_rules",
+        "target_column": "profit_split",
+        "condition_group": "payout",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "min_trading_days": {
+        "target_table": "futures_prop_phase_rules",
+        "target_column": "min_trading_days",
+        "condition_group": "trading_rule",
+        "expected_format": "integer",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      }
+    },
+    "crypto_prop_firm": {
+      "base_fee": {
+        "target_table": "crypto_prop_account_sizes",
+        "target_column": "price",
+        "also_consider_columns": ["original_price", "activation_fee", "reset_fee", "monthly_fee", "total_first_month_cost"],
+        "condition_group": "pricing",
+        "expected_format": "money_or_number",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_target_phase_1": {
+        "target_table": "crypto_prop_phase_drawdown_rules",
+        "target_column": "profit_target_pct",
+        "fixed_columns": {"phase_number": 1},
+        "condition_group": "profit_target",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_target_phase_2": {
+        "target_table": "crypto_prop_phase_drawdown_rules",
+        "target_column": "profit_target_pct",
+        "fixed_columns": {"phase_number": 2},
+        "condition_group": "profit_target",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "max_daily_loss": {
+        "target_table": "crypto_prop_phase_drawdown_rules",
+        "target_column": "daily_drawdown_pct",
+        "condition_group": "risk_limit",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "max_total_loss": {
+        "target_table": "crypto_prop_phase_drawdown_rules",
+        "target_column": "max_drawdown_pct",
+        "condition_group": "risk_limit",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "profit_split": {
+        "target_table": "crypto_prop_kyc_payout_rules",
+        "target_column": "profit_split",
+        "condition_group": "payout",
+        "expected_format": "percent",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "min_trading_days": {
+        "target_table": "crypto_prop_phase_drawdown_rules",
+        "target_column": "min_trading_days",
+        "condition_group": "trading_rule",
+        "expected_format": "integer",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      },
+      "refund": {
+        "target_table": "crypto_prop_phase_drawdown_rules",
+        "target_column": "refund_conditions",
+        "condition_group": "pricing",
+        "expected_format": "text",
+        "requires_context": ["company_name", "program_type", "account_size", "source_url", "interaction_path"]
+      }
+    }
+  },
+  "quality_flag_mapping": {
+    "missing": {"target_table": "data_quality_flags", "flag_type": "missing", "default_severity": "medium"},
+    "conflicting": {"target_table": "data_quality_flags", "flag_type": "conflicting", "default_severity": "high"},
+    "unverified": {"target_table": "data_quality_flags", "flag_type": "unverified", "default_severity": "medium"},
+    "needs_source": {"target_table": "data_quality_flags", "flag_type": "needs_source", "default_severity": "high"}
+  },
+  "import_candidate_columns": [
+    "target_table",
+    "target_column",
+    "company_name",
+    "entity_type",
+    "program_type",
+    "account_size",
+    "normalized_value",
+    "source_url",
+    "source_checked_at",
+    "source_confidence",
+    "data_status",
+    "source_notes",
+    "interaction_path"
+  ]
+}
