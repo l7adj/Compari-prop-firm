@@ -7,14 +7,17 @@
     "generate": "node scripts/generate-site.mjs",
     "build": "node scripts/generate-site.mjs",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "agent:scrape": "node agents/propfirm-agent/src/scrape.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
     "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "lucide-react": "latest"
+    "lucide-react": "latest",
+    "playwright": "latest",
+    "googleapis": "latest"
   },
   "devDependencies": {}
 }
