@@ -1,0 +1,35 @@
+company_name,entity_type,folder_path,status
+Alpha Capital Group,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/alpha-capital-group,created
+AquaFunded,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/aquafunded,created
+Atlas Funded,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/atlas-funded,pending
+Audacity Capital,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/audacity-capital,pending
+Blueberry Funded,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/blueberry-funded,pending
+BrightFunded,crypto_prop_firm,agents/propfirm-agent/manual-intake/uploads/crypto-prop-firms/brightfunded,pending
+City Traders Imperium,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/city-traders-imperium,pending
+E8 Markets,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/e8-markets,pending
+Fintokei,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/fintokei,pending
+FTMO,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/ftmo,pending
+FundedNext,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/fundednext,pending
+FundedNext Futures,futures_prop_firm,agents/propfirm-agent/manual-intake/uploads/futures-prop-firms/fundednext-futures,pending
+Funded Trading Plus,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/funded-trading-plus,pending
+FunderPro,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/funderpro,pending
+FundingPips,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/fundingpips,pending
+FundingTraders,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/fundingtraders,pending
+FXIFY,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/fxify,pending
+FXIFY Futures,futures_prop_firm,agents/propfirm-agent/manual-intake/uploads/futures-prop-firms/fxify-futures,pending
+Goat Funded Trader,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/goat-funded-trader,pending
+Goat Funded Futures,futures_prop_firm,agents/propfirm-agent/manual-intake/uploads/futures-prop-firms/goat-funded-futures,pending
+Hantec Trader,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/hantec-trader,pending
+Hola Prime,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/hola-prime,pending
+Instant Funding,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/instant-funding,pending
+Lux Trading Firm,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/lux-trading-firm,pending
+Maven Trading,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/maven-trading,pending
+RebelsFunding,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/rebelsfunding,pending
+The Trading Pit,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/the-trading-pit,pending
+The5ers,cfd_prop_firm,agents/propfirm-agent/manual-intake/uploads/cfd-prop-firms/the5ers,pending
+Topstep,futures_prop_firm,agents/propfirm-agent/manual-intake/uploads/futures-prop-firms/topstep,pending
+Apex Trader Funding,futures_prop_firm,agents/propfirm-agent/manual-intake/uploads/futures-prop-firms/apex-trader-funding,pending
+Earn2Trade,futures_prop_firm,agents/propfirm-agent/manual-intake/uploads/futures-prop-firms/earn2trade,pending
+MyFundedFutures,futures_prop_firm,agents/propfirm-agent/manual-intake/uploads/futures-prop-firms/myfundedfutures,pending
+HyroTrader,crypto_prop_firm,agents/propfirm-agent/manual-intake/uploads/crypto-prop-firms/hyrotrader,pending
+Crypto Fund Trader,crypto_prop_firm,agents/propfirm-agent/manual-intake/uploads/crypto-prop-firms/crypto-fund-trader,pending
