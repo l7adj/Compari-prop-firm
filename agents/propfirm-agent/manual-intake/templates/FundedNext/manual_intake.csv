@@ -1,0 +1,2 @@
+company_name,entity_type,program_type,account_size,field_name,value,source_url,interaction_path,source_text,confidence,needs_review,review_reason,captured_at
+FundedNext,cfd_prop_firm,,,,,https://fundednext.com/express/,FundedNext manual intake,"PLACEHOLDER: replace with values extracted from screenshots",low,true,pending_screenshot_extraction,2026-04-29T00:00:00.000Z
