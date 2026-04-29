@@ -8,7 +8,8 @@
     "build": "node scripts/generate-site.mjs",
     "dev": "vite",
     "preview": "vite preview",
-    "agent:scrape": "node agents/propfirm-agent/src/scrape.mjs"
+    "agent:scrape": "node agents/propfirm-agent/src/scrape.mjs",
+    "agent:batch": "node agents/propfirm-agent/src/batch.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
