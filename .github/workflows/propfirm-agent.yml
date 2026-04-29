@@ -3,17 +3,37 @@ name: Prop Firm Data Agent
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: Run mode: single or batch
+        required: false
+        default: single
       config:
-        description: Company config path
+        description: Single company config path
         required: false
         default: agents/propfirm-agent/companies/template.company.json
+      batch:
+        description: Batch company seed path
+        required: false
+        default: agents/propfirm-agent/companies/prop-firms.seed.json
+      limit:
+        description: Max companies for batch mode
+        required: false
+        default: "5"
+      offset:
+        description: Batch offset
+        required: false
+        default: "0"
+      categories:
+        description: Optional comma-separated entity types
+        required: false
+        default: "cfd_prop_firm,futures_prop_firm,crypto_prop_firm"
   schedule:
     - cron: "0 7 * * 1"
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
 
     steps:
       - name: Checkout
@@ -30,10 +50,22 @@ jobs:
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Run scraper
+      - name: Run single scraper
+        if: ${{ github.event.inputs.mode != 'batch' }}
         run: npm run agent:scrape -- --config "${COMPANY_CONFIG}"
         env:
           COMPANY_CONFIG: ${{ github.event.inputs.config || 'agents/propfirm-agent/companies/template.company.json' }}
+          OUTPUT_DIR: output
+          SAVE_SCREENSHOTS: "false"
+
+      - name: Run batch scraper
+        if: ${{ github.event.inputs.mode == 'batch' }}
+        run: npm run agent:batch -- --batch "${COMPANY_BATCH}" --limit "${AGENT_LIMIT}" --offset "${AGENT_OFFSET}" --categories "${AGENT_CATEGORIES}"
+        env:
+          COMPANY_BATCH: ${{ github.event.inputs.batch || 'agents/propfirm-agent/companies/prop-firms.seed.json' }}
+          AGENT_LIMIT: ${{ github.event.inputs.limit || '5' }}
+          AGENT_OFFSET: ${{ github.event.inputs.offset || '0' }}
+          AGENT_CATEGORIES: ${{ github.event.inputs.categories || 'cfd_prop_firm,futures_prop_firm,crypto_prop_firm' }}
           OUTPUT_DIR: output
           SAVE_SCREENSHOTS: "false"
 
