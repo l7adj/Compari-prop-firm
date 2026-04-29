@@ -1,0 +1,7 @@
+company_name,entity_type,flag_type,severity,item,details,source_url
+Alpha Capital Group,cfd_prop_firm,missing,high,Alpha Pro10%,Program option visible but no screenshots captured account-size details/prices/rules. Do not import until captured.,https://alphacapitalgroup.uk/
+Alpha Capital Group,cfd_prop_firm,missing,high,Swing,Program option visible but no screenshots captured account-size details/prices/rules. Do not import until captured.,https://alphacapitalgroup.uk/
+Alpha Capital Group,cfd_prop_firm,missing,medium,1 Step,Funding model tab visible but no account/rule screenshot captured.,https://alphacapitalgroup.uk/
+Alpha Capital Group,cfd_prop_firm,partial,medium,3 Step Alpha Three,"Only 10K account captured; 25K, 50K, 100K, 200K buttons visible but values not captured.",https://alphacapitalgroup.uk/
+Alpha Capital Group,cfd_prop_firm,unverified,medium,Platforms,No MT4/MT5/cTrader/DXtrade platform information visible in the supplied screenshots. Only partner ACG Markets / simulated environment text visible.,https://alphacapitalgroup.uk/
+Alpha Capital Group,cfd_prop_firm,source_context,low,Trading environment,Screenshots explicitly state all accounts are demo accounts with simulated funds; trading/profit references are virtual.,https://alphacapitalgroup.uk/
