@@ -14,7 +14,7 @@ on:
       batch:
         description: Batch company seed path
         required: false
-        default: agents/propfirm-agent/companies/prop-firms.seed.json
+        default: agents/propfirm-agent/companies/prop-firms-seed.generated.json
       limit:
         description: Max companies for batch mode
         required: false
@@ -30,7 +30,7 @@ on:
       schema:
         description: Schema driver path
         required: false
-        default: agents/propfirm-agent/schema/schema-driver.json
+        default: agents/propfirm-agent/schema/schema-driver.generated.json
   schedule:
     - cron: "0 7 * * 1"
 
@@ -51,6 +51,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build schema driver from detailed schema bundle
+        run: |
+          if [ -f agents/propfirm-agent/schema/schema-bundle.b64 ]; then
+            npm run agent:schema -- \
+              --bundle agents/propfirm-agent/schema/schema-bundle.b64 \
+              --outSchema agents/propfirm-agent/schema/schema-driver.generated.json \
+              --outCompanySeed agents/propfirm-agent/companies/company-seed.generated.json \
+              --outPropSeed agents/propfirm-agent/companies/prop-firms-seed.generated.json
+          else
+            echo "schema-bundle.b64 not found. Using committed schema driver if present."
+            test -f agents/propfirm-agent/schema/schema-driver.generated.json || test -f agents/propfirm-agent/schema/schema-driver.json
+          fi
+
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
 
@@ -66,7 +79,7 @@ jobs:
         if: ${{ github.event.inputs.mode == 'batch' }}
         run: npm run agent:batch -- --batch "${COMPANY_BATCH}" --limit "${AGENT_LIMIT}" --offset "${AGENT_OFFSET}" --categories "${AGENT_CATEGORIES}"
         env:
-          COMPANY_BATCH: ${{ github.event.inputs.batch || 'agents/propfirm-agent/companies/prop-firms.seed.json' }}
+          COMPANY_BATCH: ${{ github.event.inputs.batch || 'agents/propfirm-agent/companies/prop-firms-seed.generated.json' }}
           AGENT_LIMIT: ${{ github.event.inputs.limit || '5' }}
           AGENT_OFFSET: ${{ github.event.inputs.offset || '0' }}
           AGENT_CATEGORIES: ${{ github.event.inputs.categories || 'cfd_prop_firm,futures_prop_firm,crypto_prop_firm' }}
@@ -77,12 +90,16 @@ jobs:
         if: always()
         run: |
           if [ -f output/normalized_pending_review.csv ]; then
-            npm run agent:review -- --input output/normalized_pending_review.csv --output output --schema "${SCHEMA_DRIVER}"
+            SCHEMA_PATH="${SCHEMA_DRIVER}"
+            if [ ! -f "$SCHEMA_PATH" ] && [ -f agents/propfirm-agent/schema/schema-driver.json ]; then
+              SCHEMA_PATH="agents/propfirm-agent/schema/schema-driver.json"
+            fi
+            npm run agent:review -- --input output/normalized_pending_review.csv --output output --schema "$SCHEMA_PATH"
           else
             echo "No normalized_pending_review.csv found; skipping schema review."
           fi
         env:
-          SCHEMA_DRIVER: ${{ github.event.inputs.schema || 'agents/propfirm-agent/schema/schema-driver.json' }}
+          SCHEMA_DRIVER: ${{ github.event.inputs.schema || 'agents/propfirm-agent/schema/schema-driver.generated.json' }}
           OUTPUT_DIR: output
 
       - name: Upload scrape and schema-review output
